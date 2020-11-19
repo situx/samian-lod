@@ -4,47 +4,72 @@
 
 samian (base):
   http://lod.archaeology.link/data/samian/
+
 crm:
   http://www.cidoc-crm.org/cidoc-crm/
+
 dc:
   http://purl.org/dc/elements/1.1/
+
 dct:
   http://purl.org/dc/terms/
+
 dcmitype:
   http://purl.org/dc/dcmitype/
+
 geosparql:
   http://www.opengis.net/ont/geosparql#>
+
 lado
   http://samian/ontology
+
 owl:
   http://www.w3.org/2002/07/owl#
+
 pleiades:
   https://pleiades.stoa.org/places/vocab#
+
 rdf:
   http://www.w3.org/1999/02/22-rdf-syntax-ns#
+
 rdfs:
   http://www.w3.org/2000/01/rdf-schema#
+
 sf:
   http://www.opengis.net/ont/sf#
+
 skos:
   http://www.w3.org/2004/02/skos/core#
+
 xml:
   http://www.w3.org/XML/1998/namespace
+
 xsd:
   http://www.w3.org/2001/XMLSchema#
 
 ## Class Structure
 
-![SamianLod_map](/docs/pictures/Samian_map_png.png){:class="img-responsive"}
-![SamianLod_map_InformationCarrier](/docs/pictures/SamianLod_map_InformationCarrier.png){:class="img-responsive"}
-![SamianLod_map_Insription](/docs/pictures/SamianLod_map_Insription.png){:class="img-responsive"}
-![SamianLod_map_Actor](/docs/pictures/SamianLod_map_Actor.png){:class="img-responsive"}
-![SamianLod_map_Location](/docs/pictures/SamianLod_map_Location.png){:class="img-responsive"}
-![SamianLod_map_Potform](/docs/pictures/SamianLod_map_Potform.png){:class="img-responsive"}
+### Samian Map
+![SamianLod_map](/assets/SamianLod_map.png){:class="img-responsive"}
+
+### Detailed InformationCarrier
+![SamianLod_map_InformationCarrier](/assets/SamianLod_map_InformationCarrier.png){:class="img-responsive"}
+
+### Detailed Inscription
+![SamianLod_map_Insription](/assets/SamianLod_map_Insription.png){:class="img-responsive"}
+
+### Detailed Actor
+![SamianLod_map_Actor](/assets/SamianLod_map_Actor.png){:class="img-responsive"}
+
+### Detailed Location
+![SamianLod_map_Location](/assets/SamianLod_map_Location.png){:class="img-responsive"}
+
+### Detailed Potform
+![SamianLod_map_Potform](/assets/SamianLod_map_Potform.png){:class="img-responsive"}
 
 ## File Structure
 
-![Samian_universal_map](/docs/pictures/Samian_universal_map.png){:class="img-responsive"}
+![Samian_universal_map](/assets/Samian_universal_map.png){:class="img-responsive"}
 
 ## CSV-Documentation
 
