@@ -2,49 +2,49 @@
 
 ## Prefixes
 
-samian (base):
+**samian (base)**:
   http://lod.archaeology.link/data/samian/
 
-crm:
+**crm**:
   http://www.cidoc-crm.org/cidoc-crm/
 
-dc:
+**dc**:
   http://purl.org/dc/elements/1.1/
 
-dct:
+**dct**:
   http://purl.org/dc/terms/
 
-dcmitype:
+**dcmitype**:
   http://purl.org/dc/dcmitype/
 
-geosparql:
+**geosparql**:
   http://www.opengis.net/ont/geosparql#>
 
-lado
+**lado**:
   http://samian/ontology
 
-owl:
+**owl**:
   http://www.w3.org/2002/07/owl#
 
-pleiades:
+**pleiades**:
   https://pleiades.stoa.org/places/vocab#
 
-rdf:
+**rdf**:
   http://www.w3.org/1999/02/22-rdf-syntax-ns#
 
-rdfs:
+**rdfs**:
   http://www.w3.org/2000/01/rdf-schema#
 
-sf:
+**sf**:
   http://www.opengis.net/ont/sf#
 
-skos:
+**skos**:
   http://www.w3.org/2004/02/skos/core#
 
-xml:
+**xml**:
   http://www.w3.org/XML/1998/namespace
 
-xsd:
+**xsd**:
   http://www.w3.org/2001/XMLSchema#
 
 ## Class Structure
