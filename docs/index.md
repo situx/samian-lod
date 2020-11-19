@@ -50,7 +50,7 @@ xsd:
 ## Class Structure
 
 ### Samian Map
-![SamianLod_map](/assets/SamianLod_map.png){:class="img-responsive"}
+![SamianLod_map](/docs/assets/SamianLod_map.png){:class="img-responsive"}
 
 ### Detailed InformationCarrier
 ![SamianLod_map_InformationCarrier](/docs/assets/SamianLod_map_InformationCarrier.png){:class="img-responsive"}
