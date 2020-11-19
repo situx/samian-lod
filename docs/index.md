@@ -142,117 +142,117 @@ xsd:
 ### Unique:
 |Name | Columns|
 |-------------------------|-------------------------|
-|actorsasaconcept: | **id**|
-|                  | **name**|
+|actorsasaconcept: | **id** |
+|                  | **name** |
 |-------------------------|-------------------------|
-|chiefpotter:                | **id**|
-|                            | **name**|
-|                            | **praenomen**|
-|                            | **cognomen**|
-|                            | **slave**|
-|                            | **gentilicium**|
-|                            | **partner**|
-|                            | **kilnsite**|
+|chiefpotter:                | **id** |
+|                            | **name** |
+|                            | **praenomen** |
+|                            | **cognomen** |
+|                            | **slave** |
+|                            | **gentilicium** |
+|                            | **partner** |
+|                            | **kilnsite** |
 |-------------------------|-------------------------|    
-|cooperationandchiefpotter:  | **id**|
-|                            | **name**|
-|                            | **praenomen**|
-|                            | **cognomen**|
-|                            | **slave**|
-|                            | **gentilicium**|
-|                            | **partner**|
-|                            | **kilnsite**|
+|cooperationandchiefpotter:  | **id** |
+|                            | **name** |
+|                            | **praenomen** |
+|                            | **cognomen** |
+|                            | **slave** |
+|                            | **gentilicium** |
+|                            | **partner** |
+|                            | **kilnsite** |
 |-------------------------|-------------------------|
-|cooperationpotter:          | **id**|
-|                            | **pottername**|
-|                            | **praenomen**|
-|                            | **cognomen**|
-|                            | **slave**|
-|                            | **gentilicium**|
-|                            | **partner**|
-|                            | **kilnsite**|
+|cooperationpotter:          | **id** |
+|                            | **pottername** |
+|                            | **praenomen** |
+|                            | **cognomen** |
+|                            | **slave** |
+|                            | **gentilicium** |
+|                            | **partner** |
+|                            | **kilnsite** |
 |-------------------------|-------------------------|
-|dependentpotter:            | **id**|
-|                            | **slave**|
+|dependentpotter:            | **id** |
+|                            | **slave** |
 |-------------------------|-------------------------|
-|discoverysite:              | **id**|
-|                            | **label**|
-|                            | **long**|
-|                            | **pleiades_id**|
-|                            | **ancientname**|
-|                            | **wkt**|
+|discoverysite:              | **id** |
+|                            | **label** |
+|                            | **long** |
+|                            | **pleiades_id** |
+|                            | **ancientname** |
+|                            | **wkt** |
 |-------------------------|-------------------------|
-|genericpotform:             | **id**|
-|                            | **label**|
+|genericpotform:             | **id** |
+|                            | **label** |
 |-------------------------|-------------------------|
-|independentpotter:          | **id**|
-|                            | **pottername**|
-|                            | **praenomen**|
-|                            | **cognomen**|
-|                            | **slave**|
-|                            | **gentilicium**|
-|                            | **partner**|
-|                            | **kilnsite**|
+|independentpotter:          | **id** |
+|                            | **pottername** |
+|                            | **praenomen** |
+|                            | **cognomen** |
+|                            | **slave** |
+|                            | **gentilicium** |
+|                            | **partner** |
+|                            | **kilnsite** |
 |-------------------------|-------------------------|
-|informationcarrier:         | **id**|
-|                            | **label**|
-|                            | **shapes**|
-|                            | **number**|
-|                            | **kilnsite**|
-|                            | **pottername**|
-|                            | **die**|
-|                            | **site**|
-|                            | **repositorysite**|
+|informationcarrier:         | **id** |
+|                            | **label** |
+|                            | **shapes** |
+|                            | **number** |
+|                            | **kilnsite** |
+|                            | **pottername** |
+|                            | **die** |
+|                            | **site** |
+|                            | **repositorysite** |
 |-------------------------|-------------------------|
-|inscriptiondie:             | **id**|
-|                            | **reading**|
-|                            | **simplereading**|
-|                            | **direction**|
+|inscriptiondie:             | **id** |
+|                            | **reading** |
+|                            | **simplereading** |
+|                            | **direction** |
 |-------------------------|-------------------------|
-|inscriptiongraffito:        | **id**|
-|                            | **reading**|
-|                            | **simplereading**|
-|                            | **direction**|
+|inscriptiongraffito:        | **id** |
+|                            | **reading** |
+|                            | **simplereading** |
+|                            | **direction** |
 |-------------------------|-------------------------|
-|inscriptionmakingtypedie:   | **id**|
-|                            | **label**|
-|                            | **pottername**|
-|                            | **die**|
+|inscriptionmakingtypedie:   | **id** |
+|                            | **label** |
+|                            | **pottername** |
+|                            | **die** |
 |-------------------------|-------------------------|
-|inscriptionmakingtypestylus:  | **id**|
-|                              | **label**|
-|                              | **pottername**|
-|                              | **die**|
+|inscriptionmakingtypestylus:  | **id** |
+|                              | **label** |
+|                              | **pottername** |
+|                              | **die** |
 |-------------------------|-------------------------|
-|kilnregion:                 | **id**|
-|                            | **label**|
-|                            | **kilnregion_centroid_wkt**|
-|                            | **kilnregion_wkt**|
+|kilnregion:                 | **id** |
+|                            | **label** |
+|                            | **kilnregion_centroid_wkt** |
+|                            | **kilnregion_wkt** |
 |-------------------------|-------------------------|
-|partnerpotter:              | **id**|
-|                            | **name**|
+|partnerpotter:              | **id** |
+|                            | **name** |
 |-------------------------|-------------------------|
-|placeasaconcept:            | **id**|
-|                            | **label**|
+|placeasaconcept:            | **id** |
+|                            | **label** |
 |-------------------------|-------------------------|
-|potformgaulish:             | **id**|
-|                            | **label**|
-|                            | **image**|
-|                            | **genericform**|
-|                            | **tradition**|
+|potformgaulish:             | **id** |
+|                            | **label** |
+|                            | **image** |
+|                            | **genericform** |
+|                            | **tradition** |
 |-------------------------|-------------------------|
-|potformitalian:             | **id**|
-|                            | **label**|
-|                            | **image**|
-|                            | **genericform**|
-|                            | **tradition**|
+|potformitalian:             | **id** |
+|                            | **label** |
+|                            | **image** |
+|                            | **genericform** |
+|                            | **tradition** |
 |-------------------------|-------------------------|
-|productioncentre:           | **id**|
-|                            | **label**|
-|                            | **kilnregion**|
-|                            | **lat**|
-|                            | **long**|
-|                            | **wkt**|
+|productioncentre:           | **id** |
+|                            | **label** |
+|                            | **kilnregion** |
+|                            | **lat** |
+|                            | **long** |
+|                            | **wkt** |
 |-------------------------|-------------------------|
-|repositorylocation:         | **id**|
-|                            | **label**|
+|repositorylocation:         | **id** |
+|                            | **label** |
