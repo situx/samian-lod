@@ -50,7 +50,7 @@ xsd:
 ## Class Structure
 
 ### Samian Map
-![SamianLod_map](https://github.com/RGZM/samian-lod/docs/assets/SamianLod_map.png)
+![SamianLod_map](/assets/SamianLod_map.png)
 
 ### Detailed InformationCarrier
 ![SamianLod_map_InformationCarrier](/assets/SamianLod_map_InformationCarrier.png)
