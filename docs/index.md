@@ -53,23 +53,23 @@ xsd:
 ![SamianLod_map](/docs/assets/SamianLod_map.png){:class="img-responsive"}
 
 ### Detailed InformationCarrier
-![SamianLod_map_InformationCarrier](/assets/SamianLod_map_InformationCarrier.png){:class="img-responsive"}
+![SamianLod_map_InformationCarrier](/docs/assets/SamianLod_map_InformationCarrier.png){:class="img-responsive"}
 
 ### Detailed Inscription
-![SamianLod_map_Insription](/assets/SamianLod_map_Insription.png){:class="img-responsive"}
+![SamianLod_map_Insription](/docs/assets/SamianLod_map_Insription.png){:class="img-responsive"}
 
 ### Detailed Actor
-![SamianLod_map_Actor](/assets/SamianLod_map_Actor.png){:class="img-responsive"}
+![SamianLod_map_Actor](/docs/assets/SamianLod_map_Actor.png){:class="img-responsive"}
 
 ### Detailed Location
-![SamianLod_map_Location](/assets/SamianLod_map_Location.png){:class="img-responsive"}
+![SamianLod_map_Location](/docs/assets/SamianLod_map_Location.png){:class="img-responsive"}
 
 ### Detailed Potform
-![SamianLod_map_Potform](/assets/SamianLod_map_Potform.png){:class="img-responsive"}
+![SamianLod_map_Potform](/docs/assets/SamianLod_map_Potform.png){:class="img-responsive"}
 
 ## File Structure
 
-![Samian_universal_map](/assets/Samian_universal_map.png){:class="img-responsive"}
+![Samian_universal_map](/docs/assets/Samian_universal_map.png){:class="img-responsive"}
 
 ## CSV-Documentation
 
