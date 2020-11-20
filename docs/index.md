@@ -65,6 +65,9 @@
 ## Detailed Potform
 ![SamianLod_map_Potform](/assets/SamianLod_map_Potform.png)
 
+## AMT-Model
+![Samian_amt_model](/assets/Samian_amt_model.png)
+
 ## File Structure
 
 ![Samian_universal_map](/assets/Samian_universal_map.png)
