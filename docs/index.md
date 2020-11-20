@@ -287,6 +287,6 @@ and the potform **Dragendorff 33 (pf_28)**:
 
 # Credits
 
-Florian Thiery M.Sc. (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
-Dr. Allard Mees FSA (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
-Dennis Gottwald B.A. (JGU Mainz)
+-   Florian Thiery M.Sc. (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
+-   Dr. Allard Mees FSA (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
+-   Dennis Gottwald B.A. (JGU Mainz)
