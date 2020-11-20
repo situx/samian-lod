@@ -69,11 +69,14 @@
 ![Samian_amt_model](/assets/Samian_amt_model.png)
 
 ### AMT-Model Examples
-Samian AMT-Model for the potter Advocisus (ae_120) and the productioncentre Lezoux (loc_pc_2000016):
+Samian AMT-Model for the potter **Advocisus (ae_120)**
+and the productioncentre **Lezoux (loc_pc_2000016)**:
 ![Samian_amt_model_ae_pc](/assets/Samian_amt_model_ae_pc_example.png)
-Samian AMT-Model for information carrier 203109 (ic_203109) and the productioncentre Lezoux (loc_pc_2000016):
+Samian AMT-Model for **information carrier 203109 (ic_203109)**
+and the productioncentre **Lezoux (loc_pc_2000016)**:
 ![Samian_amt_model_ic_pc](/assets/Samian_amt_model_ic_pc_example.png)
-Samian AMT-Model for information carrier 203109 (ic_203109) and the potform Dragendorff 33 (pf_28):
+Samian AMT-Model for **information carrier 203109 (ic_203109)**
+and the potform **Dragendorff 33 (pf_28)**:
 ![Samian_amt_model_ic_pf](/assets/Samian_amt_model_ic_pf_example.png)
 
 
