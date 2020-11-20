@@ -281,8 +281,12 @@ and the potform **Dragendorff 33 (pf_28)**:
 | repositorylocation          | **id**                      | ---                       |     |
 |                             | **label**                   | ---                       |     |
 
-# Samian Workflow:
+# Samian Workflow
 
 ![Samian_Workflow](/assets/Samian_Workflow.png)
 
-## Credits
+# Credits
+
+Florian Thiery M.Sc. (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
+Dr. Allard Mees FSA (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
+Dennis Gottwald B.A. (JGU Mainz)
