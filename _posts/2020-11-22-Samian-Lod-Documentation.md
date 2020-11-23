@@ -6,6 +6,8 @@ categories:
 tags:
   - Jekyll
   - update
+header:
+  image: /assets/images/header.jpg
 ---
 # About Linked Samian Ware
 
