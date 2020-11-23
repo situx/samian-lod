@@ -1,4 +1,6 @@
 main:
+  - header:
+    image: /assets/images/header.jpg
   - title: "Posts"
     url: /posts/
   - title: "Categories"
