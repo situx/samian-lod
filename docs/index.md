@@ -164,122 +164,122 @@ and the potform **Dragendorff 33 (pf_28)**:
 
 ## Unique:
 
-| Name                        | Columns                     | Definition                |     |
-| --------------------------- | --------------------------- | ------------------------- | --- |
-| actorsasaconcept            | **id**                      | ---                       |     |
-|                             | **name**                    | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| chiefpotter                 | **id**                      | ---                       | --- |
-|                             | **name**                    | ---                       |     |
-|                             | **praenomen**               | ---                       |     |
-|                             | **cognomen**                | ---                       |     |
-|                             | **slave**                   | ---                       |     |
-|                             | **gentilicium**             | ---                       |     |
-|                             | **partner**                 | ---                       |     |
-|                             | **kilnsite**                | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| cooperationandchiefpotter   | **id**                      | ---                       |     |
-|                             | **name**                    | ---                       |     |
-|                             | **praenomen**               | ---                       |     |
-|                             | **cognomen**                | ---                       |     |
-|                             | **slave**                   | ---                       |     |
-|                             | **gentilicium**             | ---                       |     |
-|                             | **partner**                 | ---                       |     |
-|                             | **kilnsite**                | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| cooperationpotter           | **id**                      | ---                       |     |
-|                             | **pottername**              | ---                       |     |
-|                             | **praenomen**               | ---                       |     |
-|                             | **cognomen**                | ---                       |     |
-|                             | **slave**                   | ---                       |     |
-|                             | **gentilicium**             | ---                       |     |
-|                             | **partner**                 | ---                       |     |
-|                             | **kilnsite**                | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| dependentpotter             | **id**                      | ---                       |     |
-|                             | **slave**                   | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| discoverysite               | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-|                             | **long**                    | ---                       |     |
-|                             | **pleiades_id**             | ---                       |     |
-|                             | **ancientname**             | ---                       |     |
-|                             | **wkt**                     | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| genericpotform              | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| independentpotter           | **id**                      | ---                       |     |
-|                             | **pottername**              | ---                       |     |
-|                             | **praenomen**               | ---                       |     |
-|                             | **cognomen**                | ---                       |     |
-|                             | **slave**                   | ---                       |     |
-|                             | **gentilicium**             | ---                       |     |
-|                             | **partner**                 | ---                       |     |
-|                             | **kilnsite**                | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| informationcarrier          | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-|                             | **shapes**                  | ---                       |     |
-|                             | **number**                  | ---                       |     |
-|                             | **kilnsite**                | ---                       |     |
-|                             | **pottername**              | ---                       |     |
-|                             | **die**                     | ---                       |     |
-|                             | **site**                    | ---                       |     |
-|                             | **repositorysite**          | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| inscriptiondie              | **id**                      | ---                       |     |
-|                             | **reading**                 | ---                       |     |
-|                             | **simplereading**           | ---                       |     |
-|                             | **direction**               | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| inscriptiongraffito         | **id**                      | ---                       |     |
-|                             | **reading**                 | ---                       |     |
-|                             | **simplereading**           | ---                       |     |
-|                             | **direction**               | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| inscriptionmakingtypedie    | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-|                             | **pottername**              | ---                       |     |
-|                             | **die**                     | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| inscriptionmakingtypestylus | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-|                             | **pottername**              | ---                       |     |
-|                             | **die**                     | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| kilnregion                  | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-|                             | **kilnregion_centroid_wkt** | ---                       |     |
-|                             | **kilnregion_wkt**          | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| partnerpotter               | **id**                      | ---                       |     |
-|                             | **name**                    | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| placeasaconcept             | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| potformgaulish              | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-|                             | **image**                   | ---                       |     |
-|                             | **genericform**             | ---                       |     |
-|                             | **tradition**               | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| potformitalian              | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-|                             | **image**                   | ---                       |     |
-|                             | **genericform**             | ---                       |     |
-|                             | **tradition**               | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| productioncentre            | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
-|                             | **kilnregion**              | ---                       |     |
-|                             | **lat**                     | ---                       |     |
-|                             | **long**                    | ---                       |     |
-|                             | **wkt**                     | ---                       |     |
-| -------------------------   | -------------------------   | ------------------------- |     |
-| repositorylocation          | **id**                      | ---                       |     |
-|                             | **label**                   | ---                       |     |
+| Name                        | Columns                     | Definition                |
+| --------------------------- | --------------------------- | ------------------------- |
+| actorsasaconcept            | **id**                      | identifier (numeric)      |
+|                             | **name**                    | name of the potter        |
+| -------------------------   | -------------------------   | ------------------------- |
+| chiefpotter                 | **id**                      | identifier (numeric)      |
+|                             | **name**                    | name of the potter        |
+|                             | **praenomen**               | praenomen of the potter   |
+|                             | **cognomen**                | cognomen of the potter    |
+|                             | **slave**                   | name of associated dependent potter(s) |
+|                             | **gentilicium**             | family name (gentilicium) |
+|                             | **partner**                 | name of associated partner potter(s) |
+|                             | **kilnsite**                | associated production centre(s) |
+| -------------------------   | -------------------------   | ------------------------- |
+| cooperationandchiefpotter   | **id**                      | identifier (numeric)      |
+|                             | **name**                    | name of the potter        |
+|                             | **praenomen**               | praenomen of the potter   |
+|                             | **cognomen**                | cognomen of the potter    |
+|                             | **slave**                   | name of associated dependent potter(s) |
+|                             | **gentilicium**             | family name (gentilicium) |
+|                             | **partner**                 | name of associated partner potter(s) |
+|                             | **kilnsite**                | associated production centre(s) |
+| -------------------------   | -------------------------   | ------------------------- |
+| cooperationpotter           | **id**                      | identifier (numeric)      |
+|                             | **pottername**                    | name of the potter        |
+|                             | **praenomen**               | praenomen of the potter   |
+|                             | **cognomen**                | cognomen of the potter    |
+|                             | **slave**                   | name of associated dependent potter(s) |
+|                             | **gentilicium**             | family name (gentilicium) |
+|                             | **partner**                 | name of associated partner potter(s) |
+|                             | **kilnsite**                | associated production centre(s) |
+| -------------------------   | -------------------------   | ------------------------- |
+| dependentpotter             | **id**                      | identifier (numeric)      |
+|                             | **slave**                   | name of the dependent potter |
+| -------------------------   | -------------------------   | ------------------------- |
+| discoverysite               | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+|                             | **long**                    | ---                       |
+|                             | **pleiades_id**             | ---                       |
+|                             | **ancientname**             | ---                       |
+|                             | **wkt**                     | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| genericpotform              | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| independentpotter           | **id**                      | identifier (numeric)      |
+|                             | **pottername**                    | name of the potter        |
+|                             | **praenomen**               | praenomen of the potter   |
+|                             | **cognomen**                | cognomen of the potter    |
+|                             | **slave**                   | name of associated dependent potter(s) |
+|                             | **gentilicium**             | family name (gentilicium) |
+|                             | **partner**                 | name of associated partner potter(s) |
+|                             | **kilnsite**                | associated production centre(s) |
+| -------------------------   | -------------------------   | ------------------------- |
+| informationcarrier          | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+|                             | **shapes**                  | ---                       |
+|                             | **number**                  | ---                       |
+|                             | **kilnsite**                | associated production centre(s) |
+|                             | **pottername**                    | name of the potter        |
+|                             | **die**                     | ---                       |
+|                             | **site**                    | ---                       |
+|                             | **repositorysite**          | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| inscriptiondie              | **id**                      | identifier (numeric)      |
+|                             | **reading**                 | ---                       |
+|                             | **simplereading**           | ---                       |
+|                             | **direction**               | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| inscriptiongraffito         | **id**                      | identifier (numeric)      |
+|                             | **reading**                 | ---                       |
+|                             | **simplereading**           | ---                       |
+|                             | **direction**               | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| inscriptionmakingtypedie    | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+|                             | **pottername**                    | name of the potter        |
+|                             | **die**                     | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| inscriptionmakingtypestylus | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+|                             | **pottername**                    | name of the potter        |
+|                             | **die**                     | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| kilnregion                  | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+|                             | **kilnregion_centroid_wkt** | ---                       |
+|                             | **kilnregion_wkt**          | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| partnerpotter               | **id**                      | identifier (numeric)      |
+|                             | **name**                    | name of the potter        |
+| -------------------------   | -------------------------   | ------------------------- |
+| placeasaconcept             | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| potformgaulish              | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+|                             | **image**                   | ---                       |
+|                             | **genericform**             | ---                       |
+|                             | **tradition**               | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| potformitalian              | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+|                             | **image**                   | ---                       |
+|                             | **genericform**             | ---                       |
+|                             | **tradition**               | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| productioncentre            | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
+|                             | **kilnregion**              | ---                       |
+|                             | **lat**                     | ---                       |
+|                             | **long**                    | ---                       |
+|                             | **wkt**                     | ---                       |
+| -------------------------   | -------------------------   | ------------------------- |
+| repositorylocation          | **id**                      | identifier (numeric)      |
+|                             | **label**                   | ---                       |
 
 # Samian Workflow
 
