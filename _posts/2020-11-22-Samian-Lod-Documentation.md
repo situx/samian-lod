@@ -62,49 +62,63 @@ tags:
 
 #### Samian Map
 
-![SamianLod_map](/assets/images/SamianLod_map.png)
+{% include figure image_path="/assets/images/SamianLod_map.png" %}
+[//]: #![SamianLod_map](/assets/images/SamianLod_map.png)
 
 #### Detailed InformationCarrier
 
-![SamianLod_map_InformationCarrier](/assets/images/SamianLod_map_InformationCarrier.png)
+{% include figure image_path="/assets/images/SamianLod_map_InformationCarrier.png" %}
+[//]: #![SamianLod_map_InformationCarrier](/assets/images/SamianLod_map_InformationCarrier.png)
 
 #### Detailed Inscription
 
-![SamianLod_map_Insription](/assets/images/SamianLod_map_Insription.png)
+{% include figure image_path="/assets/images/SamianLod_map_Insription.png" %}
+[//]: #![SamianLod_map_Insription](/assets/images/SamianLod_map_Insription.png)
 
 #### Detailed Actor
 
-![SamianLod_map_Actor](/assets/images/SamianLod_map_Actor.png)
+{% include figure image_path="/assets/images/SamianLod_map_Actor.png" %}
+[//]: #![SamianLod_map_Actor](/assets/images/SamianLod_map_Actor.png)
 
 #### Detailed Location
 
-![SamianLod_map_Location](/assets/images/SamianLod_map_Location.png)
+{% include figure image_path="/assets/images/SamianLod_map_Location.png" %}
+[//]: #![SamianLod_map_Location](/assets/images/SamianLod_map_Location.png)
 
 #### Detailed Potform
 
-![SamianLod_map_Potform](/assets/images/SamianLod_map_Potform.png)
+{% include figure image_path="/assets/images/SamianLod_map_Potform.png" %}
+[//]: #![SamianLod_map_Potform](/assets/images/SamianLod_map_Potform.png)
 
 #### AMT-Model
 
-![Samian_amt_model](/assets/images/Samian_amt_model.png)
+{% include figure image_path="/assets/images/Samian_amt_model.png" %}
+[//]: #![Samian_amt_model](/assets/images/Samian_amt_model.png)
 
 ##### AMT-Model Examples
 
 Samian AMT-Model for the potter **Advocisus (ae_120)**
 and the productioncentre **Lezoux (loc_pc_2000016)**:
-![Samian_amt_model_ae_pc](/assets/images/Samian_amt_model_ae_pc_example.png)
+
+{% include figure image_path="/assets/images/Samian_amt_model_ae_pc_example.png" %}
+[//]: #![Samian_amt_model_ae_pc](/assets/images/Samian_amt_model_ae_pc_example.png)
 Samian AMT-Model for **information carrier 203109 (ic_203109)**
 and the productioncentre **Lezoux (loc_pc_2000016)**:
-![Samian_amt_model_ic_pc](/assets/images/Samian_amt_model_ic_pc_example.png)
+
+{% include figure image_path="/assets/images/Samian_amt_model_ic_pc_example.png" %}
+[//]: #![Samian_amt_model_ic_pc](/assets/images/Samian_amt_model_ic_pc_example.png)
 Samian AMT-Model for **information carrier 203109 (ic_203109)**
 and the potform **Dragendorff 33 (pf_28)**:
-![Samian_amt_model_ic_pf](/assets/images/Samian_amt_model_ic_pf_example.png)
+
+{% include figure image_path="/assets/images/Samian_amt_model_ic_pf_example.png" %}
+[//]: #![Samian_amt_model_ic_pf](/assets/images/Samian_amt_model_ic_pf_example.png)
 
 ## CSV-Documentation
 
 ### File Structure
 
-![Samian_universal_map](/assets/images/Samian_universal_map.png)
+{% include figure image_path="/assets/images/Samian_universal_map.png" %}
+[//]: #![Samian_universal_map](/assets/images/Samian_universal_map.png)
 
 ### Crosstables:
 
@@ -290,7 +304,8 @@ and the potform **Dragendorff 33 (pf_28)**:
 
 ## Samian Workflow
 
-![Samian_Workflow](/assets/images/Samian_Workflow.png)
+{% include figure image_path="/assets/images/Samian_Workflow.png" %}
+[//]: #![Samian_Workflow](/assets/images/Samian_Workflow.png)
 
 ## Credits
 
