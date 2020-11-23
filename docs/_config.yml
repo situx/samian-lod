@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -16,10 +16,13 @@ url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 gitlab_username:  pages
-
+remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 # Outputting
 permalink: /:categories/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
+
+plugins:
+  - jekyll-include-cache
