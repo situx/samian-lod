@@ -1,11 +1,6 @@
 ---
+permalink: /samian-doc/
 title: "Samian LOD Documentation"
-date: 2020-11-22T15:34:30-04:00
-categories:
-  - blog
-tags:
-  - Jekyll
-  - update
 header:
   image: /assets/images/header.jpg
 ---
@@ -65,37 +60,30 @@ header:
 #### Samian Map
 
 {% include figure image_path="/assets/images/SamianLod_map.png" %}
-[//]: #![SamianLod_map](/assets/images/SamianLod_map.png)
 
 #### Detailed InformationCarrier
 
 {% include figure image_path="/assets/images/SamianLod_map_InformationCarrier.png" %}
-[//]: #![SamianLod_map_InformationCarrier](/assets/images/SamianLod_map_InformationCarrier.png)
 
 #### Detailed Inscription
 
 {% include figure image_path="/assets/images/SamianLod_map_Insription.png" %}
-[//]: #![SamianLod_map_Insription](/assets/images/SamianLod_map_Insription.png)
 
 #### Detailed Actor
 
 {% include figure image_path="/assets/images/SamianLod_map_Actor.png" %}
-[//]: #![SamianLod_map_Actor](/assets/images/SamianLod_map_Actor.png)
 
 #### Detailed Location
 
 {% include figure image_path="/assets/images/SamianLod_map_Location.png" %}
-[//]: #![SamianLod_map_Location](/assets/images/SamianLod_map_Location.png)
 
 #### Detailed Potform
 
 {% include figure image_path="/assets/images/SamianLod_map_Potform.png" %}
-[//]: #![SamianLod_map_Potform](/assets/images/SamianLod_map_Potform.png)
 
 #### AMT-Model
 
 {% include figure image_path="/assets/images/Samian_amt_model.png" %}
-[//]: #![Samian_amt_model](/assets/images/Samian_amt_model.png)
 
 ##### AMT-Model Examples
 
@@ -103,24 +91,24 @@ Samian AMT-Model for the potter **Advocisus (ae_120)**
 and the productioncentre **Lezoux (loc_pc_2000016)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ae_pc_example.png" %}
-[//]: #![Samian_amt_model_ae_pc](/assets/images/Samian_amt_model_ae_pc_example.png)
+
 Samian AMT-Model for **information carrier 203109 (ic_203109)**
 and the productioncentre **Lezoux (loc_pc_2000016)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pc_example.png" %}
-[//]: #![Samian_amt_model_ic_pc](/assets/images/Samian_amt_model_ic_pc_example.png)
+
 Samian AMT-Model for **information carrier 203109 (ic_203109)**
 and the potform **Dragendorff 33 (pf_28)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pf_example.png" %}
-[//]: #![Samian_amt_model_ic_pf](/assets/images/Samian_amt_model_ic_pf_example.png)
+
 
 ## CSV-Documentation
 
 ### File Structure
 
 {% include figure image_path="/assets/images/Samian_universal_map.png" %}
-[//]: #![Samian_universal_map](/assets/images/Samian_universal_map.png)
+
 
 ### Crosstables:
 
@@ -211,7 +199,7 @@ and the potform **Dragendorff 33 (pf_28)**:
 |                             | **kilnsite**                | associated production centre(s) |
 | -------------------------   | -------------------------   | ------------------------- |
 | cooperationpotter           | **id**                      | identifier (numeric)      |
-|                             | **pottername**                    | name of the potter        |
+|                             | **pottername**              | name of the potter        |
 |                             | **praenomen**               | praenomen of the potter   |
 |                             | **cognomen**                | cognomen of the potter    |
 |                             | **slave**                   | name of associated dependent potter(s) |
@@ -233,7 +221,7 @@ and the potform **Dragendorff 33 (pf_28)**:
 |                             | **label**                   | ---                       |
 | -------------------------   | -------------------------   | ------------------------- |
 | independentpotter           | **id**                      | identifier (numeric)      |
-|                             | **pottername**                    | name of the potter        |
+|                             | **pottername**              | name of the potter        |
 |                             | **praenomen**               | praenomen of the potter   |
 |                             | **cognomen**                | cognomen of the potter    |
 |                             | **slave**                   | name of associated dependent potter(s) |
@@ -246,7 +234,7 @@ and the potform **Dragendorff 33 (pf_28)**:
 |                             | **shapes**                  | ---                       |
 |                             | **number**                  | ---                       |
 |                             | **kilnsite**                | associated production centre(s) |
-|                             | **pottername**                    | name of the potter        |
+|                             | **pottername**              | name of the potter        |
 |                             | **die**                     | ---                       |
 |                             | **site**                    | ---                       |
 |                             | **repositorysite**          | ---                       |
@@ -263,12 +251,12 @@ and the potform **Dragendorff 33 (pf_28)**:
 | -------------------------   | -------------------------   | ------------------------- |
 | inscriptionmakingtypedie    | **id**                      | identifier (numeric)      |
 |                             | **label**                   | ---                       |
-|                             | **pottername**                    | name of the potter        |
+|                             | **pottername**              | name of the potter        |
 |                             | **die**                     | ---                       |
 | -------------------------   | -------------------------   | ------------------------- |
 | inscriptionmakingtypestylus | **id**                      | identifier (numeric)      |
 |                             | **label**                   | ---                       |
-|                             | **pottername**                    | name of the potter        |
+|                             | **pottername**              | name of the potter        |
 |                             | **die**                     | ---                       |
 | -------------------------   | -------------------------   | ------------------------- |
 | kilnregion                  | **id**                      | identifier (numeric)      |
@@ -307,7 +295,7 @@ and the potform **Dragendorff 33 (pf_28)**:
 ## Samian Workflow
 
 {% include figure image_path="/assets/images/Samian_Workflow.png" %}
-[//]: #![Samian_Workflow](/assets/images/Samian_Workflow.png)
+
 
 ## Credits
 

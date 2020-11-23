@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   sind Darstellung und Aufbau einer Seite mit Jekyll anschaulich und nachvollziehbar.
 twitter_username: username
 github_username: username
-minimal_mistakes_skin: "sunrise"
+minimal_mistakes_skin: default
 search: true
 
 # Build settings
