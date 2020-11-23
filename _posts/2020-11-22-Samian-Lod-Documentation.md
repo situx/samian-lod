@@ -1,10 +1,17 @@
-# About Samian Research
-
+---
+title: "Samian LOD Documentation"
+date: 2020-11-22T15:34:30-04:00
+categories:
+  - blog
+tags:
+  - Jekyll
+  - update
+---
 # About Linked Samian Ware
 
-# Ontology
+## Ontology
 
-## Prefixes
+### Prefixes
 
 **samian**:
   <http://lod.archaeology.link/data/samian/>
@@ -51,55 +58,55 @@
 **xsd**:
   <http://www.w3.org/2001/XMLSchema#>
 
-## Class Structure
+### Class Structure
 
-### Samian Map
+#### Samian Map
 
-![SamianLod_map](/assets/SamianLod_map.png)
+![SamianLod_map](/assets/images/SamianLod_map.png)
 
-### Detailed InformationCarrier
+#### Detailed InformationCarrier
 
-![SamianLod_map_InformationCarrier](/assets/SamianLod_map_InformationCarrier.png)
+![SamianLod_map_InformationCarrier](/assets/images/SamianLod_map_InformationCarrier.png)
 
-### Detailed Inscription
+#### Detailed Inscription
 
-![SamianLod_map_Insription](/assets/SamianLod_map_Insription.png)
+![SamianLod_map_Insription](/assets/images/SamianLod_map_Insription.png)
 
-### Detailed Actor
+#### Detailed Actor
 
-![SamianLod_map_Actor](/assets/SamianLod_map_Actor.png)
+![SamianLod_map_Actor](/assets/images/SamianLod_map_Actor.png)
 
-### Detailed Location
+#### Detailed Location
 
-![SamianLod_map_Location](/assets/SamianLod_map_Location.png)
+![SamianLod_map_Location](/assets/images/SamianLod_map_Location.png)
 
-### Detailed Potform
+#### Detailed Potform
 
-![SamianLod_map_Potform](/assets/SamianLod_map_Potform.png)
+![SamianLod_map_Potform](/assets/images/SamianLod_map_Potform.png)
 
-### AMT-Model
+#### AMT-Model
 
-![Samian_amt_model](/assets/Samian_amt_model.png)
+![Samian_amt_model](/assets/images/Samian_amt_model.png)
 
-#### AMT-Model Examples
+##### AMT-Model Examples
 
 Samian AMT-Model for the potter **Advocisus (ae_120)**
 and the productioncentre **Lezoux (loc_pc_2000016)**:
-![Samian_amt_model_ae_pc](/assets/Samian_amt_model_ae_pc_example.png)
+![Samian_amt_model_ae_pc](/assets/images/Samian_amt_model_ae_pc_example.png)
 Samian AMT-Model for **information carrier 203109 (ic_203109)**
 and the productioncentre **Lezoux (loc_pc_2000016)**:
-![Samian_amt_model_ic_pc](/assets/Samian_amt_model_ic_pc_example.png)
+![Samian_amt_model_ic_pc](/assets/images/Samian_amt_model_ic_pc_example.png)
 Samian AMT-Model for **information carrier 203109 (ic_203109)**
 and the potform **Dragendorff 33 (pf_28)**:
-![Samian_amt_model_ic_pf](/assets/Samian_amt_model_ic_pf_example.png)
+![Samian_amt_model_ic_pf](/assets/images/Samian_amt_model_ic_pf_example.png)
 
-# CSV-Documentation
+## CSV-Documentation
 
-## File Structure
+### File Structure
 
-![Samian_universal_map](/assets/Samian_universal_map.png)
+![Samian_universal_map](/assets/images/Samian_universal_map.png)
 
-## Crosstables:
+### Crosstables:
 
 | Name                      | Columns                                                                                                                                               | Definition                |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
@@ -162,7 +169,7 @@ and the potform **Dragendorff 33 (pf_28)**:
 | ct_plc_rl                 | **plc_id** [placeasaconcept.id]                                                                                                                       | ---                       |
 |                           | **rl_id** [repositylocation.id]                                                                                                                       | ---                       |
 
-## Unique:
+### Unique:
 
 | Name                        | Columns                     | Definition                |
 | --------------------------- | --------------------------- | ------------------------- |
@@ -281,11 +288,11 @@ and the potform **Dragendorff 33 (pf_28)**:
 | repositorylocation          | **id**                      | identifier (numeric)      |
 |                             | **label**                   | ---                       |
 
-# Samian Workflow
+## Samian Workflow
 
-![Samian_Workflow](/assets/Samian_Workflow.png)
+![Samian_Workflow](/assets/images/Samian_Workflow.png)
 
-# Credits
+## Credits
 
 -   Florian Thiery M.Sc. (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
 -   Dr. Allard Mees FSA (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
