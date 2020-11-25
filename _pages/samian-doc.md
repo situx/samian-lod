@@ -290,7 +290,7 @@ and the potform **Dragendorff 33 (pf_28)**:
 | ct_plc_pc                 | **plc_id**                        | placeasaconcept.id        |
 |                           | **pc_id**                         | productioncentre.id       |
 | ------------------------- | -------------------------         | ------------------------- |
-| ct_plc_rl                 | **plc_id**                        | [placeasaconcept.id]      |
+| ct_plc_rl                 | **plc_id**                        | placeasaconcept.id        |
 |                           | **rl_id**                         | repositylocation.id       |
 
 ## Samian Workflow
