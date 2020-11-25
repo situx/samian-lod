@@ -2,7 +2,13 @@
 permalink: /about/
 title: "About"
 ---
+# Credits
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
-
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+-   Florian Thiery M.Sc. (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
+    [orcid](https://orcid.org/0000-0002-3246-3531)
+    [Projects & Publications](https://web.rgzm.de/no_cache/ueber-uns/team/m/florian-thiery/)
+-   Dr. Allard Mees FSA (Römisch-Germanisches Zentralmuseum Leibniz-Forschungsinstitut für Archäologie)
+    [orcid](https://orcid.org/0000-0002-7634-5342)
+    [Projects & Publications](https://web.rgzm.de/no_cache/ueber-uns/mitarbeiterinnen/mitarbeiter-detailseite/allard-mees/)
+-   Dennis Gottwald B.A. (JGU Mainz)
+    [orcid](https://orcid.org/0000-0002-8761-4659)

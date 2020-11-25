@@ -109,70 +109,6 @@ and the potform **Dragendorff 33 (pf_28)**:
 
 {% include figure image_path="/assets/images/Samian_universal_map.png" %}
 
-
-### Crosstables:
-
-| Name                      | Columns                                                                                                                                               | Definition                |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| ct_ac_ae                  | **ac_id** **ae_id** [chiefpotter.id, cooperationpotter.id, independentpotter.id - partnerpotter.id, dependentpotter.id, cooperationandchiefpotter.id] | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_cpchp_dp               | **cpchp_id** [cooperationandchiefpotter.id] **dp_id** [dependentpotter.id]                                                                            | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_cpchp_pp               | **cpchp_id** [cooperationandchiefpotter.id]                                                                                                           | ---                       |
-|                           | **pp_id** [partnerpotter.id]                                                                                                                          | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_ae_pc                  | **ae_id** [ct_ac_ae.fk2]                                                                                                                              | ---                       |
-|                           | **pc_id** [ct_ac_ae.productioncentre]                                                                                                                 | ---                       |
-|                           | **weight** [ct_ae_pc_2.weight]                                                                                                                        | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_chp_dp                 | **chp_id** [chiefpotter.id]                                                                                                                           |                           |
-|                           | **dp_id** [dependentpotter.id]                                                                                                                        | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_cp_pp                  | **cp_id** [cooperationpotter.id]                                                                                                                      | ---                       |
-|                           | **pp_id** [partnerpotter.id]                                                                                                                          | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_ic_ds                  | **ic_id** [informationcarrier.id]                                                                                                                     | ---                       |
-|                           | **ds_id** [discoverysite.id]                                                                                                                          | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_ic_in                  | **ic_id** [informationcarrier.id]                                                                                                                     | ---                       |
-|                           | **pottername** [informationcarrier.pottername]                                                                                                        | ---                       |
-|                           | **die** [informationcarrier.die]                                                                                                                      | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_ic_pc                  | **ic_id** [ct_ic_pc_2.id]                                                                                                                             | ---                       |
-|                           | **pc_id** [productioncentre.id]                                                                                                                       | ---                       |
-|                           | **weight** [ct_ic_pc_2.weight]                                                                                                                        | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_ic_pf                  | **ic_id** [ct_ic_pf_2.id]                                                                                                                             | ---                       |
-|                           | **weight** [ct_ic_pf_2.weight]                                                                                                                        | ---                       |
-|                           | **pf_id** [potform.id]                                                                                                                                | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_ic_plc                 | **plc_id** [placeasaconcept.id]                                                                                                                       | ---                       |
-|                           | **ic_id** [informationcarrier.id]                                                                                                                     | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_ic_rl                  | **ic_id** [informationcarrier.id]                                                                                                                     | ---                       |
-|                           | **rl_id** [repositorylocation.id]                                                                                                                     | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_in_ac                  | **in_id** [inscription.id]                                                                                                                            | ---                       |
-|                           | **ac_id** [actorsasaconcept.id]                                                                                                                       | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_mt_in                  | **in_id** [inscription.id]                                                                                                                            | ---                       |
-|                           | **mt_id** [inscriptionmakingtype.id]                                                                                                                  | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_pc_kr                  | **kr_id** [kilnregion.id]                                                                                                                             | ---                       |
-|                           | **pc_id** [productioncentre.id]                                                                                                                       | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_pf_gf                  | **gf_id** [genericpotform.id]                                                                                                                         | ---                       |
-|                           | **pf_id** [potform.id]                                                                                                                                | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_plc_ds                 | **plc_id** [placeasaconcept.id]                                                                                                                       | ---                       |
-|                           | **ds_id** [discoverysite.id]                                                                                                                          | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_plc_pc                 | **plc_id** [placeasaconcept.id]                                                                                                                       | ---                       |
-|                           | **pc_id** [productioncentre.id]                                                                                                                       | ---                       |
-| ------------------------- | -------------------------                                                                                                                             | ------------------------- |
-| ct_plc_rl                 | **plc_id** [placeasaconcept.id]                                                                                                                       | ---                       |
-|                           | **rl_id** [repositylocation.id]                                                                                                                       | ---                       |
-
 ### Unique:
 
 | Name                        | Columns                     | Definition                |
@@ -211,14 +147,14 @@ and the potform **Dragendorff 33 (pf_28)**:
 |                             | **slave**                   | name of the dependent potter |
 | -------------------------   | -------------------------   | ------------------------- |
 | discoverysite               | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
-|                             | **long**                    | ---                       |
+|                             | **label**                   | identifier (string)       |
+|                             | **long**                    | longitude                 |
 |                             | **pleiades_id**             | ---                       |
 |                             | **ancientname**             | ---                       |
 |                             | **wkt**                     | ---                       |
 | -------------------------   | -------------------------   | ------------------------- |
 | genericpotform              | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
+|                             | **label**                   | identifier (string)       |
 | -------------------------   | -------------------------   | ------------------------- |
 | independentpotter           | **id**                      | identifier (numeric)      |
 |                             | **pottername**              | name of the potter        |
@@ -230,37 +166,37 @@ and the potform **Dragendorff 33 (pf_28)**:
 |                             | **kilnsite**                | associated production centre(s) |
 | -------------------------   | -------------------------   | ------------------------- |
 | informationcarrier          | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
+|                             | **label**                   | identifier (string)       |
 |                             | **shapes**                  | ---                       |
 |                             | **number**                  | ---                       |
 |                             | **kilnsite**                | associated production centre(s) |
 |                             | **pottername**              | name of the potter        |
-|                             | **die**                     | ---                       |
-|                             | **site**                    | ---                       |
-|                             | **repositorysite**          | ---                       |
+|                             | **die**                     | die stamp or stylus       |
+|                             | **site**                    | discoverysite of the object(s) |
+|                             | **repositorysite**          | repositorysite of the object(s) |
 | -------------------------   | -------------------------   | ------------------------- |
 | inscriptiondie              | **id**                      | identifier (numeric)      |
-|                             | **reading**                 | ---                       |
-|                             | **simplereading**           | ---                       |
-|                             | **direction**               | ---                       |
+|                             | **reading**                 | reading on the object(s)  |
+|                             | **simplereading**           | simplified reading on the object(s) |
+|                             | **direction**               | reading direction of the inscription |
 | -------------------------   | -------------------------   | ------------------------- |
 | inscriptiongraffito         | **id**                      | identifier (numeric)      |
-|                             | **reading**                 | ---                       |
-|                             | **simplereading**           | ---                       |
-|                             | **direction**               | ---                       |
+|                             | **reading**                 | reading on the object(s)  |
+|                             | **simplereading**           | simplified reading on the object(s) |
+|                             | **direction**               | reading direction of the inscription |
 | -------------------------   | -------------------------   | ------------------------- |
 | inscriptionmakingtypedie    | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
+|                             | **label**                   | identifier (string)       |
 |                             | **pottername**              | name of the potter        |
-|                             | **die**                     | ---                       |
+|                             | **die**                     | die stamp or stylus       |
 | -------------------------   | -------------------------   | ------------------------- |
 | inscriptionmakingtypestylus | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
+|                             | **label**                   | identifier (string)       |
 |                             | **pottername**              | name of the potter        |
-|                             | **die**                     | ---                       |
+|                             | **die**                     | die stamp or stylus       |
 | -------------------------   | -------------------------   | ------------------------- |
 | kilnregion                  | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
+|                             | **label**                   | identifier (string)       |
 |                             | **kilnregion_centroid_wkt** | ---                       |
 |                             | **kilnregion_wkt**          | ---                       |
 | -------------------------   | -------------------------   | ------------------------- |
@@ -268,29 +204,94 @@ and the potform **Dragendorff 33 (pf_28)**:
 |                             | **name**                    | name of the potter        |
 | -------------------------   | -------------------------   | ------------------------- |
 | placeasaconcept             | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
+|                             | **label**                   | identifier (string)       |
 | -------------------------   | -------------------------   | ------------------------- |
 | potformgaulish              | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
-|                             | **image**                   | ---                       |
-|                             | **genericform**             | ---                       |
-|                             | **tradition**               | ---                       |
+|                             | **label**                   | identifier (string)       |
+|                             | **image**                   | image of potform          |
+|                             | **genericform**             | generic potform label     |
+|                             | **tradition**               | tradition gaulish or italian |
 | -------------------------   | -------------------------   | ------------------------- |
 | potformitalian              | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
-|                             | **image**                   | ---                       |
-|                             | **genericform**             | ---                       |
-|                             | **tradition**               | ---                       |
+|                             | **label**                   | identifier (string)       |
+|                             | **image**                   | image of potform          |
+|                             | **genericform**             | generic potform label     |
+|                             | **tradition**               | tradition gaulish or italian |
 | -------------------------   | -------------------------   | ------------------------- |
 | productioncentre            | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
-|                             | **kilnregion**              | ---                       |
-|                             | **lat**                     | ---                       |
-|                             | **long**                    | ---                       |
+|                             | **label**                   | identifier (string)       |
+|                             | **kilnregion**              | Region of productioncentre |
+|                             | **lat**                     | latitude                  |
+|                             | **long**                    | longitude                 |
 |                             | **wkt**                     | ---                       |
 | -------------------------   | -------------------------   | ------------------------- |
 | repositorylocation          | **id**                      | identifier (numeric)      |
-|                             | **label**                   | ---                       |
+|                             | **label**                   | identifier (string)       |
+
+### Crosstables:
+
+| Name                      | Columns                           | Definition                |
+| ------------------------- | --------------------------------- | ------------------------- |
+| ct_ac_ae                  | **ac_id**                         | actorsasaconcept.id       |
+|                           | **ae_id**                         | chiefpotter.id, cooperationpotter.id, independentpotter.id - partnerpotter.id, dependentpotter.id, cooperationandchiefpotter.id |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_cpchp_dp               | **cpchp_id**                      | cooperationandchiefpotter.id |
+|                           | **dp_id**                         | dependentpotter.id        |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_cpchp_pp               | **cpchp_id**                      | cooperationandchiefpotter.id |
+|                           | **pp_id**                         | partnerpotter.id          |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_ae_pc                  | **ae_id**                         | ct_ac_ae.fk2              |
+|                           | **pc_id**                         | ct_ac_ae.productioncentre |
+|                           | **weight**                        | ct_ae_pc_2.weight         |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_chp_dp                 | **chp_id**                        | chiefpotter.id            |
+|                           | **dp_id**                         | dependentpotter.id        |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_cp_pp                  | **cp_id**                         | cooperationpotter.id      |
+|                           | **pp_id**                         | partnerpotter.id          |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_ic_ds                  | **ic_id**                         | informationcarrier.id     |
+|                           | **ds_id**                         | discoverysite.id          |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_ic_in                  | **ic_id**                         | informationcarrier.id     |
+|                           | **pottername**                    | informationcarrier.pottername |
+|                           | **die**                           | informationcarrier.die    |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_ic_pc                  | **ic_id**                         | ct_ic_pc_2.id             |
+|                           | **pc_id**                         | productioncentre.id       |
+|                           | **weight**                        | ct_ic_pc_2.weight         |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_ic_pf                  | **ic_id**                         | ct_ic_pf_2.id             |
+|                           | **weight**                        | ct_ic_pf_2.weight         |
+|                           | **pf_id**                         | potform.id                |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_ic_plc                 | **plc_id**                        | placeasaconcept.id        |
+|                           | **ic_id**                         | informationcarrier.id     |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_ic_rl                  | **ic_id**                         | informationcarrier.id     |
+|                           | **rl_id**                         | repositorylocation.id     |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_in_ac                  | **in_id**                         | inscription.id            |
+|                           | **ac_id**                         | actorsasaconcept.id       |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_mt_in                  | **in_id**                         | inscription.id            |
+|                           | **mt_id**                         | inscriptionmakingtype.id  |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_pc_kr                  | **kr_id**                         | kilnregion.id             |
+|                           | **pc_id**                         | productioncentre.id       |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_pf_gf                  | **gf_id**                         | genericpotform.id         |
+|                           | **pf_id**                         | potform.id                |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_plc_ds                 | **plc_id**                        | placeasaconcept.id        |
+|                           | **ds_id**                         | discoverysite.id          |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_plc_pc                 | **plc_id**                        | placeasaconcept.id        |
+|                           | **pc_id**                         | productioncentre.id       |
+| ------------------------- | -------------------------         | ------------------------- |
+| ct_plc_rl                 | **plc_id**                        | [placeasaconcept.id]      |
+|                           | **rl_id**                         | repositylocation.id       |
 
 ## Samian Workflow
 
