@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Samian LOD Documentation
+title: Samian Linked Data
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Diese Seite soll unsere Präsentation graphisch unterstützen. Auf diese Weise
   sind Darstellung und Aufbau einer Seite mit Jekyll anschaulich und nachvollziehbar.
 twitter_username: username
-github_username: username
+github_username: rgzm
 minimal_mistakes_skin: default
 search: true
 
@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Römisch-Germanisches Zentralmuseum"
   avatar : "/assets/images/RGZM-Logo.jpg"
-  bio    : "Documentation for the Samian LOD-Project"
+  bio    : "Samian Linked Data"
   links:
     #- label: "Website"
     #  icon: "fas fa-fw fa-link"
