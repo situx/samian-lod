@@ -58,7 +58,7 @@ plugins:
 
 author:
   name   : "Römisch-Germanisches Zentralmuseum"
-  avatar : "/assets/images/RGZM-Logo.jpg"
+  avatar : "/assets/images/leibniz_rgzm_logo.png"
   bio    : "Samian Linked Data"
   links:
     #- label: "Website"
