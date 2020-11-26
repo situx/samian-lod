@@ -1,5 +1,7 @@
 main:
-  - title: "Samian LOD Documentation"
-    url: /samian-doc/
+  - title: "Documentation"
+    url: /doc/
+  - title: "Related Literature"
+    url: /lit/
   - title: "About"
     url: /about/
