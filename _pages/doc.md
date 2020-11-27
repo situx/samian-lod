@@ -67,37 +67,109 @@ header:
 
 {% include figure image_path="/assets/images/SamianLod_map_InformationCarrier.png" %}
 
-#### Detailed Inscription
+**Example Query - InformationCarrier**
 
-{% include figure image_path="/assets/images/SamianLod_map_Insription.png" %}
-
-#### Detailed Actor
-
-{% include figure image_path="/assets/images/SamianLod_map_Actor.png" %}
-
-#### Detailed Location
-
-{% include figure image_path="/assets/images/SamianLod_map_Location.png" %}
-
-#### Detailed Potform
-
-{% include figure image_path="/assets/images/SamianLod_map_Potform.png" %}
-
-**Example Query - Potform**
-*-> 100 Potforms and their labels with tradition "Gaulish"*
+*-> 100 Random InformationCarriers and their associated Discovery Site, Production Centre and Repository Location*
 <pre>
   <code>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX lado: <http://archaeology.link/ontology#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+    SELECT *  WHERE {
+      ?item	rdf:type lado:InformationCarrier.
+      ?item 	rdfs:label ?label.
+      ?item 	lado:disclosedAt ?loc_disc.
+      ?loc_disc 	rdfs:label ?disc_label.
+      ?item	lado:hasKilnsite ?loc_prod.
+      ?loc_prod 	rdfs:label ?prod_label.
+      ?item	lado:storedAt ?loc_rep.
+      ?loc_rep	rdfs:label ?rep_label.   	
+    }
+LIMIT 100
+  </code>
+</pre>
+
+#### Detailed Inscription
+
+{% include figure image_path="/assets/images/SamianLod_map_Insription.png" %}
+
+**Example Query - Inscription**
+
+*-> Inscriptions with a reading stemming from a die impression and the actor which is mentioned in it*
+
+<pre>
+  <code>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX lado: <http://archaeology.link/ontology#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT *  WHERE {
+    ?insc	rdf:type lado:Inscription;
+          lado:simpleReading ?reading;
+          lado:hasType lado:DieImpression;
+          lado:isAbout ?actor.
+    ?actor lado:name ?name.  
+    }
+  </code>
+</pre>
+
+#### Detailed Actor
+
+{% include figure image_path="/assets/images/SamianLod_map_Actor.png" %}
+
+
+**Example Query - Actor**
+
+*-> 100 Random ActorEntities and their associated Production Centre and Status*
+
+<pre>
+  <code>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX lado: <http://archaeology.link/ontology#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT *  WHERE {
+      ?actor_ent	rdf:type lado:ActorEntity;
+                  rdfs:label ?label;
+                  lado:hasStatus ?status;
+                  lado:worksAtPlace ?worksAt.
+      ?worksAt rdfs:label ?loc_label.
+    }
+    LIMIT 100
+  </code>
+</pre>
+
+#### Detailed Location
+
+{% include figure image_path="/assets/images/SamianLod_map_Location.png" %}
+
+**Example Query - Location**
+
+<pre>
+  <code>
+
+  </code>
+</pre>
+
+#### Detailed Potform
+
+{% include figure image_path="/assets/images/SamianLod_map_Potform.png" %}
+
+**Example Query - Potform**
+
+*-> Potforms and their labels with tradition "Gaulish"*
+<pre>
+  <code>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX lado: <http://archaeology.link/ontology#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     SELECT ?item ?tradition ?label WHERE {
     ?item rdf:type lado:Potform.
     ?item lado:hasType ?tradition; lado:hasType lado:Gaulish.
     ?item rdfs:label ?label.
     }
-    LIMIT 100
   </code>
 </pre>
 
