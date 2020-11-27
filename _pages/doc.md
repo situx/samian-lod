@@ -83,6 +83,24 @@ header:
 
 {% include figure image_path="/assets/images/SamianLod_map_Potform.png" %}
 
+**Example Query - Potform**
+<pre>
+  <code>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX lado: <http://archaeology.link/ontology#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+    SELECT ?item ?tradition ?label WHERE {
+    ?item rdf:type lado:Potform.
+    ?item lado:hasType ?tradition;
+    lado:hasType lado:Gaulish.
+    ?item rdfs:label ?label.
+    }
+    LIMIT 100
+  </code>
+</pre>
+
 #### AMT-Model
 
 {% include figure image_path="/assets/images/Samian_amt_model.png" %}
