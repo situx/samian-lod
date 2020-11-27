@@ -84,6 +84,7 @@ header:
 {% include figure image_path="/assets/images/SamianLod_map_Potform.png" %}
 
 **Example Query - Potform**
+*-> 100 Potforms and their labels with tradition "Gaulish"*
 <pre>
   <code>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -93,8 +94,7 @@ header:
 
     SELECT ?item ?tradition ?label WHERE {
     ?item rdf:type lado:Potform.
-    ?item lado:hasType ?tradition;
-    lado:hasType lado:Gaulish.
+    ?item lado:hasType ?tradition; lado:hasType lado:Gaulish.
     ?item rdfs:label ?label.
     }
     LIMIT 100
