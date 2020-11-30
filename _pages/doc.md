@@ -118,11 +118,11 @@ LIMIT 100
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     SELECT *  WHERE {
-    ?insc	rdf:type lado:Inscription;
-          lado:simpleReading ?reading;
-          lado:hasType lado:DieImpression;
-          lado:isAbout ?actor.
-    ?actor lado:name ?name.  
+      ?insc	rdf:type lado:Inscription;
+      lado:simpleReading ?reading;
+      lado:hasType lado:DieImpression;
+      lado:isAbout ?actor.
+      ?actor lado:name ?name.  
     }
   </code>
 </pre>
@@ -157,9 +157,9 @@ LIMIT 100
 
     SELECT *  WHERE {
       ?actor_ent	rdf:type lado:ActorEntity;
-                  rdfs:label ?label;
-                  lado:hasStatus ?status;
-                  lado:worksAtPlace ?worksAt.
+      rdfs:label ?label;
+      lado:hasStatus ?status;
+      lado:worksAtPlace ?worksAt.
       ?worksAt rdfs:label ?loc_label.
     }
     LIMIT 100
@@ -185,11 +185,39 @@ LIMIT 100
 
 **Example Query - Location**
 
+*-> Kilnregion, Workers & their Status of the Productioncentre "La Graufesenque"*
+
 <pre>
   <code>
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX lado: <http://archaeology.link/ontology#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+  SELECT ?loc_label ?kr_label ?name ?status WHERE {
+    ?item rdf:type lado:Location.
+    ?item rdfs:label ?loc_label.
+    ?item rdfs:label "La Graufesenque"@en.
+    ?item lado:clusteredAs ?kilnregion.
+    ?kilnregion rdfs:label ?kr_label.
+    ?item lado:hasWorker ?worker.
+    ?worker lado:name ?name.
+    ?worker lado:hasStatus ?status.
+  }
   </code>
 </pre>
+
+*Output*
+
+| **loc_label**               | **kr_label**                | **name**                               | **status**                             |
+| --------------------------- | --------------------------- | -------------------------------------- | -------------------------------------- |
+| "La Graufesenque"@en        | "South Gaulish"@en          | "ABC (or Abc- or ABG-)"                | lado:IndependentPotter                 |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| "La Graufesenque"@en        | "South Gaulish"@en          | "Abitus (Habitus)"                     | lado:IndependentPotter                 |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| "La Graufesenque"@en        | "South Gaulish"@en          | "Acanus (Acaunus)"                     | lado:IndependentPotter                 |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| ...                         | ...                         | ...                                    | ...                                    |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
 
 #### Detailed Potform
 
@@ -205,9 +233,9 @@ LIMIT 100
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     SELECT ?item ?tradition ?label WHERE {
-    ?item rdf:type lado:Potform.
-    ?item lado:hasType ?tradition; lado:hasType lado:Gaulish.
-    ?item rdfs:label ?label.
+      ?item rdf:type lado:Potform.
+      ?item lado:hasType ?tradition; lado:hasType lado:Gaulish.
+      ?item rdfs:label ?label.
     }
   </code>
 </pre>
