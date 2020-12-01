@@ -77,20 +77,20 @@ _-> 100 Random InformationCarriers and their associated Discovery Site, Producti
 
 <pre>
   <code>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX lado: <http://archaeology.link/ontology#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT *  WHERE {
-      ?item	rdf:type lado:InformationCarrier.
-      ?item 	rdfs:label ?label.
-      ?item 	lado:disclosedAt ?loc_disc.
-      ?loc_disc 	rdfs:label ?disc_label.
-      ?item	lado:hasKilnsite ?loc_prod.
-      ?loc_prod 	rdfs:label ?prod_label.
-      ?item	lado:storedAt ?loc_rep.
-      ?loc_rep	rdfs:label ?rep_label.   	
-    }
+SELECT *  WHERE {
+  ?item	rdf:type lado:InformationCarrier.
+  ?item 	rdfs:label ?label.
+  ?item 	lado:disclosedAt ?loc_disc.
+  ?loc_disc 	rdfs:label ?disc_label.
+  ?item	lado:hasKilnsite ?loc_prod.
+  ?loc_prod 	rdfs:label ?prod_label.
+  ?item	lado:storedAt ?loc_rep.
+  ?loc_rep	rdfs:label ?rep_label.   	
+}
 LIMIT 100
   </code>
 </pre>
@@ -112,21 +112,21 @@ _-> 100 distinct InformationCarriers and their weight (vagueness) & production c
 
 <pre>
   <code>
-  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-  PREFIX lado: <http://archaeology.link/ontology#>
-  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-  PREFIX vocab: <http://academic-meta-tool.xyz/vocab#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX vocab: <http://academic-meta-tool.xyz/vocab#>
 
-  SELECT ?item (SAMPLE (?Info_label) as ?Info_label) (SAMPLE(?weight)as ?weight) (SAMPLE (?prod_label) as ?prod_label) WHERE {
-    ?item rdf:type lado:InformationCarrier;
-    rdfs:label ?Info_label;
-    lado:hasKilnsite ?productioncentre;
-    lado:hasAMT ?amt.
-    ?amt vocab:weight ?weight.
-    ?productioncentre rdfs:label ?prod_label;
-   }
- GROUP BY ?item
-   LIMIT 100
+SELECT ?item (SAMPLE (?Info_label) as ?Info_label) (SAMPLE(?weight)as ?weight) (SAMPLE (?prod_label) as ?prod_label) WHERE {
+  ?item rdf:type lado:InformationCarrier;
+  rdfs:label ?Info_label;
+  lado:hasKilnsite ?productioncentre;
+  lado:hasAMT ?amt.
+  ?amt vocab:weight ?weight.
+  ?productioncentre rdfs:label ?prod_label;
+}
+GROUP BY ?item
+LIMIT 100
 </code>
 </pre>
 
@@ -153,17 +153,17 @@ _-> Inscriptions with a reading stemming from a die impression and the actor whi
 
 <pre>
   <code>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX lado: <http://archaeology.link/ontology#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT *  WHERE {
-      ?insc	rdf:type lado:Inscription;
-      lado:simpleReading ?reading;
-      lado:hasType lado:DieImpression;
-      lado:isAbout ?actor.
-      ?actor lado:name ?name.  
-    }
+SELECT *  WHERE {
+  ?insc	rdf:type lado:Inscription;
+  lado:simpleReading ?reading;
+  lado:hasType lado:DieImpression;
+  lado:isAbout ?actor.
+  ?actor lado:name ?name.  
+}
   </code>
 </pre>
 
@@ -184,18 +184,18 @@ _-> InformationCarriers, their inscriptions and makingtypes_
 
 <pre>
   <code>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX lado: <http://archaeology.link/ontology#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT ?item ?info_label ?inscription ?inscriptionmakingtype ?die WHERE {
-  	   ?item rdf:type lado:InformationCarrier;
-       rdfs:label ?info_label;
-       lado:carries ?inscription.
-  	   ?inscription lado:wasMadeBy ?inscriptionmakingtype.
- 		   ?inscriptionmakingtype lado:hasType ?die.
-		}
-    LIMIT 100
+SELECT ?item ?info_label ?inscription ?inscriptionmakingtype ?die WHERE {
+  ?item rdf:type lado:InformationCarrier;
+  rdfs:label ?info_label;
+  lado:carries ?inscription.
+  ?inscription lado:wasMadeBy ?inscriptionmakingtype.
+  ?inscriptionmakingtype lado:hasType ?die.
+}
+LIMIT 100
   </code>
 </pre>
 
@@ -209,18 +209,18 @@ _-> 100 Random ActorEntities and their associated Production Centre and Status_
 
 <pre>
   <code>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX lado: <http://archaeology.link/ontology#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT *  WHERE {
-      ?actor_ent	rdf:type lado:ActorEntity;
-      rdfs:label ?label;
-      lado:hasStatus ?status;
-      lado:worksAtPlace ?worksAt.
-      ?worksAt rdfs:label ?loc_label.
-    }
-    LIMIT 100
+SELECT *  WHERE {
+  ?actor_ent	rdf:type lado:ActorEntity;
+  rdfs:label ?label;
+  lado:hasStatus ?status;
+  lado:worksAtPlace ?worksAt.
+  ?worksAt rdfs:label ?loc_label.
+}
+LIMIT 100
   </code>
 </pre>
 
@@ -241,20 +241,19 @@ _Output_
 
 <pre>
   <code>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX lado: <http://archaeology.link/ontology#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT ?chief ?chief_label ?dependent ?dependent_label  WHERE {
-    ?chief rdf:type lado:ActorEntity;
-    rdfs:label ?chief_label;
-    lado:hasStatus lado:ChiefPotter;
-  	lado:interactsWith ?dependent.
-  	?dependent rdf:type lado:ActorEntity;
-    rdfs:label ?dependent_label;
-    lado:hasStatus lado:DependentPotter.
-
-    }
+SELECT ?chief ?chief_label ?dependent ?dependent_label  WHERE {
+  ?chief rdf:type lado:ActorEntity;
+  rdfs:label ?chief_label;
+  lado:hasStatus lado:ChiefPotter;
+  lado:interactsWith ?dependent.
+  ?dependent rdf:type lado:ActorEntity;
+  rdfs:label ?dependent_label;
+  lado:hasStatus lado:DependentPotter.
+}
   </code>
 </pre>
 
@@ -281,20 +280,20 @@ _-> Kilnregion, Workers & their Status of the Productioncentre "La Graufesenque"
 
 <pre>
   <code>
-  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-  PREFIX lado: <http://archaeology.link/ontology#>
-  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-  SELECT ?loc_label ?kr_label ?name ?status WHERE {
-    ?item rdf:type lado:Location.
-    ?item rdfs:label ?loc_label.
-    ?item rdfs:label "La Graufesenque"@en.
-    ?item lado:clusteredAs ?kilnregion.
-    ?kilnregion rdfs:label ?kr_label.
-    ?item lado:hasWorker ?worker.
-    ?worker lado:name ?name.
-    ?worker lado:hasStatus ?status.
-  }
+SELECT ?loc_label ?kr_label ?name ?status WHERE {
+  ?item rdf:type lado:Location.
+  ?item rdfs:label ?loc_label.
+  ?item rdfs:label "La Graufesenque"@en.
+  ?item lado:clusteredAs ?kilnregion.
+  ?kilnregion rdfs:label ?kr_label.
+  ?item lado:hasWorker ?worker.
+  ?worker lado:name ?name.
+  ?worker lado:hasStatus ?status.
+}
   </code>
 </pre>
 
@@ -321,15 +320,15 @@ _-> Potforms and their labels with tradition "Gaulish"_
 
 <pre>
   <code>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX lado: <http://archaeology.link/ontology#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT ?item ?tradition ?label WHERE {
-      ?item rdf:type lado:Potform.
-      ?item lado:hasType ?tradition; lado:hasType lado:Gaulish.
-      ?item rdfs:label ?label.
-    }
+SELECT ?item ?tradition ?label WHERE {
+  ?item rdf:type lado:Potform.
+  ?item lado:hasType ?tradition; lado:hasType lado:Gaulish.
+  ?item rdfs:label ?label.
+}
   </code>
 </pre>
 
