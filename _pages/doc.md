@@ -108,6 +108,41 @@ _Output_
 | ...                         | ...                                 | ...                         | ...                         | ...                         | ...                         | ...                         | ...                         |
 | --------------------------- | ---------------------------         | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
 
+_-> 100 distinct InformationCarriers and their weight (vagueness) & production centres_
+
+<pre>
+  <code>
+  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX lado: <http://archaeology.link/ontology#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX vocab: <http://academic-meta-tool.xyz/vocab#>
+
+  SELECT ?item (SAMPLE (?Info_label) as ?Info_label) (SAMPLE(?weight)as ?weight) (SAMPLE (?prod_label) as ?prod_label) WHERE {
+    ?item rdf:type lado:InformationCarrier;
+    rdfs:label ?Info_label;
+    lado:hasKilnsite ?productioncentre;
+    lado:hasAMT ?amt.
+    ?amt vocab:weight ?weight.
+    ?productioncentre rdfs:label ?prod_label;
+   }
+ GROUP BY ?item
+   LIMIT 100
+</code>
+</pre>
+
+_Output_
+
+| **item**                    | **Info_label**                 | **weight**                              | **prod_label**                               |
+| --------------------------- | --------------------------- | -------------------------------------- | -------------------------------------- |
+| samian:ic_112680            | "redslipvessel formtype 31"@en | 1                                   | "Lezoux"@en                            |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| samian:ic_55293             | "redslipvessel formtype Unknown"@en | 1                              | "Lezoux"@en                            |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| samian:ic_55292             | "redslipvessel formtype Unknown"@en | 1                              | "Lezoux"@en                            |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| ...                         | ...                         | ...                                    | ...                                    |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+
 #### Detailed Inscription
 
 {% include figure image_path="/assets/images/SamianLod_map_Insription.png" %}
@@ -144,6 +179,23 @@ _Output_
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | ...                       | ...                         | ...                                 | ...                                    |
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
+
+<pre>
+  <code>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX lado: <http://archaeology.link/ontology#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT ?item ?info_label ?inscription ?inscriptionmakingtype ?die WHERE {
+  	   ?item rdf:type lado:InformationCarrier;
+       rdfs:label ?info_label;
+       lado:carries ?inscription.
+  	   ?inscription lado:wasMadeBy ?inscriptionmakingtype.
+ 		   ?inscriptionmakingtype lado:hasType ?die.
+		}
+    LIMIT 100
+  </code>
+</pre>
 
 #### Detailed Actor
 
@@ -182,6 +234,40 @@ _Output_
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | ...                       | ...                         | ...                                 | ...                                    | ...                                    |
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
+
+*-> ChiefPotters who interact with DependentPotters*
+
+<pre>
+  <code>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX lado: <http://archaeology.link/ontology#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT ?chief ?chief_label ?dependent ?dependent_label  WHERE {
+    ?chief rdf:type lado:ActorEntity;
+    rdfs:label ?chief_label;
+    lado:hasStatus lado:ChiefPotter;
+  	lado:interactsWith ?dependent.
+  	?dependent rdf:type lado:ActorEntity;
+    rdfs:label ?dependent_label;
+    lado:hasStatus lado:DependentPotter.
+
+    }
+  </code>
+</pre>
+
+*Output*
+
+| **chief**                    | **chief_label**                 | **dependent**                              | **dependent_label**           |
+| --------------------------- | --------------------------- | -------------------------------------- | -------------------------------------- |
+| samian:ae_10348           | "Vibius Iucun(dus) Vibius"@en                  | samian:ae_136996                      | "IVCVN(DVS)"@en        |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| samian:ae_7878           | "Serius Thyrsus Serius"@en                   | samian:ae_214084                      | "THYRSVS"@en              |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| samian:ae_8314           | "L. Umbricius Thyrsus"@en                    | samian:ae_214084                      | "THYRSVS"@en              |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
+| ...                         | ...                         | ...                                    | ...                                    |
+| -------------------------   | --------------------------- | -----------------------------------    | -------------------------------------- |
 
 #### Detailed Location
 
