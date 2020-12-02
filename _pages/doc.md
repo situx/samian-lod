@@ -351,20 +351,139 @@ _Output_
 
 ##### AMT-Model Examples
 
-Samian AMT-Model for the potter **Advocisus (ae_120)**
-and the productioncentre **Lezoux (loc_pc_2000016)**:
+**Example 1:**
+
+Samian AMT-Model for the potter **Quietus/Quetus (ae_5889)**
+and the productioncentre **Rheinzabern (loc_pc_2000047)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ae_pc_example.png" %}
 
-Samian AMT-Model for **information carrier 203109 (ic_203109)**
-and the productioncentre **Lezoux (loc_pc_2000016)**:
+_Example Query: Filter all weights for the Potter Quietus' Productioncentres:_
+
+<pre>
+  <code>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX amt: <http://academic-meta-tool.xyz/vocab#>
+PREFIX samian: <http://data.archaeology.link/data/samian/>
+
+SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
+  	?subject lado:hasAMT ?amt.
+    ?amt rdf:subject ?subject.
+    ?subject rdfs:label ?subjectLabel.
+  	?amt rdf:predicate ?predicate.
+    ?predicate rdfs:label ?predicateLabel.
+    ?amt rdf:object ?object.
+    ?object rdfs:label ?objectLabel.
+    ?amt amt:weight ?weight.
+    FILTER(?subject = samian:ae_5889)
+    FILTER(?predicate = lado:worksAtPlace)
+    FILTER (lang(?predicateLabel) = 'en')
+}
+  </code>
+</pre>
+
+_Output:_
+
+| **subject**               | **subjectLabel**            | **predicateLabel**                  | **objectLabel**                        | **weight** |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+| samian:ae_5889            | "Quietus (Quetus)"@en       | "works at place"@en                 |  "Kräherwald"@en                       | 1          |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+| samian:ae_5889            | "Quietus (Quetus)"@en       | "works at place"@en                 | "Rheinzabern"@en                       | 1          |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+
+_-> Quietus worked at Kräherwald AND Rheinzabern, so the weight results in 1_
+
+**Example 2:**
+
+Samian AMT-Model for **information carrier 118117 (ic_118117)**
+and the productioncentre **Rheinzabern (loc_pc_2000047)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pc_example.png" %}
 
-Samian AMT-Model for **information carrier 203109 (ic_203109)**
-and the potform **Dragendorff 33 (pf_28)**:
+_Example Query: Filter all weights for the Kilnsites of Information Carrier 118117_
+
+<pre>
+  <code>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX amt: <http://academic-meta-tool.xyz/vocab#>
+PREFIX samian: <http://data.archaeology.link/data/samian/>
+
+SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
+  	?subject lado:hasAMT ?amt.
+    ?amt rdf:subject ?subject.
+    ?subject rdfs:label ?subjectLabel.
+  	?amt rdf:predicate ?predicate.
+    ?predicate rdfs:label ?predicateLabel.
+    ?amt rdf:object ?object.
+    ?object rdfs:label ?objectLabel.
+    ?amt amt:weight ?weight.
+    FILTER(?subject = samian:ic_118117)
+    FILTER(?predicate = lado:hasKilnsite)
+    FILTER (lang(?predicateLabel) = 'en')
+}
+  </code>
+</pre>
+
+_Output:_
+
+| **subject**               | **subjectLabel**            | **predicateLabel**                  | **objectLabel**                        | **weight** |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+| samian:ic_118117            | "redslipvessel formtype 15/17 or 18 or 18/31"@en       | "has kilnsite"@en                 |  "Kräherwald"@en                       | 1          |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+| samian:ic_118117            | "redslipvessel formtype 15/17 or 18 or 18/31"@en       | "has kilnsite"@en                | "Rheinzabern"@en                       | 1          |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+
+_-> The Informationcarriers have been made at Kräherwald AND Rheinzabern, so the weight results in 1_
+
+**Example 3:**
+
+Samian AMT-Model for **information carrier 118117 (ic_118117)**
+and the potform **33 (pf_9)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pf_example.png" %}
+
+_Example Query: Filter all weights for the potforms of Information Carrier 118117_
+
+<pre>
+  <code>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX lado: <http://archaeology.link/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX amt: <http://academic-meta-tool.xyz/vocab#>
+PREFIX samian: <http://data.archaeology.link/data/samian/>
+
+SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
+  	?subject lado:hasAMT ?amt.
+    ?amt rdf:subject ?subject.
+    ?subject rdfs:label ?subjectLabel.
+  	?amt rdf:predicate ?predicate.
+    ?predicate rdfs:label ?predicateLabel.
+    ?amt rdf:object ?object.
+    ?object rdfs:label ?objectLabel.
+    ?amt amt:weight ?weight.
+    FILTER(?subject = samian:ic_118117)
+    FILTER(?predicate = lado:representedBy)
+    FILTER (lang(?predicateLabel) = 'en')
+}
+  </code>
+</pre>
+
+_Output:_
+
+| **subject**               | **subjectLabel**            | **predicateLabel**                  | **objectLabel**                        | **weight** |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+| samian:ic_118117            | "redslipvessel formtype 15/17 or 18 or 18/31"@en       | "represented by"@en                 |  "15/17"                       | 0.330000013          |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+| samian:ic_118117            | "redslipvessel formtype 15/17 or 18 or 18/31"@en       | "represented by"@en                 | "18"                       | 0.330000013          |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+| samian:ic_118117            | "redslipvessel formtype 15/17 or 18 or 18/31"@en       | "represented by"@en                 | "18/31"                       | 0.330000013          |
+| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
+
+_-> The Informationcarriers either has the potform 15/17, 18 OR 18/31 (vagueness), so each weight results in 0.33_
 
 ## CSV-Documentation
 
