@@ -442,7 +442,7 @@ _-> The Informationcarriers have been made at Kräherwald AND Rheinzabern, so th
 **Example 3:**
 
 Samian AMT-Model for **information carrier 118117 (ic_118117)**
-and the potform **33 (pf_9)**:
+and the potform **18 (pf_9)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pf_example.png" %}
 
