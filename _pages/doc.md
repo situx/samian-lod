@@ -20,50 +20,23 @@ header:
 
 table col prefix col value
 
-**samian**:
-  <http://lod.archaeology.link/data/samian/>
-
-**crm**:
-  <http://www.cidoc-crm.org/cidoc-crm/>
-
-**dc**:
-  <http://purl.org/dc/elements/1.1/>
-
-**dct**:
-  <http://purl.org/dc/terms/>
-
-**dcmitype**:
-  <http://purl.org/dc/dcmitype/>
-
-**geosparql**:
-  <http://www.opengis.net/ont/geosparql#>>
-
-**lado**:
-  <http://samian/ontology>
-
-**owl**:
-  <http://www.w3.org/2002/07/owl#>
-
-**pleiades**:
-  <https://pleiades.stoa.org/places/vocab#>
-
-**rdf**:
-  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
-**rdfs**:
-  <http://www.w3.org/2000/01/rdf-schema#>
-
-**sf**:
-  <http://www.opengis.net/ont/sf#>
-
-**skos**:
-  <http://www.w3.org/2004/02/skos/core#>
-
-**xml**:
-  <http://www.w3.org/XML/1998/namespace>
-
-**xsd**:
-  <http://www.w3.org/2001/XMLSchema#>
+| Prefix        | Value                                         |
+|---------------|-----------------------------------------------|
+| **samian**    | <http://lod.archaeology.link/data/samian/>    |
+| **crm**       | <http://www.cidoc-crm.org/cidoc-crm/>         |
+| **dc**        | <http://purl.org/dc/elements/1.1/>            |
+| **dct**       | <http://purl.org/dc/terms/>                   |
+| **dcmitype**  | <http://purl.org/dc/dcmitype/>                |
+| **geosparql** | <http://www.opengis.net/ont/geosparql#>>      |
+| **lado**      | <http://samian/ontology>                      |
+| **owl**       | <http://www.w3.org/2002/07/owl#>              |
+| **pleiades**  | <https://pleiades.stoa.org/places/vocab#>     |
+| **rdf**       | <http://www.w3.org/1999/02/22-rdf-syntax-ns#> |
+| **rdfs**      | <http://www.w3.org/2000/01/rdf-schema#>       |
+| **sf**        | <http://www.opengis.net/ont/sf#>              |
+| **skos**      | <http://www.w3.org/2004/02/skos/core#>        |
+| **xml**       | <http://www.w3.org/XML/1998/namespace>        |
+| **xsd**       | <http://www.w3.org/2001/XMLSchema#>           |
 
 ### Class Structure
 
