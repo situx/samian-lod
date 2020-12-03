@@ -18,8 +18,6 @@ header:
 
 ### Prefixes
 
-table col prefix col value
-
 | Prefix        | Value                                         |
 |---------------|-----------------------------------------------|
 | **samian**    | <http://lod.archaeology.link/data/samian/>    |
@@ -44,7 +42,10 @@ table col prefix col value
 
 {% include figure image_path="/assets/images/SamianLod_map.png" %}
 
-...
+The ontology represents a graph model of the original relational database which includes vague relations (amt).
+Classes (white boxes) are related to each other through predicates (arrows).
+Checkered lines present abstract relations to Typeclasses (yellow and grey) as well as AMT-relations, which belong to their superclass but have been highlighted for visibility.
+
 
 #### Detailed InformationCarrier
 
@@ -79,13 +80,9 @@ _Output_
 | **item**                    | **label**                           | **loc_disc**                | **disc_label**              | **loc_prod**                | **prod_label**              | **loc_rep**                 | **rep_label**               |
 | --------------------------- | ----------------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
 | samian:ic_208496            | "redslipvessel formtype Unknown"@en | samian:loc_ds_1002687       | "Plessis-du-Mée"@en         | samian:loc_pc_2000016       | "Lezoux"@en                 | samian:loc_rl_3102331       | "Plessis-du-Mée"@en         |
-| --------------------------- | ---------------------------         | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
 | samian:ic_207892            | "redslipvessel formtype 37"@en      | samian:loc_ds_1000357       | "Susa"@en                   | samian:loc_pc_2000017       | "Lubié"@en                  | samian:loc_rl_3446482       | "Susa"@en                   |
-| --------------------------- | ---------------------------         | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
 | samian:ic_207892            | "redslipvessel formtype 37"@en      | samian:loc_ds_1000357       | "Susa"@en                   | samian:loc_pc_2000016       | "Lezoux"@en                 | samian:loc_rl_3446482       | "Susa"@en                   |
-| --------------------------- | ---------------------------         | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
 | ...                         | ...                                 | ...                         | ...                         | ...                         | ...                         | ...                         | ...                         |
-| --------------------------- | ---------------------------         | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
 
 _-> 100 distinct InformationCarriers and their weight (vagueness) & production centres_
 
@@ -114,13 +111,9 @@ _Output_
 | **item**                  | **Info_label**                      | **weight**                          | **prod_label**                         |
 | ------------------------- | ----------------------------------- | ----------------------------------- | -------------------------------------- |
 | samian:ic_112680          | "redslipvessel formtype 31"@en      | 1                                   | "Lezoux"@en                            |
-| ------------------------- | ---------------------------         | ----------------------------------- | -------------------------------------- |
 | samian:ic_55293           | "redslipvessel formtype Unknown"@en | 1                                   | "Lezoux"@en                            |
-| ------------------------- | ---------------------------         | ----------------------------------- | -------------------------------------- |
 | samian:ic_55292           | "redslipvessel formtype Unknown"@en | 1                                   | "Lezoux"@en                            |
-| ------------------------- | ---------------------------         | ----------------------------------- | -------------------------------------- |
 | ...                       | ...                                 | ...                                 | ...                                    |
-| ------------------------- | ---------------------------         | ----------------------------------- | -------------------------------------- |
 
 #### Detailed Inscription
 
@@ -151,13 +144,9 @@ _Output_
 | **Insc**                  | **Reading**                 | **Actor**                           | **Name**                               |
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | samian:insc_43034         | "DIOMEDES"                  | samian:ac_7010018                   | "(M.) (Perennius) (Tigranus) (4)"      |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | samian:insc_43389         | "POTITVS"                   | samian:ac_7009673                   | "Potitus (1)"                          |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | samian:insc_43415         | "PRIMVS"                    | samian:ac_7009402                   | "Primus (1)"                           |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | ...                       | ...                         | ...                                 | ...                                    |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 
 _-> InformationCarriers, their inscriptions and makingtypes_
 
@@ -183,13 +172,9 @@ _Output_
 | **item**                  | **info_label**                      | **inscription**                     | **inscriptionmakingtype**              | **die**                                |
 | ------------------------- | ----------------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | samian:ic_14040           | "redslipvessel formtype 27"@en      | samian:insc_1                       | samian:mt_1                            | lado:Die                               |
-| ------------------------- | ---------------------------         | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | samian:ic_14058           | "redslipvessel formtype Unknown"@en | samian:insc_10                      | samian:mt_10                           | lado:Die                               |
-| ------------------------- | ---------------------------         | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | samian:ic_202856          | "redslipvessel formtype 29"@en      | samian:insc_100                     | samian:mt_100                          | lado:Die                               |
-| ------------------------- | ---------------------------         | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | ...                       | ...                                 | ...                                 | ...                                    | ...                                    |
-| ------------------------- | ---------------------------         | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 
 #### Detailed Actor
 
@@ -221,13 +206,9 @@ _Output_
 | **actor_ent**             | **label**                   | **status**                          | **worksAt**                            | **loc_label**                          |
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | samian:ae_564             | "Arvernicus ii"@en          | lado:IndependentPotter              | samian:loc_pc_2000048                  | "Sinzig"@en                            |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | samian:ae_1044            | "Boudus ii"@en              | lado:IndependentPotter              | samian:loc_pc_2000048                  | "Sinzig"@en                            |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | samian:ae_1541            | "Arvernicus ii"@en          | lado:IndependentPotter              | samian:loc_pc_2000048                  | "Sinzig"@en                            |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 | ...                       | ...                         | ...                                 | ...                                    | ...                                    |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
 
 _-> ChiefPotters who interact with DependentPotters_
 
@@ -254,13 +235,9 @@ _Output_
 | **chief**                 | **chief_label**               | **dependent**                       | **dependent_label**                    |
 | ------------------------- | ----------------------------- | ----------------------------------- | -------------------------------------- |
 | samian:ae_10348           | "Vibius Iucun(dus) Vibius"@en | samian:ae_136996                    | "IVCVN(DVS)"@en                        |
-| ------------------------- | ---------------------------   | ----------------------------------- | -------------------------------------- |
 | samian:ae_7878            | "Serius Thyrsus Serius"@en    | samian:ae_214084                    | "THYRSVS"@en                           |
-| ------------------------- | ---------------------------   | ----------------------------------- | -------------------------------------- |
 | samian:ae_8314            | "L. Umbricius Thyrsus"@en     | samian:ae_214084                    | "THYRSVS"@en                           |
-| ------------------------- | ---------------------------   | ----------------------------------- | -------------------------------------- |
 | ...                       | ...                           | ...                                 | ...                                    |
-| ------------------------- | ---------------------------   | ----------------------------------- | -------------------------------------- |
 
 #### Detailed Location
 
@@ -294,13 +271,9 @@ _Output_
 | **loc_label**             | **kr_label**                | **name**                            | **status**                             |
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | "La Graufesenque"@en      | "South Gaulish"@en          | "ABC (or Abc- or ABG-)"             | lado:IndependentPotter                 |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | "La Graufesenque"@en      | "South Gaulish"@en          | "Abitus (Habitus)"                  | lado:IndependentPotter                 |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | "La Graufesenque"@en      | "South Gaulish"@en          | "Acanus (Acaunus)"                  | lado:IndependentPotter                 |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 | ...                       | ...                         | ...                                 | ...                                    |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- |
 
 #### Detailed Potform
 
@@ -329,23 +302,22 @@ _Output_
 | **Item**                  | **Tradition**               | **Label**                           |
 | ------------------------- | --------------------------- | ----------------------------------- |
 | samian:pf_1               | lado:Gaulish                | "15"                                |
-| ------------------------- | --------------------------- | ----------------------------------- |
 | samian:pf_11              | lado:Gaulish                | "18/31"                             |
-| ------------------------- | --------------------------- | ----------------------------------- |
 | samian:pf_12              | lado:Gaulish                | "18/31R"                            |
-| ------------------------- | --------------------------- | ----------------------------------- |
 | ...                       | ...                         | ...                                 |
-| ------------------------- | --------------------------- | ----------------------------------- |
 
 #### AMT-Model
 
 {% include figure image_path="/assets/images/Samian_amt_model.png" %}
 
+
+The data contains strings with vague expressions.
+We model this vagueness using the Academic Meta Tool.
 The AMT-Model depends on the keywords **AND** (_AMT-weight = 1_) and **OR** (_AMT-weight/2_).
 Attributions for e.g. productionscenters can result in more than one place, which has to be recorded accordingly.
 This vagueness has been taken into consideration with the Samian Linked Data Project.
 
-Beispiele aus Slides
+In the following examples we're mapping relations for the potter Quietus/Quetus (ae_5889), his production centres as well as the information carrier 118117 (ic_118117).
 
 ##### AMT-Model Examples
 
@@ -357,6 +329,7 @@ and the productioncentre **Rheinzabern (loc_pc_2000047)**:
 {% include figure image_path="/assets/images/Samian_amt_model_ae_pc_example.png" %}
 
 _Example Query: Filter all weights for the Potter Quietus' Productioncentres:_
+The String containing the necessary data reads as follows "Kräherwald and Rheinzabern"
 
 <pre>
   <code>
@@ -387,9 +360,7 @@ _Output:_
 | **subject**               | **subjectLabel**            | **predicateLabel**                  | **objectLabel**                        | **weight** |
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
 | samian:ae_5889            | "Quietus (Quetus)"@en       | "works at place"@en                 | "Kräherwald"@en                        | 1          |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
 | samian:ae_5889            | "Quietus (Quetus)"@en       | "works at place"@en                 | "Rheinzabern"@en                       | 1          |
-| ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
 
 _-> Quietus worked at Kräherwald AND Rheinzabern, so the weight results in 1_
 
@@ -401,6 +372,7 @@ and the productioncentre **Rheinzabern (loc_pc_2000047)**:
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pc_example.png" %}
 
 _Example Query: Filter all weights for the Kilnsites of Information Carrier 118117_
+The String containing the necessary data reads as follows "Kräherwald and Rheinzabern"
 
 <pre>
   <code>
@@ -431,9 +403,7 @@ _Output:_
 | **subject**               | **subjectLabel**                                 | **predicateLabel**                  | **objectLabel**                        | **weight** |
 | ------------------------- | ------------------------------------------------ | ----------------------------------- | -------------------------------------- | ---------- |
 | samian:ic_118117          | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "has kilnsite"@en                   | "Kräherwald"@en                        | 1          |
-| ------------------------- | ---------------------------                      | ----------------------------------- | -------------------------------------- | ---------- |
 | samian:ic_118117          | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "has kilnsite"@en                   | "Rheinzabern"@en                       | 1          |
-| ------------------------- | ---------------------------                      | ----------------------------------- | -------------------------------------- | ---------- |
 
 _-> The Informationcarrier's Productioncentre has been attributed to Kräherwald AND Rheinzabern, so the weight results in 1_
 
@@ -445,6 +415,7 @@ and the potform **18 (pf_9)**:
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pf_example.png" %}
 
 _Example Query: Filter all weights for the potforms of Information Carrier 118117_
+The String containing the necessary data reads as follows "15/17 or 18 or 18/31"
 
 <pre>
   <code>
@@ -475,11 +446,8 @@ _Output:_
 | **subject**               | **subjectLabel**                                 | **predicateLabel**                  | **objectLabel**                        | **weight**  |
 | ------------------------- | ------------------------------------------------ | ----------------------------------- | -------------------------------------- | ----------- |
 | samian:ic_118117          | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "represented by"@en                 | "15/17"                                | 0.330000013 |
-| ------------------------- | ---------------------------                      | ----------------------------------- | -------------------------------------- | ----------  |
 | samian:ic_118117          | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "represented by"@en                 | "18"                                   | 0.330000013 |
-| ------------------------- | ---------------------------                      | ----------------------------------- | -------------------------------------- | ----------  |
 | samian:ic_118117          | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "represented by"@en                 | "18/31"                                | 0.330000013 |
-| ------------------------- | ---------------------------                      | ----------------------------------- | -------------------------------------- | ----------  |
 
 _-> The Informationcarriers either has the potform 15/17, 18 OR 18/31 (vagueness), so each weight results in 0.33_
 
