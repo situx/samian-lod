@@ -6,15 +6,19 @@ header:
   caption: "Photo credit: Carole Raddato from FRANKFURT, Germany, CC BY-SA 2.0, via [**Wikimedia Commons**](https://commons.wikimedia.org/wiki/File:Terra_sigillata,_Gallo-Roman_Museum_of_Tongeren,_Belgium_(27032316984).jpg)"
 ---
 
-# About Linked Samian Ware
+# Linked Open Samian Ware
 
-## Samian Workflow
+## Transformation Workflow
+
+...
 
 {% include figure image_path="/assets/images/Samian_Workflow.png" %}
 
 ## Ontology
 
 ### Prefixes
+
+table col prefix col value
 
 **samian**:
   <http://lod.archaeology.link/data/samian/>
@@ -66,6 +70,8 @@ header:
 #### Samian Map
 
 {% include figure image_path="/assets/images/SamianLod_map.png" %}
+
+...
 
 #### Detailed InformationCarrier
 
@@ -362,9 +368,11 @@ _Output_
 
 {% include figure image_path="/assets/images/Samian_amt_model.png" %}
 
-_The AMT-Model depends on the keywords **AND** **AMT-weight = 1**) and **OR** (**AMT-weight/2**)._
-_Attributions for e.g. productionscenters can result in more than one place, which has to be recorded accordingly._  
-_This vagueness has been taken into consideration with the Samian Linked Data Project._
+The AMT-Model depends on the keywords **AND** (_AMT-weight = 1_) and **OR** (_AMT-weight/2_).
+Attributions for e.g. productionscenters can result in more than one place, which has to be recorded accordingly.
+This vagueness has been taken into consideration with the Samian Linked Data Project.
+
+Beispiele aus Slides
 
 ##### AMT-Model Examples
 
@@ -506,9 +514,11 @@ _-> The Informationcarriers either has the potform 15/17, 18 OR 18/31 (vagueness
 
 ### File Structure
 
+The CSV files can be downloaded under <https://www1.rgzm.de/ips/lod/{filename}.csv>
+
 {% include figure image_path="/assets/images/Samian_universal_map.png" %}
 
-### Unique:
+### Instances
 
 | Name                        | Columns                     | Definition                             |
 | --------------------------- | --------------------------- | -------------------------------------- |
@@ -627,7 +637,7 @@ _-> The Informationcarriers either has the potform 15/17, 18 OR 18/31 (vagueness
 | repositorylocation          | **id**                      | identifier (numeric)                   |
 |                             | **label**                   | identifier (string)                    |
 
-### Crosstables:
+### Semantic Relations
 
 | Name                      | Columns                   | Definition                                                                                                                      |
 | ------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
