@@ -13,6 +13,7 @@ header:
 
 ## Talks and Poster
 
+-   Florian Thiery, Allard Mees, Dennis Gottwald (2020). Linked Open Samian Ware - Transformation and modelling of vagueness and uncertainty, 03rd December 2020. DOI: [10.5281/zenodo.4293761](https://doi.org/10.5281/zenodo.4293761).
 -   Florian Thiery, Allard Mees (2019). Taming Time Tools: Alligator and Academic Meta Tool, Computer Applications and Quantitative Methods in Archaeology (CAA), Kraków, Poland, 24th March 2019. DOI: [10.5281/zenodo.2648202](https://doi.org/10.5281/zenodo.2648202).
 -   Florian Thiery (2019). Das Internet als Daten-Netzwerk: Die Zukunft der Archäologie?, Wintervorträge 2019, Gesellschaft der Freunde des Römisch-Germanischen Zentralmuseums in Mainz e.V. Mainz, Germany, 02nd April 2019. DOI: [10.5281/zenodo.2620929](https://doi.org/10.5281/zenodo.2620929).
 -   Florian Thiery, Allard Mees (2019). Dating Mechanism: Eine Linked Data Strategie zur interoperablen und nachvollziehbaren Modellierung relativer Chronologien am Beispiel südgallischer Terra Sigillata in Limes-Abschnitten, Graphentechnologien 2019, Mainz, Germany, 18th January 2019. DOI: [10.5281/zenodo.2540373](https://doi.org/10.5281/zenodo.2540373).
