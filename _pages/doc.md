@@ -382,17 +382,17 @@ PREFIX amt: <http://academic-meta-tool.xyz/vocab#>
 PREFIX samian: <http://data.archaeology.link/data/samian/>
 
 SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
-  	?subject lado:hasAMT ?amt.
-    ?amt rdf:subject ?subject.
-    ?subject rdfs:label ?subjectLabel.
-  	?amt rdf:predicate ?predicate.
-    ?predicate rdfs:label ?predicateLabel.
-    ?amt rdf:object ?object.
-    ?object rdfs:label ?objectLabel.
-    ?amt amt:weight ?weight.
-    FILTER(?subject = samian:ae_5889)
-    FILTER(?predicate = lado:worksAtPlace)
-    FILTER (lang(?predicateLabel) = 'en')
+  ?subject lado:hasAMT ?amt.
+  ?amt rdf:subject ?subject.
+  ?subject rdfs:label ?subjectLabel.
+  ?amt rdf:predicate ?predicate.
+  ?predicate rdfs:label ?predicateLabel.
+  ?amt rdf:object ?object.
+  ?object rdfs:label ?objectLabel.
+  ?amt amt:weight ?weight.
+  FILTER(?subject = samian:ae_5889)
+  FILTER(?predicate = lado:worksAtPlace)
+  FILTER (lang(?predicateLabel) = 'en')
 }
   </code>
 </pre>
@@ -426,17 +426,17 @@ PREFIX amt: <http://academic-meta-tool.xyz/vocab#>
 PREFIX samian: <http://data.archaeology.link/data/samian/>
 
 SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
-  	?subject lado:hasAMT ?amt.
-    ?amt rdf:subject ?subject.
-    ?subject rdfs:label ?subjectLabel.
-  	?amt rdf:predicate ?predicate.
-    ?predicate rdfs:label ?predicateLabel.
-    ?amt rdf:object ?object.
-    ?object rdfs:label ?objectLabel.
-    ?amt amt:weight ?weight.
-    FILTER(?subject = samian:ic_118117)
-    FILTER(?predicate = lado:hasKilnsite)
-    FILTER (lang(?predicateLabel) = 'en')
+  ?subject lado:hasAMT ?amt.
+  ?amt rdf:subject ?subject.
+  ?subject rdfs:label ?subjectLabel.
+	?amt rdf:predicate ?predicate.
+  ?predicate rdfs:label ?predicateLabel.
+  ?amt rdf:object ?object.
+  ?object rdfs:label ?objectLabel.
+  ?amt amt:weight ?weight.
+  FILTER(?subject = samian:ic_118117)
+  FILTER(?predicate = lado:hasKilnsite)
+  FILTER (lang(?predicateLabel) = 'en')
 }
   </code>
 </pre>
@@ -470,17 +470,17 @@ PREFIX amt: <http://academic-meta-tool.xyz/vocab#>
 PREFIX samian: <http://data.archaeology.link/data/samian/>
 
 SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
-  	?subject lado:hasAMT ?amt.
-    ?amt rdf:subject ?subject.
-    ?subject rdfs:label ?subjectLabel.
-  	?amt rdf:predicate ?predicate.
-    ?predicate rdfs:label ?predicateLabel.
-    ?amt rdf:object ?object.
-    ?object rdfs:label ?objectLabel.
-    ?amt amt:weight ?weight.
-    FILTER(?subject = samian:ic_118117)
-    FILTER(?predicate = lado:representedBy)
-    FILTER (lang(?predicateLabel) = 'en')
+	?subject lado:hasAMT ?amt.
+  ?amt rdf:subject ?subject.
+  ?subject rdfs:label ?subjectLabel.
+	?amt rdf:predicate ?predicate.
+  ?predicate rdfs:label ?predicateLabel.
+  ?amt rdf:object ?object.
+  ?object rdfs:label ?objectLabel.
+  ?amt amt:weight ?weight.
+  FILTER(?subject = samian:ic_118117)
+  FILTER(?predicate = lado:representedBy)
+  FILTER (lang(?predicateLabel) = 'en')
 }
   </code>
 </pre>
