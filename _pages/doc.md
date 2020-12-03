@@ -362,6 +362,10 @@ _Output_
 
 {% include figure image_path="/assets/images/Samian_amt_model.png" %}
 
+_The AMT-Model depends on the keywords **AND** **AMT-weight = 1**) and **OR** (**AMT-weight/2**)._
+_Attributions for e.g. productionscenters can result in more than one place, which has to be recorded accordingly._  
+_This vagueness has been taken into consideration with the Samian Linked Data Project._
+
 ##### AMT-Model Examples
 
 **Example 1:**
@@ -450,7 +454,7 @@ _Output:_
 | samian:ic_118117            | "redslipvessel formtype 15/17 or 18 or 18/31"@en       | "has kilnsite"@en                | "Rheinzabern"@en                       | 1          |
 | ------------------------- | --------------------------- | ----------------------------------- | -------------------------------------- | ---------- |
 
-_-> The Informationcarriers have been made at Kräherwald AND Rheinzabern, so the weight results in 1_
+_-> The Informationcarrier's Productioncentre has been attributed to Kräherwald AND Rheinzabern, so the weight results in 1_
 
 **Example 3:**
 
