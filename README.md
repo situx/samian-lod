@@ -4,7 +4,7 @@ This repository contains the `ontology` (ontology folder), the transformation `p
 
 There is also a documentation website which can be accessed by https://rgzm.github.io/samian-lod .
 
-## Creadits
+## Credits
 
 * Florian Thiery (RGZM)
 * Allard Mees (RGZM)
