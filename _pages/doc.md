@@ -10,7 +10,13 @@ header:
 
 ## Transformation Workflow
 
-...
+**curate** entries in the Samian Research Database, stored in a PostgreSQL database
+**create** database views from the original database tables via ColdFusion/SQL
+**export** database views as CSV files
+**transform** CSV files with Python to RDF according to our ontology
+**import** RDF files with a Java application in a RDF4J triplestore
+**link** our data to the Linked Open Data Cloud, e.g. Pleiades, Wikidata
+
 
 {% include figure image_path="/assets/images/Samian_Workflow.png" %}
 
