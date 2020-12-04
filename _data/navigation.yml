@@ -3,5 +3,7 @@ main:
     url: /doc/
   - title: "Related Literature"
     url: /lit/
+  - title: "Data Publications"
+    url: /datapub/
   - title: "About"
     url: /about/

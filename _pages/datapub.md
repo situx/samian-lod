@@ -1,5 +1,5 @@
 ---
-permalink: /lit/
+permalink: /datapub/
 title: "Data Publications"
 header:
   image: /assets/images/header.jpg
