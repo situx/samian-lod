@@ -3,7 +3,6 @@
 ---
 @charset "utf-8";
 
-$border-color: #252331;
 $masthead-link-color: #058b8c;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
