@@ -7,3 +7,19 @@ main:
     url: /datapub/
   - title: "About"
     url: /about/
+
+bar:
+  - title: "Transformation Workflow"
+    url: /doc/#transformation-workflow
+  - title: "Ontology"
+    url: /doc/#ontology
+    children:
+      - title: "Prefixes"
+        url: /doc/#prefixes
+      - title: "Class Structure"
+        url: /doc/#class-structure
+        children:
+          - title: "Detailed InformationCarrier"
+            url: doc/#detailed-informationcarrier
+  - title: "Provenance Modelling"
+  - title: "CSV-Documentation"
