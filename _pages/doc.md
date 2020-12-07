@@ -12,6 +12,12 @@ sidebar:
 
 ## Transformation Workflow
 
+{% include figure image_path="/assets/images/Samian_Workflow.png" %}
+
+The Data used for the Linked Open Samian Ware-Project stems from multiple resources (e.g. Corpus Vasorum Antiquorum, User Entries of the Samian Research-Community), resulting in a partly normalised database.
+To counter this issue we included several steps from the original Samian Research Database to our finished LOD result.
+Several steps (especially the cfm-scripts) were necessary in order to normalise our source data:
+
 **curate** entries in the Samian Research Database, stored in a PostgreSQL database
 
 **create** database views from the original database tables via ColdFusion/SQL
@@ -24,11 +30,12 @@ sidebar:
 
 **link** our data to the Linked Open Data Cloud, e.g. Pleiades, Wikidata
 
-{% include figure image_path="/assets/images/Samian_Workflow.png" %}
-
 ## Ontology
 
 ### Prefixes
+
+Linked Open Samian Ware features several preestablished prefixes as well as our own prefix *lado* and *samian*.
+Uses are demonstrated in the Maps and examples below.
 
 | Prefix        | Value                                         |
 | ------------- | --------------------------------------------- |
@@ -474,6 +481,8 @@ The provenance information for the transformation process is stored using the [P
 The CSV files can be downloaded under <https://www1.rgzm.de/ips/lod/{filename}.csv>
 
 {% include figure image_path="/assets/images/Samian_universal_map.png" %}
+
+Our CSV files are split into the categories *Instances*, containing unique lists (of classes/objects), and *Semantic Relation*, containing the necessary crosstables to link our instances by their IDs.
 
 ### Instances
 
