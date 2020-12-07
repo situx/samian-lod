@@ -24,7 +24,6 @@ sidebar:
 
 **link** our data to the Linked Open Data Cloud, e.g. Pleiades, Wikidata
 
-
 {% include figure image_path="/assets/images/Samian_Workflow.png" %}
 
 ## Ontology
@@ -326,7 +325,7 @@ The data contains strings with vague expressions.
 We model this vagueness using the Academic Meta Tool.
 The AMT-Model depends on the keywords **AND** (_AMT-weight = 1_) and **OR** (_AMT-weight/2_).
 Attributions for e.g. productionscenters can result in more than one place, which has to be recorded accordingly.
-This vagueness has been taken into consideration with the Samian Linked Data Project.
+This vagueness has been taken into consideration with the Linked Open Samian Ware Project.
 
 In the following examples we're mapping relations for the potter Quietus/Quetus (ae_5889), his production centres as well as the information carrier 118117 (ic_118117).
 

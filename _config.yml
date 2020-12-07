@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Samian Linked Data
+title: Linked Open Samian Ware
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Diese Seite soll unsere Präsentation graphisch unterstützen. Auf diese Weise
@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Römisch-Germanisches Zentralmuseum"
   avatar : "/assets/images/leibniz_rgzm_logo.png"
-  bio    : "Samian Linked Data"
+  bio    : "Linked Open Samian Ware"
   links:
     #- label: "Website"
     #  icon: "fas fa-fw fa-link"
