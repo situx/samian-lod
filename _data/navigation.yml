@@ -44,3 +44,9 @@ bar:
         url: /doc/#instances
       - title: "Semantic Relations"
         url: /doc/#semantic-relations
+  - title: "Papers and Thesis"
+    url: /lit/#papers-and-thesis
+  - title: "Talks"
+    url: /lit/#talks
+  - title: "Poster"
+    url: /lit/#poster
