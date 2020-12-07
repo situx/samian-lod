@@ -57,7 +57,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Römisch-Germanisches Zentralmuseum"
+  name   : "RGZM"
   avatar : "/assets/images/leibniz_rgzm_logo.png"
   bio    : "Linked Open Samian Ware"
   links:
