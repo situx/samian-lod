@@ -7,6 +7,9 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+$masthead-color : #252331;
+$masthead-link-color : #058b8c;
+
 .author__avatar img {
     border-radius: 0% !important;
     max-width: 250px !important;
