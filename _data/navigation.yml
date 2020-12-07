@@ -18,8 +18,29 @@ bar:
         url: /doc/#prefixes
       - title: "Class Structure"
         url: /doc/#class-structure
-        children:
-          - title: "Detailed InformationCarrier"
-            url: doc/#detailed-informationcarrier
+      - title: "  1) Detailed InformationCarrier"
+        url: doc/#detailed-informationcarrier
+      - title: "  2) Detailed Inscription"
+        url: doc/#detailed-inscription
+      - title: "  3) Detailed Actor"
+        url: doc/#detailed-actor
+      - title: "  4) Detailed Location"
+        url: doc/#detailed-location
+      - title: "  5) Detailed Potform"
+        url: doc/#detailed-potform
+  - title: "AMT-Model"
+    url: /doc/#amt-model
+    children:
+      - title: "AMT-Model Examples"
+        url: doc/#amt-model-examples
   - title: "Provenance Modelling"
+    url: /doc/#provenance-modelling
   - title: "CSV-Documentation"
+    url: /doc/#csv-documentation
+    children:
+      - title: "File Structure"
+        url: /doc/#file-structure
+      - title: "Instances"
+        url: /doc/#instances
+      - title: "Semantic Relations"
+        url: /doc/#semantic-relations
