@@ -14,7 +14,7 @@ sidebar:
 
 {% include figure image_path="/assets/images/Samian_Workflow.png" %}
 
-The Data used for the Linked Open Samian Ware-Project stems from multiple resources (e.g. Corpus Vasorum Antiquorum, User Entries of the Samian Research-Community), resulting in a partly normalised database.
+The Data used for the Linked Open Samian Ware-Project stems from multiple resources (e.g. Corpus Vasorum Arretinorum, User Entries of the Samian Research-Community), resulting in a partly normalised database.
 To counter this issue we included several steps from the original Samian Research Database to our finished LOD result.
 Several steps (especially the cfm-scripts) were necessary in order to normalise our source data and transform it into RDF:
 
