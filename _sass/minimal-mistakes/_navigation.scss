@@ -83,10 +83,6 @@
       border: 1px solid mix(#000, $border-color, 25%);
       border-radius: 0;
 
-      &:hover {
-        color: $link-color-hover;
-      }
-
       &.current,
       &.current.disabled {
         color: #fff;
@@ -187,10 +183,6 @@
     -webkit-transition: none;
     transition: none;
 
-    &:hover {
-      color: $masthead-link-color-hover;
-    }
-
     &.site-logo {
       margin-left: 0;
       margin-right: 0.5rem;
@@ -281,10 +273,6 @@
       padding: 10px 20px;
       font-size: $type-size-5;
 
-      &:hover {
-        color: $masthead-link-color-hover;
-        background: $navicon-link-color-hover;
-      }
     }
 
     &:before {
