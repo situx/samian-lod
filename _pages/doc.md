@@ -5,7 +5,7 @@ header:
   image: /assets/images/header.jpg
   caption: "Photo credit: Carole Raddato from FRANKFURT, Germany, CC BY-SA 2.0, via [**Wikimedia Commons**](https://commons.wikimedia.org/wiki/File:Terra_sigillata,_Gallo-Roman_Museum_of_Tongeren,_Belgium_(27032316984).jpg)"
 sidebar:
-  nav: "bar"
+  nav: "bar_doc"
 ---
 
 # Linked Open Samian Ware
@@ -482,7 +482,7 @@ The CSV files can be downloaded under <https://www1.rgzm.de/ips/lod/{filename}.c
 
 {% include figure image_path="/assets/images/Samian_universal_map.png" %}
 
-Our CSV files are split into the categories *Instances*, containing unique lists (of classes/objects), and *Semantic Relation*, containing the necessary crosstables to link our instances by their IDs.
+Our CSV files are split into the categories *Instances*, containing unique lists (of classes/objects), and *Semantic Relations*, containing the necessary crosstables to link our instances by their IDs.
 
 ### Instances
 

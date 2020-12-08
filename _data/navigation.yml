@@ -8,7 +8,7 @@ main:
   - title: "About"
     url: /about/
 
-bar:
+bar_doc:
   - title: "Transformation Workflow"
     url: /doc/#transformation-workflow
   - title: "Ontology"
@@ -44,3 +44,13 @@ bar:
         url: /doc/#instances
       - title: "Semantic Relations"
         url: /doc/#semantic-relations
+
+bar_lit:
+  - title: "Related Literature"
+  children:
+      - title: "Papers and Thesis"
+        url: /lit/#papers-and-thesis
+      - title: "Talks"
+        url: /lit/#talks
+      - title: "Poster"
+        url: /lit/#poster
