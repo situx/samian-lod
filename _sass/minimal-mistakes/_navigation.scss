@@ -177,7 +177,7 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: $background-color;
+  background-color: #252331;
 
   a {
     display: block;
@@ -200,7 +200,7 @@
       margin-left: 0;
     }
   }
-  
+
   img{
     -webkit-transition: none;
     transition: none;
