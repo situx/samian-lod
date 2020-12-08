@@ -49,7 +49,6 @@ barDoc:
 
 barLit:
   - title: "Related Literature"
-    url:
     children:
       - title: "Papers and Thesis"
         url: /lit/#papers-and-thesis
@@ -57,3 +56,17 @@ barLit:
         url: /lit/#talks
       - title: "Poster"
         url: /lit/#poster
+
+
+barAbout:
+  - title: "About"
+    children:
+      - title: "Developers"
+        url: /about/#developers
+
+
+barDatapub:
+  - title: "Data Publications"
+    children:
+      - title: "Releases"
+        url: /datapub/#releases
