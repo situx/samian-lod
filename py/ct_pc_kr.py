@@ -6,7 +6,7 @@ __version__ = "beta"
 __maintainer__ = "Florian Thiery"
 __email__ = "thiery@rgzm.de"
 __status__ = "beta"
-__update__ = "2020-12-03"
+__update__ = "2020-12-09"
 
 # import dependencies
 import uuid
@@ -25,10 +25,6 @@ importlib.reload(sys)  # py3
 
 # uncomment the line below when using Python version <3.0
 # sys.setdefaultencoding('UTF8')
-
-# set output path
-dir_path = os.path.dirname(os.path.realpath(__file__))
-file_out = dir_path.replace("\\py", "\\ttl") + "\\" + "ct_pc_kr.ttl"
 
 # set input csv
 csv = "ct_pc_kr.csv"
@@ -60,21 +56,34 @@ for index, row in data.iterrows():
 files = (len(lines) / 100000) + 1
 print("lines", len(lines), "files", int(files))
 
-# write output file
-print("start writing turtle file...")
-file = codecs.open(file_out, "w", "utf-8")
-file.write("# create triples from " + url + " \r\n")
-file.write("# on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "\r\n\r\n")
-prefixes = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\nPREFIX owl: <http://www.w3.org/2002/07/owl#> \r\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#> \r\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> \r\nPREFIX geosparql: <http://www.opengis.net/ont/geosparql#> \r\nPREFIX dc: <http://purl.org/dc/elements/1.1/> \r\n"
-prefixes += "PREFIX lado: <http://archaeology.link/ontology#> \r\nPREFIX samian: <http://data.archaeology.link/data/samian/> \r\n"
-prefixes += "\r\n"
-file.write(prefixes)
-for line in lines:
-    file.write(line)
-    file.write("\r\n")
+# set output path
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
-print("Yuhu!")
-file.close()
+# write output files
+print("start writing turtle files...")
+
+f = 0
+step = 100000
+fileprefix = "ct_pc_kr_"
+prefixes = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \r\nPREFIX owl: <http://www.w3.org/2002/07/owl#> \r\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#> \r\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> \r\nPREFIX geosparql: <http://www.opengis.net/ont/geosparql#> \r\nPREFIX dc: <http://purl.org/dc/elements/1.1/> \r\nPREFIX sf: <http://www.opengis.net/ont/sf#> \r\n"
+prefixes += "PREFIX lado: <http://archaeology.link/ontology#> \r\nPREFIX samian: <http://data.archaeology.link/data/samian/> \r\nPREFIX wd: <http://www.wikidata.org/entity/> \r\n PREFIX pelagios: <http://pelagios.github.io/vocab/terms#> \r\nPREFIX oa: <http://www.w3.org/ns/oa#> \r\nPREFIX dcterms: <http://purl.org/dc/terms/> \r\nPREFIX foaf: <http://xmlns.com/foaf/0.1/> \r\nPREFIX relations: <http://pelagios.github.io/vocab/relations#> \r\nPREFIX cnt: <http://www.w3.org/2011/content#> \r\nPREFIX pleiades: <http://pleiades.stoa.org/places/> \r\nPREFIX amt: <http://academic-meta-tool.xyz/vocab#> \r\n"
+prefixes += "\r\n"
+for x in range(1, int(files) + 1):
+    strX = str(x)
+    filename = dir_path.replace("\\py", "\\ttl") + "\\" + fileprefix + strX + ".ttl"
+    file = codecs.open(filename, "w", "utf-8")
+    file.write("# create triples from " + url + " \r\n")
+    file.write("# on " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "\r\n\r\n")
+    file.write(prefixes)
+    i = f
+    for i, line in enumerate(lines):
+        if (i > f - 1 and i < f + step):
+            file.write(line)
+            file.write("\r\n")
+    f = f + step
+    print("Yuhu! > " + fileprefix + strX + ".ttl")
+    file.close()
+
 print("*****************************************")
 print("SUCCESS")
 print("closing script")

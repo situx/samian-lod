@@ -1,19 +1,19 @@
-Python - _run_py3.py:54
+Python - _run_py3.py:61
 start _run_py3.py...
 removed all ttl files...
 *****************************************
 https://www1.rgzm.de/ips/lod/informationcarrier.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 185059 entries, 0 to 185058
+RangeIndex: 185043 entries, 0 to 185042
 Data columns (total 6 columns):
  #   Column        Non-Null Count   Dtype
 ---  ------        --------------   -----
- 0   id            185059 non-null  int64
- 1   label         184855 non-null  object
- 2   shapes        184855 non-null  object
- 3   number        185059 non-null  int64
- 4   kilnsite      185059 non-null  object
- 5   timeinterval  185059 non-null  object
+ 0   id            185043 non-null  int64
+ 1   label         184839 non-null  object
+ 2   shapes        184839 non-null  object
+ 3   number        185043 non-null  int64
+ 4   kilnsite      185043 non-null  object
+ 5   timeinterval  185043 non-null  object
 dtypes: int64(2), object(4)
 memory usage: 8.5+ MB
 None
@@ -36,52 +36,50 @@ None
 160000
 170000
 180000
-lines 2775885 files 28
-start writing turtle file...
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
+lines 2775645 files 28
+start writing turtle files...
+Yuhu! > informationcarrier_1.ttl
+Yuhu! > informationcarrier_2.ttl
+Yuhu! > informationcarrier_3.ttl
+Yuhu! > informationcarrier_4.ttl
+Yuhu! > informationcarrier_5.ttl
+Yuhu! > informationcarrier_6.ttl
+Yuhu! > informationcarrier_7.ttl
+Yuhu! > informationcarrier_8.ttl
+Yuhu! > informationcarrier_9.ttl
+Yuhu! > informationcarrier_10.ttl
+Yuhu! > informationcarrier_11.ttl
+Yuhu! > informationcarrier_12.ttl
+Yuhu! > informationcarrier_13.ttl
+Yuhu! > informationcarrier_14.ttl
+Yuhu! > informationcarrier_15.ttl
+Yuhu! > informationcarrier_16.ttl
+Yuhu! > informationcarrier_17.ttl
+Yuhu! > informationcarrier_18.ttl
+Yuhu! > informationcarrier_19.ttl
+Yuhu! > informationcarrier_20.ttl
+Yuhu! > informationcarrier_21.ttl
+Yuhu! > informationcarrier_22.ttl
+Yuhu! > informationcarrier_23.ttl
+Yuhu! > informationcarrier_24.ttl
+Yuhu! > informationcarrier_25.ttl
+Yuhu! > informationcarrier_26.ttl
+Yuhu! > informationcarrier_27.ttl
+Yuhu! > informationcarrier_28.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/inscriptiondie.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 45523 entries, 0 to 45522
+RangeIndex: 45524 entries, 0 to 45523
 Data columns (total 4 columns):
  #   Column         Non-Null Count  Dtype
 ---  ------         --------------  -----
- 0   id             45523 non-null  int64
- 1   reading        34200 non-null  object
+ 0   id             45524 non-null  int64
+ 1   reading        34201 non-null  object
  2   simplereading  11315 non-null  object
- 3   direction      45522 non-null  object
+ 3   direction      45523 non-null  object
 dtypes: int64(1), object(3)
 memory usage: 1.4+ MB
 None
@@ -90,15 +88,15 @@ None
 20000
 30000
 40000
-lines 603114 files 7
-start writing turtle file...
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
+lines 603127 files 7
+start writing turtle files...
+Yuhu! > inscriptiondie_1.ttl
+Yuhu! > inscriptiondie_2.ttl
+Yuhu! > inscriptiondie_3.ttl
+Yuhu! > inscriptiondie_4.ttl
+Yuhu! > inscriptiondie_5.ttl
+Yuhu! > inscriptiondie_6.ttl
+Yuhu! > inscriptiondie_7.ttl
 *****************************************
 SUCCESS
 closing script
@@ -119,22 +117,22 @@ None
 500
 1000
 lines 13572 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > inscriptiongraffito_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/inscriptionmakingtypedie.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 45523 entries, 0 to 45522
+RangeIndex: 45524 entries, 0 to 45523
 Data columns (total 4 columns):
  #   Column      Non-Null Count  Dtype
 ---  ------      --------------  -----
- 0   id          45523 non-null  int64
- 1   label       45523 non-null  object
- 2   pottername  45523 non-null  object
- 3   die         45523 non-null  object
+ 0   id          45524 non-null  int64
+ 1   label       45524 non-null  object
+ 2   pottername  45524 non-null  object
+ 3   die         45524 non-null  object
 dtypes: int64(1), object(3)
 memory usage: 1.4+ MB
 None
@@ -143,14 +141,14 @@ None
 20000
 30000
 40000
-lines 591799 files 6
-start writing turtle file...
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
+lines 591812 files 6
+start writing turtle files...
+Yuhu! > inscriptionmakingtypedie_1.ttl
+Yuhu! > inscriptionmakingtypedie_2.ttl
+Yuhu! > inscriptionmakingtypedie_3.ttl
+Yuhu! > inscriptionmakingtypedie_4.ttl
+Yuhu! > inscriptionmakingtypedie_5.ttl
+Yuhu! > inscriptionmakingtypedie_6.ttl
 *****************************************
 SUCCESS
 closing script
@@ -172,8 +170,8 @@ None
 500
 1000
 lines 13572 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > inscriptionmakingtypestylus_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -194,8 +192,8 @@ None
 20
 30
 lines 360 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > genericpotform_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -216,8 +214,8 @@ None
 50
 100
 lines 1637 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > potformgaulish_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -239,29 +237,29 @@ None
 200
 300
 lines 4053 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > potformitalian_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/actorsasaconcept.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 9419 entries, 0 to 9418
+RangeIndex: 9330 entries, 0 to 9329
 Data columns (total 2 columns):
  #   Column  Non-Null Count  Dtype
 ---  ------  --------------  -----
- 0   id      9419 non-null   int64
- 1   name    9419 non-null   object
+ 0   id      9330 non-null   int64
+ 1   name    9330 non-null   object
 dtypes: int64(1), object(1)
-memory usage: 147.3+ KB
+memory usage: 145.9+ KB
 None
 0
 5000
-lines 103609 files 2
-start writing turtle file...
-Yuhu!
-Yuhu!
+lines 102630 files 2
+start writing turtle files...
+Yuhu! > actorsasaconcept_1.ttl
+Yuhu! > actorsasaconcept_2.ttl
 *****************************************
 SUCCESS
 closing script
@@ -285,8 +283,8 @@ None
 0
 500
 lines 15764 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ae_chiefpotter_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -309,8 +307,8 @@ memory usage: 912.0+ bytes
 None
 0
 lines 252 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ae_cooperationandchiefpotter_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -333,8 +331,8 @@ memory usage: 2.5+ KB
 None
 0
 lines 807 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ae_cooperationpotter_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -356,27 +354,27 @@ None
 300
 400
 lines 5388 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ae_dependentpotter_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/independentpotter.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 8072 entries, 0 to 8071
+RangeIndex: 7983 entries, 0 to 7982
 Data columns (total 7 columns):
  #   Column        Non-Null Count  Dtype
 ---  ------        --------------  -----
- 0   id            8072 non-null   int64
- 1   name          8072 non-null   object
+ 0   id            7983 non-null   int64
+ 1   name          7983 non-null   object
  2   praenomen     766 non-null    object
  3   cognomen      1175 non-null   object
  4   gentilicium   1092 non-null   object
- 5   kilnsite      8072 non-null   object
- 6   timeinterval  8072 non-null   object
+ 5   kilnsite      7983 non-null   object
+ 6   timeinterval  7983 non-null   object
 dtypes: int64(1), object(6)
-memory usage: 441.6+ KB
+memory usage: 436.7+ KB
 None
 0
 1000
@@ -386,11 +384,10 @@ None
 5000
 6000
 7000
-8000
-triples 140288 files 2
-start writing turtle file...
-Yuhu!
-Yuhu!
+triples 138775 files 2
+start writing turtle files...
+Yuhu! > ae_independentpotter_1.ttl
+Yuhu! > ae_independentpotter_2.ttl
 *****************************************
 SUCCESS
 closing script
@@ -412,8 +409,8 @@ None
 30
 40
 lines 492 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ae_partnerpotter_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -439,9 +436,9 @@ None
 1000
 2000
 3000
-lines 63702 files 1
-start writing turtle file...
-Yuhu!
+lines 67581 files 1
+start writing turtle files...
+Yuhu! > loc_discoverysite_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -462,9 +459,9 @@ memory usage: 568.0+ bytes
 None
 0
 10
-lines 220 files 1
-start writing turtle file...
-Yuhu!
+lines 231 files 1
+start writing turtle files...
+Yuhu! > loc_kilnregion_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -486,9 +483,9 @@ None
 0
 50
 100
-lines 1648 files 1
-start writing turtle file...
-Yuhu!
+lines 1751 files 1
+start writing turtle files...
+Yuhu! > loc_productioncentre_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -513,9 +510,9 @@ None
 600
 700
 800
-lines 9636 files 1
-start writing turtle file...
-Yuhu!
+lines 10512 files 1
+start writing turtle files...
+Yuhu! > loc_repositorylocation_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -537,22 +534,22 @@ None
 3000
 4000
 lines 42670 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > placeasaconcept_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_ac_ae.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 9435 entries, 0 to 9434
+RangeIndex: 9346 entries, 0 to 9345
 Data columns (total 2 columns):
  #   Column  Non-Null Count  Dtype
 ---  ------  --------------  -----
- 0   ac_id   9435 non-null   int64
- 1   ae_id   9435 non-null   int64
+ 0   ac_id   9346 non-null   int64
+ 1   ae_id   9346 non-null   int64
 dtypes: int64(2)
-memory usage: 147.5 KB
+memory usage: 146.2 KB
 None
 0
 1000
@@ -564,24 +561,24 @@ None
 7000
 8000
 9000
-lines 9435 files 1
-start writing turtle file...
-Yuhu!
+lines 9346 files 1
+start writing turtle files...
+Yuhu! > ct_ac_ae_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_ae_pc.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 5224 entries, 0 to 5223
+RangeIndex: 5220 entries, 0 to 5219
 Data columns (total 3 columns):
  #   Column  Non-Null Count  Dtype
 ---  ------  --------------  -----
- 0   ae_id   5224 non-null   object
- 1   pc_id   5224 non-null   object
- 2   weight  5224 non-null   object
+ 0   ae_id   5220 non-null   object
+ 1   pc_id   5220 non-null   object
+ 2   weight  5220 non-null   object
 dtypes: object(3)
-memory usage: 122.6+ KB
+memory usage: 122.5+ KB
 None
 0
 100
@@ -636,9 +633,9 @@ None
 5000
 5100
 5200
-lines 36568 files 1
-start writing turtle file...
-Yuhu!
+lines 36540 files 1
+start writing turtle files...
+Yuhu! > ct_ae_pc_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -663,8 +660,8 @@ None
 600
 700
 lines 800 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_chp_dp_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -686,8 +683,8 @@ None
 30
 40
 lines 43 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_cp_pp_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -706,8 +703,8 @@ None
 0
 10
 lines 14 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_cpchp_dp_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -726,20 +723,20 @@ None
 0
 10
 lines 14 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_cpchp_pp_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_ic_ds.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 177531 entries, 0 to 177530
+RangeIndex: 177515 entries, 0 to 177514
 Data columns (total 2 columns):
  #   Column  Non-Null Count   Dtype
 ---  ------  --------------   -----
- 0   ic_id   177531 non-null  int64
- 1   ds_id   177531 non-null  int64
+ 0   ic_id   177515 non-null  int64
+ 1   ds_id   177515 non-null  int64
 dtypes: int64(2)
 memory usage: 2.7 MB
 None
@@ -762,23 +759,23 @@ start reading csv file...
 150000
 160000
 170000
-lines 177531 files 2
+lines 177515 files 2
 start writing turtle files...
-Yuhu!
-Yuhu!
+Yuhu! > ct_ic_ds_1.ttl
+Yuhu! > ct_ic_ds_2.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_ic_in.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 185060 entries, 0 to 185059
+RangeIndex: 185044 entries, 0 to 185043
 Data columns (total 3 columns):
  #   Column       Non-Null Count   Dtype
 ---  ------       --------------   -----
- 0   ic_id        185060 non-null  int64
- 1   in_id        185060 non-null  int64
- 2   dieposition  159761 non-null  object
+ 0   ic_id        185044 non-null  int64
+ 1   in_id        185044 non-null  int64
+ 2   dieposition  159745 non-null  object
 dtypes: int64(2), object(1)
 memory usage: 4.2+ MB
 None
@@ -790,25 +787,25 @@ None
 125000
 150000
 175000
-triples 370120 files 4
-start writing turtle file...
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
+triples 370088 files 4
+start writing turtle files...
+Yuhu! > ct_ic_in_1.ttl
+Yuhu! > ct_ic_in_2.ttl
+Yuhu! > ct_ic_in_3.ttl
+Yuhu! > ct_ic_in_4.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_ic_pc.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 209091 entries, 0 to 209090
+RangeIndex: 209076 entries, 0 to 209075
 Data columns (total 3 columns):
  #   Column  Non-Null Count   Dtype
 ---  ------  --------------   -----
- 0   ic_id   209091 non-null  object
- 1   pc_id   209091 non-null  object
- 2   weight  209091 non-null  object
+ 0   ic_id   209076 non-null  object
+ 1   pc_id   209076 non-null  object
+ 2   weight  209076 non-null  object
 dtypes: object(3)
 memory usage: 4.8+ MB
 None
@@ -818,36 +815,36 @@ start reading csv file...
 100000
 150000
 200000
-lines 1463637 files 15
-start writing turtle file...
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
+lines 1463532 files 15
+start writing turtle files...
+Yuhu! > ct_ic_pc_1.ttl
+Yuhu! > ct_ic_pc_2.ttl
+Yuhu! > ct_ic_pc_3.ttl
+Yuhu! > ct_ic_pc_4.ttl
+Yuhu! > ct_ic_pc_5.ttl
+Yuhu! > ct_ic_pc_6.ttl
+Yuhu! > ct_ic_pc_7.ttl
+Yuhu! > ct_ic_pc_8.ttl
+Yuhu! > ct_ic_pc_9.ttl
+Yuhu! > ct_ic_pc_10.ttl
+Yuhu! > ct_ic_pc_11.ttl
+Yuhu! > ct_ic_pc_12.ttl
+Yuhu! > ct_ic_pc_13.ttl
+Yuhu! > ct_ic_pc_14.ttl
+Yuhu! > ct_ic_pc_15.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_ic_pf.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 151911 entries, 0 to 151910
+RangeIndex: 151920 entries, 0 to 151919
 Data columns (total 3 columns):
  #   Column  Non-Null Count   Dtype
 ---  ------  --------------   -----
- 0   ic_id   151911 non-null  object
- 1   pf_id   151911 non-null  object
- 2   weight  151911 non-null  object
+ 0   ic_id   151920 non-null  object
+ 1   pf_id   151920 non-null  object
+ 2   weight  151920 non-null  object
 dtypes: object(3)
 memory usage: 3.5+ MB
 None
@@ -867,30 +864,30 @@ None
 130000
 140000
 150000
-lines 911466 files 10
-start writing turtle file...
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
+lines 911520 files 10
+start writing turtle files...
+Yuhu! > ct_ic_pf_1.ttl
+Yuhu! > ct_ic_pf_2.ttl
+Yuhu! > ct_ic_pf_3.ttl
+Yuhu! > ct_ic_pf_4.ttl
+Yuhu! > ct_ic_pf_5.ttl
+Yuhu! > ct_ic_pf_6.ttl
+Yuhu! > ct_ic_pf_7.ttl
+Yuhu! > ct_ic_pf_8.ttl
+Yuhu! > ct_ic_pf_9.ttl
+Yuhu! > ct_ic_pf_10.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_ic_plc.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 337118 entries, 0 to 337117
+RangeIndex: 337084 entries, 0 to 337083
 Data columns (total 2 columns):
  #   Column  Non-Null Count   Dtype
 ---  ------  --------------   -----
- 0   ic_id   337118 non-null  int64
- 1   plc_id  337118 non-null  int64
+ 0   ic_id   337084 non-null  int64
+ 1   plc_id  337084 non-null  int64
 dtypes: int64(2)
 memory usage: 5.1 MB
 None
@@ -929,24 +926,24 @@ start reading csv file...
 310000
 320000
 330000
-lines 337118 files 4
+lines 337084 files 4
 start writing turtle files...
-Yuhu!
-Yuhu!
-Yuhu!
-Yuhu!
+Yuhu! > ct_ic_plc_1.ttl
+Yuhu! > ct_ic_plc_2.ttl
+Yuhu! > ct_ic_plc_3.ttl
+Yuhu! > ct_ic_plc_4.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_ic_rl.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 75715 entries, 0 to 75714
+RangeIndex: 75707 entries, 0 to 75706
 Data columns (total 2 columns):
  #   Column  Non-Null Count  Dtype
 ---  ------  --------------  -----
- 0   ic_id   75715 non-null  int64
- 1   rl_id   75715 non-null  int64
+ 0   ic_id   75707 non-null  int64
+ 1   rl_id   75707 non-null  int64
 dtypes: int64(2)
 memory usage: 1.2 MB
 None
@@ -958,21 +955,21 @@ None
 50000
 60000
 70000
-lines 75715 files 1
-start writing turtle file...
-Yuhu!
+lines 75707 files 1
+start writing turtle files...
+Yuhu! > ct_ic_rl_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_in_ac.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 46571 entries, 0 to 46570
+RangeIndex: 46572 entries, 0 to 46571
 Data columns (total 2 columns):
  #   Column  Non-Null Count  Dtype
 ---  ------  --------------  -----
- 0   in_id   46571 non-null  int64
- 1   ac_id   46571 non-null  int64
+ 0   in_id   46572 non-null  int64
+ 1   ac_id   46572 non-null  int64
 dtypes: int64(2)
 memory usage: 727.8 KB
 None
@@ -981,21 +978,21 @@ None
 20000
 30000
 40000
-lines 46571 files 1
-start writing turtle file...
-Yuhu!
+lines 46572 files 1
+start writing turtle files...
+Yuhu! > ct_in_ac_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
 https://www1.rgzm.de/ips/lod/ct_in_mt.csv
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 46569 entries, 0 to 46568
+RangeIndex: 46570 entries, 0 to 46569
 Data columns (total 2 columns):
  #   Column  Non-Null Count  Dtype
 ---  ------  --------------  -----
- 0   in_id   46569 non-null  int64
- 1   mt_id   46569 non-null  int64
+ 0   in_id   46570 non-null  int64
+ 1   mt_id   46570 non-null  int64
 dtypes: int64(2)
 memory usage: 727.8 KB
 None
@@ -1004,9 +1001,9 @@ None
 20000
 30000
 40000
-lines 46569 files 1
-start writing turtle file...
-Yuhu!
+lines 46570 files 1
+start writing turtle files...
+Yuhu! > ct_in_mt_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -1026,8 +1023,8 @@ None
 50
 100
 lines 103 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_pc_kr_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -1049,8 +1046,8 @@ None
 300
 400
 lines 438 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_pf_gf_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -1071,8 +1068,8 @@ None
 2000
 3000
 lines 3879 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_plc_ds_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -1092,8 +1089,8 @@ None
 50
 100
 lines 103 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_plc_pc_1.ttl
 *****************************************
 SUCCESS
 closing script
@@ -1119,10 +1116,10 @@ None
 700
 800
 lines 876 files 1
-start writing turtle file...
-Yuhu!
+start writing turtle files...
+Yuhu! > ct_plc_rl_1.ttl
 *****************************************
 SUCCESS
 closing script
 *****************************************
-[Finished in 298.765s]
+[Finished in 728.294s]

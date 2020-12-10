@@ -1,5 +1,5 @@
 # create triples from https://www1.rgzm.de/ips/lod/ct_ic_pf.csv 
-# on 2020-12-03 22:11
+# on 2020-12-09 20:58
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
@@ -7,8 +7,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> 
 PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX sf: <http://www.opengis.net/ont/sf#> 
 PREFIX lado: <http://archaeology.link/ontology#> 
 PREFIX samian: <http://data.archaeology.link/data/samian/> 
+PREFIX wd: <http://www.wikidata.org/entity/> 
+ PREFIX pelagios: <http://pelagios.github.io/vocab/terms#> 
+PREFIX oa: <http://www.w3.org/ns/oa#> 
+PREFIX dcterms: <http://purl.org/dc/terms/> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX relations: <http://pelagios.github.io/vocab/relations#> 
+PREFIX cnt: <http://www.w3.org/2011/content#> 
+PREFIX pleiades: <http://pleiades.stoa.org/places/> 
 PREFIX amt: <http://academic-meta-tool.xyz/vocab#> 
 
 samian:ic_206081 lado:representedBy samian:pf_33.
@@ -101,29 +110,29 @@ _:150017 rdf:subject samian:ic_206095.
 _:150017 rdf:predicate lado:representedBy.
 _:150017 rdf:object samian:pf_18.
 _:150017 amt:weight 0.5 .
-samian:ic_206096 lado:representedBy samian:pf_2.
+samian:ic_206096 lado:representedBy samian:pf_9.
 samian:ic_206096 lado:hasAMT _:150018.
 _:150018 rdf:subject samian:ic_206096.
 _:150018 rdf:predicate lado:representedBy.
-_:150018 rdf:object samian:pf_2.
+_:150018 rdf:object samian:pf_9.
 _:150018 amt:weight 0.5 .
-samian:ic_206096 lado:representedBy samian:pf_9.
+samian:ic_206096 lado:representedBy samian:pf_2.
 samian:ic_206096 lado:hasAMT _:150019.
 _:150019 rdf:subject samian:ic_206096.
 _:150019 rdf:predicate lado:representedBy.
-_:150019 rdf:object samian:pf_9.
+_:150019 rdf:object samian:pf_2.
 _:150019 amt:weight 0.5 .
-samian:ic_206097 lado:representedBy samian:pf_2.
+samian:ic_206097 lado:representedBy samian:pf_9.
 samian:ic_206097 lado:hasAMT _:150020.
 _:150020 rdf:subject samian:ic_206097.
 _:150020 rdf:predicate lado:representedBy.
-_:150020 rdf:object samian:pf_2.
+_:150020 rdf:object samian:pf_9.
 _:150020 amt:weight 0.5 .
-samian:ic_206097 lado:representedBy samian:pf_9.
+samian:ic_206097 lado:representedBy samian:pf_2.
 samian:ic_206097 lado:hasAMT _:150021.
 _:150021 rdf:subject samian:ic_206097.
 _:150021 rdf:predicate lado:representedBy.
-_:150021 rdf:object samian:pf_9.
+_:150021 rdf:object samian:pf_2.
 _:150021 amt:weight 0.5 .
 samian:ic_206098 lado:representedBy samian:pf_21.
 samian:ic_206098 lado:hasAMT _:150022.
@@ -575,17 +584,17 @@ _:150096 rdf:subject samian:ic_206184.
 _:150096 rdf:predicate lado:representedBy.
 _:150096 rdf:object samian:pf_18.
 _:150096 amt:weight 0.5 .
-samian:ic_206185 lado:representedBy samian:pf_9.
+samian:ic_206185 lado:representedBy samian:pf_2.
 samian:ic_206185 lado:hasAMT _:150097.
 _:150097 rdf:subject samian:ic_206185.
 _:150097 rdf:predicate lado:representedBy.
-_:150097 rdf:object samian:pf_9.
+_:150097 rdf:object samian:pf_2.
 _:150097 amt:weight 0.5 .
-samian:ic_206185 lado:representedBy samian:pf_2.
+samian:ic_206185 lado:representedBy samian:pf_9.
 samian:ic_206185 lado:hasAMT _:150098.
 _:150098 rdf:subject samian:ic_206185.
 _:150098 rdf:predicate lado:representedBy.
-_:150098 rdf:object samian:pf_2.
+_:150098 rdf:object samian:pf_9.
 _:150098 amt:weight 0.5 .
 samian:ic_206186 lado:representedBy samian:pf_2.
 samian:ic_206186 lado:hasAMT _:150099.
@@ -671,17 +680,17 @@ _:150112 rdf:subject samian:ic_206199.
 _:150112 rdf:predicate lado:representedBy.
 _:150112 rdf:object samian:pf_24.
 _:150112 amt:weight 0.5 .
-samian:ic_206200 lado:representedBy samian:pf_24.
+samian:ic_206200 lado:representedBy samian:pf_11.
 samian:ic_206200 lado:hasAMT _:150113.
 _:150113 rdf:subject samian:ic_206200.
 _:150113 rdf:predicate lado:representedBy.
-_:150113 rdf:object samian:pf_24.
+_:150113 rdf:object samian:pf_11.
 _:150113 amt:weight 0.5 .
-samian:ic_206200 lado:representedBy samian:pf_11.
+samian:ic_206200 lado:representedBy samian:pf_24.
 samian:ic_206200 lado:hasAMT _:150114.
 _:150114 rdf:subject samian:ic_206200.
 _:150114 rdf:predicate lado:representedBy.
-_:150114 rdf:object samian:pf_11.
+_:150114 rdf:object samian:pf_24.
 _:150114 amt:weight 0.5 .
 samian:ic_206202 lado:representedBy samian:pf_28.
 samian:ic_206202 lado:hasAMT _:150115.
@@ -1541,17 +1550,17 @@ _:150257 rdf:subject samian:ic_206386.
 _:150257 rdf:predicate lado:representedBy.
 _:150257 rdf:object samian:pf_24.
 _:150257 amt:weight 1 .
-samian:ic_206387 lado:representedBy samian:pf_11.
+samian:ic_206387 lado:representedBy samian:pf_24.
 samian:ic_206387 lado:hasAMT _:150258.
 _:150258 rdf:subject samian:ic_206387.
 _:150258 rdf:predicate lado:representedBy.
-_:150258 rdf:object samian:pf_11.
+_:150258 rdf:object samian:pf_24.
 _:150258 amt:weight 0.5 .
-samian:ic_206387 lado:representedBy samian:pf_24.
+samian:ic_206387 lado:representedBy samian:pf_11.
 samian:ic_206387 lado:hasAMT _:150259.
 _:150259 rdf:subject samian:ic_206387.
 _:150259 rdf:predicate lado:representedBy.
-_:150259 rdf:object samian:pf_24.
+_:150259 rdf:object samian:pf_11.
 _:150259 amt:weight 0.5 .
 samian:ic_206388 lado:representedBy samian:pf_9.
 samian:ic_206388 lado:hasAMT _:150260.
@@ -3551,17 +3560,17 @@ _:150592 rdf:subject samian:ic_206801.
 _:150592 rdf:predicate lado:representedBy.
 _:150592 rdf:object samian:pf_9.
 _:150592 amt:weight 1 .
-samian:ic_206802 lado:representedBy samian:pf_9.
+samian:ic_206802 lado:representedBy samian:pf_11.
 samian:ic_206802 lado:hasAMT _:150593.
 _:150593 rdf:subject samian:ic_206802.
 _:150593 rdf:predicate lado:representedBy.
-_:150593 rdf:object samian:pf_9.
+_:150593 rdf:object samian:pf_11.
 _:150593 amt:weight 0.5 .
-samian:ic_206802 lado:representedBy samian:pf_11.
+samian:ic_206802 lado:representedBy samian:pf_9.
 samian:ic_206802 lado:hasAMT _:150594.
 _:150594 rdf:subject samian:ic_206802.
 _:150594 rdf:predicate lado:representedBy.
-_:150594 rdf:object samian:pf_11.
+_:150594 rdf:object samian:pf_9.
 _:150594 amt:weight 0.5 .
 samian:ic_206804 lado:representedBy samian:pf_19.
 samian:ic_206804 lado:hasAMT _:150595.
@@ -4277,17 +4286,17 @@ _:150713 rdf:subject samian:ic_207010.
 _:150713 rdf:predicate lado:representedBy.
 _:150713 rdf:object samian:pf_174.
 _:150713 amt:weight 1 .
-samian:ic_207012 lado:representedBy samian:pf_2.
+samian:ic_207012 lado:representedBy samian:pf_9.
 samian:ic_207012 lado:hasAMT _:150714.
 _:150714 rdf:subject samian:ic_207012.
 _:150714 rdf:predicate lado:representedBy.
-_:150714 rdf:object samian:pf_2.
+_:150714 rdf:object samian:pf_9.
 _:150714 amt:weight 0.5 .
-samian:ic_207012 lado:representedBy samian:pf_9.
+samian:ic_207012 lado:representedBy samian:pf_2.
 samian:ic_207012 lado:hasAMT _:150715.
 _:150715 rdf:subject samian:ic_207012.
 _:150715 rdf:predicate lado:representedBy.
-_:150715 rdf:object samian:pf_9.
+_:150715 rdf:object samian:pf_2.
 _:150715 amt:weight 0.5 .
 samian:ic_207013 lado:representedBy samian:pf_21.
 samian:ic_207013 lado:hasAMT _:150716.
@@ -6911,17 +6920,17 @@ _:151152 rdf:subject samian:ic_207860.
 _:151152 rdf:predicate lado:representedBy.
 _:151152 rdf:object samian:pf_9.
 _:151152 amt:weight 0.5 .
-samian:ic_207861 lado:representedBy samian:pf_24.
+samian:ic_207861 lado:representedBy samian:pf_11.
 samian:ic_207861 lado:hasAMT _:151153.
 _:151153 rdf:subject samian:ic_207861.
 _:151153 rdf:predicate lado:representedBy.
-_:151153 rdf:object samian:pf_24.
+_:151153 rdf:object samian:pf_11.
 _:151153 amt:weight 0.5 .
-samian:ic_207861 lado:representedBy samian:pf_11.
+samian:ic_207861 lado:representedBy samian:pf_24.
 samian:ic_207861 lado:hasAMT _:151154.
 _:151154 rdf:subject samian:ic_207861.
 _:151154 rdf:predicate lado:representedBy.
-_:151154 rdf:object samian:pf_11.
+_:151154 rdf:object samian:pf_24.
 _:151154 amt:weight 0.5 .
 samian:ic_207862 lado:representedBy samian:pf_2.
 samian:ic_207862 lado:hasAMT _:151155.
@@ -6953,17 +6962,17 @@ _:151159 rdf:subject samian:ic_207866.
 _:151159 rdf:predicate lado:representedBy.
 _:151159 rdf:object samian:pf_19.
 _:151159 amt:weight 1 .
-samian:ic_207867 lado:representedBy samian:pf_9.
+samian:ic_207867 lado:representedBy samian:pf_2.
 samian:ic_207867 lado:hasAMT _:151160.
 _:151160 rdf:subject samian:ic_207867.
 _:151160 rdf:predicate lado:representedBy.
-_:151160 rdf:object samian:pf_9.
+_:151160 rdf:object samian:pf_2.
 _:151160 amt:weight 0.5 .
-samian:ic_207867 lado:representedBy samian:pf_2.
+samian:ic_207867 lado:representedBy samian:pf_9.
 samian:ic_207867 lado:hasAMT _:151161.
 _:151161 rdf:subject samian:ic_207867.
 _:151161 rdf:predicate lado:representedBy.
-_:151161 rdf:object samian:pf_2.
+_:151161 rdf:object samian:pf_9.
 _:151161 amt:weight 0.5 .
 samian:ic_207868 lado:representedBy samian:pf_9.
 samian:ic_207868 lado:hasAMT _:151162.
@@ -6983,17 +6992,17 @@ _:151164 rdf:subject samian:ic_207870.
 _:151164 rdf:predicate lado:representedBy.
 _:151164 rdf:object samian:pf_33.
 _:151164 amt:weight 1 .
-samian:ic_207871 lado:representedBy samian:pf_28.
+samian:ic_207871 lado:representedBy samian:pf_41.
 samian:ic_207871 lado:hasAMT _:151165.
 _:151165 rdf:subject samian:ic_207871.
 _:151165 rdf:predicate lado:representedBy.
-_:151165 rdf:object samian:pf_28.
+_:151165 rdf:object samian:pf_41.
 _:151165 amt:weight 0.5 .
-samian:ic_207871 lado:representedBy samian:pf_41.
+samian:ic_207871 lado:representedBy samian:pf_28.
 samian:ic_207871 lado:hasAMT _:151166.
 _:151166 rdf:subject samian:ic_207871.
 _:151166 rdf:predicate lado:representedBy.
-_:151166 rdf:object samian:pf_41.
+_:151166 rdf:object samian:pf_28.
 _:151166 amt:weight 0.5 .
 samian:ic_207872 lado:representedBy samian:pf_19.
 samian:ic_207872 lado:hasAMT _:151167.
@@ -7529,17 +7538,17 @@ _:151255 rdf:subject samian:ic_207971.
 _:151255 rdf:predicate lado:representedBy.
 _:151255 rdf:object samian:pf_9.
 _:151255 amt:weight 1 .
-samian:ic_207973 lado:representedBy samian:pf_9.
+samian:ic_207973 lado:representedBy samian:pf_2.
 samian:ic_207973 lado:hasAMT _:151256.
 _:151256 rdf:subject samian:ic_207973.
 _:151256 rdf:predicate lado:representedBy.
-_:151256 rdf:object samian:pf_9.
+_:151256 rdf:object samian:pf_2.
 _:151256 amt:weight 0.5 .
-samian:ic_207973 lado:representedBy samian:pf_2.
+samian:ic_207973 lado:representedBy samian:pf_9.
 samian:ic_207973 lado:hasAMT _:151257.
 _:151257 rdf:subject samian:ic_207973.
 _:151257 rdf:predicate lado:representedBy.
-_:151257 rdf:object samian:pf_2.
+_:151257 rdf:object samian:pf_9.
 _:151257 amt:weight 0.5 .
 samian:ic_207974 lado:representedBy samian:pf_19.
 samian:ic_207974 lado:hasAMT _:151258.
@@ -7739,17 +7748,17 @@ _:151290 rdf:subject samian:ic_208006.
 _:151290 rdf:predicate lado:representedBy.
 _:151290 rdf:object samian:pf_11.
 _:151290 amt:weight 1 .
-samian:ic_208007 lado:representedBy samian:pf_11.
+samian:ic_208007 lado:representedBy samian:pf_24.
 samian:ic_208007 lado:hasAMT _:151291.
 _:151291 rdf:subject samian:ic_208007.
 _:151291 rdf:predicate lado:representedBy.
-_:151291 rdf:object samian:pf_11.
+_:151291 rdf:object samian:pf_24.
 _:151291 amt:weight 0.5 .
-samian:ic_208007 lado:representedBy samian:pf_24.
+samian:ic_208007 lado:representedBy samian:pf_11.
 samian:ic_208007 lado:hasAMT _:151292.
 _:151292 rdf:subject samian:ic_208007.
 _:151292 rdf:predicate lado:representedBy.
-_:151292 rdf:object samian:pf_24.
+_:151292 rdf:object samian:pf_11.
 _:151292 amt:weight 0.5 .
 samian:ic_208008 lado:representedBy samian:pf_33.
 samian:ic_208008 lado:hasAMT _:151293.
@@ -8381,17 +8390,17 @@ _:151397 rdf:subject samian:ic_208116.
 _:151397 rdf:predicate lado:representedBy.
 _:151397 rdf:object samian:pf_9.
 _:151397 amt:weight 1 .
-samian:ic_208117 lado:representedBy samian:pf_2.
+samian:ic_208117 lado:representedBy samian:pf_9.
 samian:ic_208117 lado:hasAMT _:151398.
 _:151398 rdf:subject samian:ic_208117.
 _:151398 rdf:predicate lado:representedBy.
-_:151398 rdf:object samian:pf_2.
+_:151398 rdf:object samian:pf_9.
 _:151398 amt:weight 0.5 .
-samian:ic_208117 lado:representedBy samian:pf_9.
+samian:ic_208117 lado:representedBy samian:pf_2.
 samian:ic_208117 lado:hasAMT _:151399.
 _:151399 rdf:subject samian:ic_208117.
 _:151399 rdf:predicate lado:representedBy.
-_:151399 rdf:object samian:pf_9.
+_:151399 rdf:object samian:pf_2.
 _:151399 amt:weight 0.5 .
 samian:ic_208118 lado:representedBy samian:pf_19.
 samian:ic_208118 lado:hasAMT _:151400.
@@ -8423,17 +8432,17 @@ _:151404 rdf:subject samian:ic_208123.
 _:151404 rdf:predicate lado:representedBy.
 _:151404 rdf:object samian:pf_11.
 _:151404 amt:weight 1 .
-samian:ic_208125 lado:representedBy samian:pf_9.
+samian:ic_208125 lado:representedBy samian:pf_2.
 samian:ic_208125 lado:hasAMT _:151405.
 _:151405 rdf:subject samian:ic_208125.
 _:151405 rdf:predicate lado:representedBy.
-_:151405 rdf:object samian:pf_9.
+_:151405 rdf:object samian:pf_2.
 _:151405 amt:weight 0.5 .
-samian:ic_208125 lado:representedBy samian:pf_2.
+samian:ic_208125 lado:representedBy samian:pf_9.
 samian:ic_208125 lado:hasAMT _:151406.
 _:151406 rdf:subject samian:ic_208125.
 _:151406 rdf:predicate lado:representedBy.
-_:151406 rdf:object samian:pf_2.
+_:151406 rdf:object samian:pf_9.
 _:151406 amt:weight 0.5 .
 samian:ic_208126 lado:representedBy samian:pf_18.
 samian:ic_208126 lado:hasAMT _:151407.
@@ -8525,17 +8534,17 @@ _:151421 rdf:subject samian:ic_208140.
 _:151421 rdf:predicate lado:representedBy.
 _:151421 rdf:object samian:pf_9.
 _:151421 amt:weight 1 .
-samian:ic_208142 lado:representedBy samian:pf_2.
+samian:ic_208142 lado:representedBy samian:pf_9.
 samian:ic_208142 lado:hasAMT _:151422.
 _:151422 rdf:subject samian:ic_208142.
 _:151422 rdf:predicate lado:representedBy.
-_:151422 rdf:object samian:pf_2.
+_:151422 rdf:object samian:pf_9.
 _:151422 amt:weight 0.5 .
-samian:ic_208142 lado:representedBy samian:pf_9.
+samian:ic_208142 lado:representedBy samian:pf_2.
 samian:ic_208142 lado:hasAMT _:151423.
 _:151423 rdf:subject samian:ic_208142.
 _:151423 rdf:predicate lado:representedBy.
-_:151423 rdf:object samian:pf_9.
+_:151423 rdf:object samian:pf_2.
 _:151423 amt:weight 0.5 .
 samian:ic_208143 lado:representedBy samian:pf_28.
 samian:ic_208143 lado:hasAMT _:151424.
@@ -8633,17 +8642,17 @@ _:151439 rdf:subject samian:ic_208157.
 _:151439 rdf:predicate lado:representedBy.
 _:151439 rdf:object samian:pf_28.
 _:151439 amt:weight 1 .
-samian:ic_208158 lado:representedBy samian:pf_24.
+samian:ic_208158 lado:representedBy samian:pf_11.
 samian:ic_208158 lado:hasAMT _:151440.
 _:151440 rdf:subject samian:ic_208158.
 _:151440 rdf:predicate lado:representedBy.
-_:151440 rdf:object samian:pf_24.
+_:151440 rdf:object samian:pf_11.
 _:151440 amt:weight 0.5 .
-samian:ic_208158 lado:representedBy samian:pf_11.
+samian:ic_208158 lado:representedBy samian:pf_24.
 samian:ic_208158 lado:hasAMT _:151441.
 _:151441 rdf:subject samian:ic_208158.
 _:151441 rdf:predicate lado:representedBy.
-_:151441 rdf:object samian:pf_11.
+_:151441 rdf:object samian:pf_24.
 _:151441 amt:weight 0.5 .
 samian:ic_208159 lado:representedBy samian:pf_33.
 samian:ic_208159 lado:hasAMT _:151442.
@@ -9167,17 +9176,17 @@ _:151528 rdf:subject samian:ic_208246.
 _:151528 rdf:predicate lado:representedBy.
 _:151528 rdf:object samian:pf_9.
 _:151528 amt:weight 0.5 .
-samian:ic_208247 lado:representedBy samian:pf_2.
+samian:ic_208247 lado:representedBy samian:pf_9.
 samian:ic_208247 lado:hasAMT _:151529.
 _:151529 rdf:subject samian:ic_208247.
 _:151529 rdf:predicate lado:representedBy.
-_:151529 rdf:object samian:pf_2.
+_:151529 rdf:object samian:pf_9.
 _:151529 amt:weight 0.5 .
-samian:ic_208247 lado:representedBy samian:pf_9.
+samian:ic_208247 lado:representedBy samian:pf_2.
 samian:ic_208247 lado:hasAMT _:151530.
 _:151530 rdf:subject samian:ic_208247.
 _:151530 rdf:predicate lado:representedBy.
-_:151530 rdf:object samian:pf_9.
+_:151530 rdf:object samian:pf_2.
 _:151530 amt:weight 0.5 .
 samian:ic_208248 lado:representedBy samian:pf_2.
 samian:ic_208248 lado:hasAMT _:151531.
@@ -11477,3 +11486,57 @@ _:151913 rdf:subject samian:ic_208818.
 _:151913 rdf:predicate lado:representedBy.
 _:151913 rdf:object samian:pf_25.
 _:151913 amt:weight 1 .
+samian:ic_208819 lado:representedBy samian:pf_28.
+samian:ic_208819 lado:hasAMT _:151914.
+_:151914 rdf:subject samian:ic_208819.
+_:151914 rdf:predicate lado:representedBy.
+_:151914 rdf:object samian:pf_28.
+_:151914 amt:weight 1 .
+samian:ic_208820 lado:representedBy samian:pf_33.
+samian:ic_208820 lado:hasAMT _:151915.
+_:151915 rdf:subject samian:ic_208820.
+_:151915 rdf:predicate lado:representedBy.
+_:151915 rdf:object samian:pf_33.
+_:151915 amt:weight 1 .
+samian:ic_208821 lado:representedBy samian:pf_33.
+samian:ic_208821 lado:hasAMT _:151916.
+_:151916 rdf:subject samian:ic_208821.
+_:151916 rdf:predicate lado:representedBy.
+_:151916 rdf:object samian:pf_33.
+_:151916 amt:weight 1 .
+samian:ic_208822 lado:representedBy samian:pf_26.
+samian:ic_208822 lado:hasAMT _:151917.
+_:151917 rdf:subject samian:ic_208822.
+_:151917 rdf:predicate lado:representedBy.
+_:151917 rdf:object samian:pf_26.
+_:151917 amt:weight 1 .
+samian:ic_208823 lado:representedBy samian:pf_26.
+samian:ic_208823 lado:hasAMT _:151918.
+_:151918 rdf:subject samian:ic_208823.
+_:151918 rdf:predicate lado:representedBy.
+_:151918 rdf:object samian:pf_26.
+_:151918 amt:weight 1 .
+samian:ic_208824 lado:representedBy samian:pf_24.
+samian:ic_208824 lado:hasAMT _:151919.
+_:151919 rdf:subject samian:ic_208824.
+_:151919 rdf:predicate lado:representedBy.
+_:151919 rdf:object samian:pf_24.
+_:151919 amt:weight 1 .
+samian:ic_208825 lado:representedBy samian:pf_26.
+samian:ic_208825 lado:hasAMT _:151920.
+_:151920 rdf:subject samian:ic_208825.
+_:151920 rdf:predicate lado:representedBy.
+_:151920 rdf:object samian:pf_26.
+_:151920 amt:weight 1 .
+samian:ic_208826 lado:representedBy samian:pf_15.
+samian:ic_208826 lado:hasAMT _:151921.
+_:151921 rdf:subject samian:ic_208826.
+_:151921 rdf:predicate lado:representedBy.
+_:151921 rdf:object samian:pf_15.
+_:151921 amt:weight 1 .
+samian:ic_208827 lado:representedBy samian:pf_2.
+samian:ic_208827 lado:hasAMT _:151922.
+_:151922 rdf:subject samian:ic_208827.
+_:151922 rdf:predicate lado:representedBy.
+_:151922 rdf:object samian:pf_2.
+_:151922 amt:weight 1 .

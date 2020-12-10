@@ -1,5 +1,5 @@
 # create triples from https://www1.rgzm.de/ips/lod/ct_ic_in.csv 
-# on 2020-12-03 22:10
+# on 2020-12-09 20:55
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
@@ -7,60 +7,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> 
 PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX sf: <http://www.opengis.net/ont/sf#> 
 PREFIX lado: <http://archaeology.link/ontology#> 
 PREFIX samian: <http://data.archaeology.link/data/samian/> 
+PREFIX wd: <http://www.wikidata.org/entity/> 
+ PREFIX pelagios: <http://pelagios.github.io/vocab/terms#> 
+PREFIX oa: <http://www.w3.org/ns/oa#> 
+PREFIX dcterms: <http://purl.org/dc/terms/> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX relations: <http://pelagios.github.io/vocab/relations#> 
+PREFIX cnt: <http://www.w3.org/2011/content#> 
+PREFIX pleiades: <http://pleiades.stoa.org/places/> 
 PREFIX amt: <http://academic-meta-tool.xyz/vocab#> 
 
-samian:ic_170917 lado:carries samian:insc_39616.
-samian:ic_170917 lado:dieposition'Unknown'.
-samian:ic_170918 lado:carries samian:insc_39617.
-samian:ic_170918 lado:dieposition'Unknown'.
-samian:ic_170919 lado:carries samian:insc_39639.
-samian:ic_170919 lado:dieposition'Unknown'.
-samian:ic_170920 lado:carries samian:insc_38583.
-samian:ic_170920 lado:dieposition'Central'.
-samian:ic_170921 lado:carries samian:insc_43291.
-samian:ic_170921 lado:dieposition'Central'.
-samian:ic_170922 lado:carries samian:insc_43291.
-samian:ic_170922 lado:dieposition'Central'.
-samian:ic_170923 lado:carries samian:insc_43293.
-samian:ic_170923 lado:dieposition'Central'.
-samian:ic_170924 lado:carries samian:insc_43295.
-samian:ic_170924 lado:dieposition'Central'.
-samian:ic_170925 lado:carries samian:insc_43295.
-samian:ic_170925 lado:dieposition'Central'.
-samian:ic_170926 lado:carries samian:insc_43295.
-samian:ic_170926 lado:dieposition'Central'.
-samian:ic_170927 lado:carries samian:insc_43296.
-samian:ic_170927 lado:dieposition'Central'.
-samian:ic_170928 lado:carries samian:insc_43297.
-samian:ic_170928 lado:dieposition'Central'.
-samian:ic_170929 lado:carries samian:insc_43298.
-samian:ic_170929 lado:dieposition'Central'.
-samian:ic_170930 lado:carries samian:insc_39645.
-samian:ic_170930 lado:dieposition'Unknown'.
-samian:ic_170931 lado:carries samian:insc_43299.
-samian:ic_170931 lado:dieposition'Central'.
-samian:ic_170932 lado:carries samian:insc_43300.
-samian:ic_170932 lado:dieposition'Central'.
-samian:ic_170933 lado:carries samian:insc_43301.
-samian:ic_170933 lado:dieposition'Central'.
-samian:ic_170934 lado:carries samian:insc_43302.
-samian:ic_170934 lado:dieposition'Central'.
-samian:ic_170935 lado:carries samian:insc_43303.
-samian:ic_170935 lado:dieposition'Central'.
-samian:ic_170936 lado:carries samian:insc_43304.
-samian:ic_170936 lado:dieposition'Central'.
-samian:ic_170937 lado:carries samian:insc_43308.
-samian:ic_170937 lado:dieposition'Central'.
-samian:ic_170938 lado:carries samian:insc_43309.
-samian:ic_170938 lado:dieposition'Central'.
-samian:ic_170939 lado:carries samian:insc_43310.
-samian:ic_170939 lado:dieposition'Central'.
-samian:ic_170940 lado:carries samian:insc_43311.
-samian:ic_170940 lado:dieposition'Central'.
-samian:ic_170941 lado:carries samian:insc_43312.
-samian:ic_170941 lado:dieposition'Central'.
 samian:ic_170942 lado:carries samian:insc_43313.
 samian:ic_170942 lado:dieposition'Central'.
 samian:ic_170944 lado:carries samian:insc_43314.
@@ -70131,3 +70090,21 @@ samian:ic_208817 lado:carries samian:insc_9893.
 samian:ic_208817 lado:dieposition'Base inside'.
 samian:ic_208818 lado:carries samian:insc_20048.
 samian:ic_208818 lado:dieposition'Base inside'.
+samian:ic_208819 lado:carries samian:insc_9022.
+samian:ic_208819 lado:dieposition'Base inside'.
+samian:ic_208820 lado:carries samian:insc_8527.
+samian:ic_208820 lado:dieposition'Intradecorativ'.
+samian:ic_208821 lado:carries samian:insc_2975.
+samian:ic_208821 lado:dieposition'Intradecorativ'.
+samian:ic_208822 lado:carries samian:insc_3378.
+samian:ic_208822 lado:dieposition'Base inside'.
+samian:ic_208823 lado:carries samian:insc_15740.
+samian:ic_208823 lado:dieposition'Base inside'.
+samian:ic_208824 lado:carries samian:insc_17921.
+samian:ic_208824 lado:dieposition'Base inside'.
+samian:ic_208825 lado:carries samian:insc_34527.
+samian:ic_208825 lado:dieposition'Base inside'.
+samian:ic_208826 lado:carries samian:insc_49256.
+samian:ic_208826 lado:dieposition'Base inside'.
+samian:ic_208827 lado:carries samian:insc_1109.
+samian:ic_208827 lado:dieposition'Base inside'.
