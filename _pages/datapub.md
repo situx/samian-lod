@@ -10,4 +10,6 @@ sidebar:
 
 ## Releases
 
--   Linked Open Samian Ware [RGZM/samian-lod: 2020-12-04] DOI: [10.5281/zenodo.4305708](https://doi.org/10.5281/zenodo.4305708)
+-   Linked Open Samian Ware [RGZM/samian-lod] DOI: [10.5281/zenodo.4305708](https://doi.org/10.5281/zenodo.4305708)
+-   Linked Open Samian Ware [RGZM/samian-lod: 2020-12-10] DOI: [10.5281/zenodo.4314355](https://doi.org/10.5281/zenodo.4314355)
+-   Linked Open Samian Ware [RGZM/samian-lod: 2020-12-04] DOI: [10.5281/zenodo.4305709](https://doi.org/10.5281/zenodo.4305709)
