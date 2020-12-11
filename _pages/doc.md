@@ -17,10 +17,10 @@ sidebar:
 {% include figure image_path="/assets/images/Samian_Workflow.png" %}
 
 The Data used for the Linked Open Samian Ware-Project stems from multiple resources (e.g. Corpus Vasorum Arretinorum, User Entries of the Samian Research-Community), resulting in a partly normalised database.
-To counter this issue we included several steps from the original Samian Research Database to our finished LOD result.
+To deal this issue we included several steps from the original Samian Research Database to our finished LOD result.
 Several steps (especially the cfm-scripts) were necessary in order to normalise our source data and transform it into RDF:
 
-**curate** entries in the Samian Research Database, stored in a PostgreSQL database
+**curate** entries in the Samian Research Database (PostgreSQL)
 
 **create** database views from the original database tables via ColdFusion/SQL
 
@@ -39,7 +39,7 @@ Several steps (especially the cfm-scripts) were necessary in order to normalise 
 ### Prefixes
 
 Linked Open Samian Ware features several preestablished prefixes as well as our own prefix *lado* and *samian*.
-Uses are demonstrated in the Maps and examples below.
+Uses are demonstrated in the maps and examples below.
 
 | Prefix        | Value                                         |
 | ------------- | --------------------------------------------- |
@@ -147,8 +147,8 @@ _Output_
 
 **Example Query - Inscription**
 
-_-> Inscriptions with a reading stemming from a die impression and the actor which is mentioned in it_
 
+_-> Inscriptions with a reading stemming from a die impression and the actor which is mentioned in it:_
 <pre>
   <code>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -165,8 +165,7 @@ SELECT *  WHERE {
   </code>
 </pre>
 
-_Output_
-
+_Output:_
 | **Insc**          | **Reading** | **Actor**         | **Name**                          |
 | ----------------- | ----------- | ----------------- | --------------------------------- |
 | samian:insc_43034 | "DIOMEDES"  | samian:ac_7010018 | "(M.) (Perennius) (Tigranus) (4)" |
@@ -174,8 +173,8 @@ _Output_
 | samian:insc_43415 | "PRIMVS"    | samian:ac_7009402 | "Primus (1)"                      |
 | ...               | ...         | ...               | ...                               |
 
-_-> InformationCarriers, their inscriptions and makingtypes_
 
+_-> InformationCarriers, their inscriptions and makingtypes:_
 <pre>
   <code>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -193,8 +192,7 @@ LIMIT 100
   </code>
 </pre>
 
-_Output_
-
+_Output:_
 | **item**         | **info_label**                      | **inscription** | **inscriptionmakingtype** | **die**  |
 | ---------------- | ----------------------------------- | --------------- | ------------------------- | -------- |
 | samian:ic_14040  | "redslipvessel formtype 27"@en      | samian:insc_1   | samian:mt_1               | lado:Die |
@@ -210,8 +208,7 @@ _Output_
 
 **Example Query - Actor**
 
-_-> 100 Random ActorEntities and their associated Production Centre and Status_
-
+_-> 100 Random ActorEntities and their associated Production Centre and Status:_
 <pre>
   <code>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -229,8 +226,7 @@ LIMIT 100
   </code>
 </pre>
 
-_Output_
-
+_Output:_
 | **actor_ent**  | **label**          | **status**             | **worksAt**           | **loc_label** |
 | -------------- | ------------------ | ---------------------- | --------------------- | ------------- |
 | samian:ae_564  | "Arvernicus ii"@en | lado:IndependentPotter | samian:loc_pc_2000048 | "Sinzig"@en   |
@@ -238,8 +234,8 @@ _Output_
 | samian:ae_1541 | "Arvernicus ii"@en | lado:IndependentPotter | samian:loc_pc_2000048 | "Sinzig"@en   |
 | ...            | ...                | ...                    | ...                   | ...           |
 
-_-> ChiefPotters who interact with DependentPotters_
 
+_-> ChiefPotters who interact with DependentPotters:_
 <pre>
   <code>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -258,8 +254,7 @@ SELECT ?chief ?chief_label ?dependent ?dependent_label  WHERE {
   </code>
 </pre>
 
-_Output_
-
+_Output:_
 | **chief**       | **chief_label**               | **dependent**    | **dependent_label** |
 | --------------- | ----------------------------- | ---------------- | ------------------- |
 | samian:ae_10348 | "Vibius Iucun(dus) Vibius"@en | samian:ae_136996 | "IVCVN(DVS)"@en     |
@@ -275,8 +270,7 @@ _Output_
 
 **Example Query - Location**
 
-_-> Kilnregion, Workers & their Status of the Productioncentre "La Graufesenque"_
-
+_-> Kilnregion, Workers & their Status of the Productioncentre "La Graufesenque:"_
 <pre>
   <code>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -296,8 +290,7 @@ SELECT ?loc_label ?kr_label ?name ?status WHERE {
   </code>
 </pre>
 
-_Output_
-
+_Output:_
 | **loc_label**        | **kr_label**       | **name**                | **status**             |
 | -------------------- | ------------------ | ----------------------- | ---------------------- |
 | "La Graufesenque"@en | "South Gaulish"@en | "ABC (or Abc- or ABG-)" | lado:IndependentPotter |
@@ -313,8 +306,7 @@ _Output_
 
 **Example Query - Potform**
 
-_-> Potforms and their labels with tradition "Gaulish"_
-
+_-> Potforms and their labels with tradition "Gaulish:"_
 <pre>
   <code>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -330,7 +322,6 @@ SELECT ?item ?tradition ?label WHERE {
 </pre>
 
 _Output_
-
 | **Item**     | **Tradition** | **Label** |
 | ------------ | ------------- | --------- |
 | samian:pf_1  | lado:Gaulish  | "15"      |
@@ -389,12 +380,10 @@ SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
 </pre>
 
 _Output:_
-
 | **subject**    | **subjectLabel**      | **predicateLabel**  | **objectLabel**  | **weight** |
 | -------------- | --------------------- | ------------------- | ---------------- | ---------- |
 | samian:ae_5889 | "Quietus (Quetus)"@en | "works at place"@en | "Kräherwald"@en  | 1          |
 | samian:ae_5889 | "Quietus (Quetus)"@en | "works at place"@en | "Rheinzabern"@en | 1          |
-
 _-> Quietus worked at Kräherwald AND Rheinzabern, so the weight results in 1_
 
 ***
@@ -406,7 +395,7 @@ and the productioncentre **Rheinzabern (loc_pc_2000047)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pc_example.png" %}
 
-_Example Query: Filter all weights for the Kilnsites of Information Carrier 118117_
+_Example Query: Filter all weights for the Kilnsites of Information Carrier 118117:_
 The String containing the necessary data reads as follows "Kräherwald and Rheinzabern"
 
 <pre>
@@ -434,12 +423,10 @@ SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
 </pre>
 
 _Output:_
-
 | **subject**      | **subjectLabel**                                 | **predicateLabel** | **objectLabel**  | **weight** |
 | ---------------- | ------------------------------------------------ | ------------------ | ---------------- | ---------- |
 | samian:ic_118117 | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "has kilnsite"@en  | "Kräherwald"@en  | 1          |
 | samian:ic_118117 | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "has kilnsite"@en  | "Rheinzabern"@en | 1          |
-
 _-> The Informationcarrier's Productioncentre has been attributed to Kräherwald AND Rheinzabern, so the weight results in 1_
 
 ***
@@ -451,7 +438,7 @@ and the potform **18 (pf_9)**:
 
 {% include figure image_path="/assets/images/Samian_amt_model_ic_pf_example.png" %}
 
-_Example Query: Filter all weights for the potforms of Information Carrier 118117_
+_Example Query: Filter all weights for the potforms of Information Carrier 118117:_
 The String containing the necessary data reads as follows "15/17 or 18 or 18/31"
 
 <pre>
@@ -479,13 +466,11 @@ SELECT ?subject ?subjectLabel ?predicateLabel ?objectLabel ?weight WHERE {
 </pre>
 
 _Output:_
-
 | **subject**      | **subjectLabel**                                 | **predicateLabel**  | **objectLabel** | **weight**  |
 | ---------------- | ------------------------------------------------ | ------------------- | --------------- | ----------- |
 | samian:ic_118117 | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "represented by"@en | "15/17"         | 0.330000013 |
 | samian:ic_118117 | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "represented by"@en | "18"            | 0.330000013 |
 | samian:ic_118117 | "redslipvessel formtype 15/17 or 18 or 18/31"@en | "represented by"@en | "18/31"         | 0.330000013 |
-
 _-> The Informationcarriers either has the potform 15/17, 18 OR 18/31 (vagueness), so each weight results in 0.33_
 
 ***
