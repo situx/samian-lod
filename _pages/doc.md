@@ -620,9 +620,9 @@ Our CSV files are split into the categories *Instances*, containing unique lists
 | productioncentre            | **id**                      | identifier (numeric)                   |
 |                             | **label**                   | identifier (string)                    |
 |                             | **kilnregion**              | productioncentre region                |
-|                             | **lat**                     | latitude                               |
-|                             | **long**                    | longitude                              |
-|                             | **wkt**                     | well-known text format                 |
+|                             | **lat**                     | latitude (geometry)                    |
+|                             | **long**                    | longitude (geometry)                   |
+|                             | **wkt**                     | well-known text format (geometry)      |
 | -------------------------   | -------------------------   | -------------------------              |
 | repositorylocation          | **id**                      | identifier (numeric)                   |
 |                             | **label**                   | identifier (string)                    |
