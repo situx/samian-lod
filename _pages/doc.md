@@ -32,9 +32,8 @@ Several steps (especially the cfm-scripts) were necessary in order to normalise 
 
 **link** our data to the Linked Open Data Cloud, e.g. Pleiades, Wikidata
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 
@@ -63,9 +62,8 @@ Uses are demonstrated in the Maps and examples below.
 | **xml**       | <http://www.w3.org/XML/1998/namespace>        |
 | **xsd**       | <http://www.w3.org/2001/XMLSchema#>           |
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 ### Class Structure
@@ -146,9 +144,8 @@ _Output_
 | samian:ic_55292  | "redslipvessel formtype Unknown"@en | 1          | "Lezoux"@en    |
 | ...              | ...                                 | ...        | ...            |
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 #### Detailed Inscription
@@ -212,9 +209,8 @@ _Output_
 | samian:ic_202856 | "redslipvessel formtype 29"@en      | samian:insc_100 | samian:mt_100             | lado:Die |
 | ...              | ...                                 | ...             | ...                       | ...      |
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 #### Detailed Actor
@@ -280,9 +276,8 @@ _Output_
 | samian:ae_8314  | "L. Umbricius Thyrsus"@en     | samian:ae_214084 | "THYRSVS"@en        |
 | ...             | ...                           | ...              | ...                 |
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 #### Detailed Location
@@ -321,9 +316,8 @@ _Output_
 | "La Graufesenque"@en | "South Gaulish"@en | "Acanus (Acaunus)"      | lado:IndependentPotter |
 | ...                  | ...                | ...                     | ...                    |
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 #### Detailed Potform
@@ -357,9 +351,8 @@ _Output_
 | samian:pf_12 | lado:Gaulish  | "18/31R"  |
 | ...          | ...           | ...       |
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 #### AMT-Model
@@ -419,9 +412,8 @@ _Output:_
 
 _-> Quietus worked at Kräherwald AND Rheinzabern, so the weight results in 1_
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 **Example 2:**
@@ -467,9 +459,8 @@ _Output:_
 
 _-> The Informationcarrier's Productioncentre has been attributed to Kräherwald AND Rheinzabern, so the weight results in 1_
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 **Example 3:**
@@ -516,9 +507,8 @@ _Output:_
 
 _-> The Informationcarriers either has the potform 15/17, 18 OR 18/31 (vagueness), so each weight results in 0.33_
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 ## Provenance Modelling
@@ -527,9 +517,8 @@ _-> The Informationcarriers either has the potform 15/17, 18 OR 18/31 (vagueness
 
 The provenance information for the transformation process is stored using the [PROV-O ontology](https://www.w3.org/TR/prov-o/). Each entity is modelled as item which is derived form the `Samian Research` database, was attributed to the `Python Transformation Script` which acted on behalf of Research Engineers (RGZM), and was generated by an `Algorithm Activity` (associated with the `Python Transformation Script`) with a defined start and ending point.
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 ## CSV-Documentation
@@ -661,9 +650,8 @@ Our CSV files are split into the categories *Instances*, containing unique lists
 | repositorylocation          | **id**                      | identifier (numeric)                   |
 |                             | **label**                   | identifier (string)                    |
 
-[//]: #spacer
 <p align="center">
-  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png" alt="SPACER"/>
 </p>
 
 ### Semantic Relations
