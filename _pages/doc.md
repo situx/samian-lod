@@ -519,31 +519,31 @@ Our CSV files are split into the categories *Instances*, containing unique lists
 |                             | **name**                    | name of the potter                     |
 |                             | **praenomen**               | praenomen of the potter                |
 |                             | **cognomen**                | cognomen of the potter                 |
-|                             | **slave**                   | name of associated dependent potter(s) |
+|                             | **dependent**               | name of associated dependent potter(s) |
 |                             | **gentilicium**             | family name (gentilicium)              |
 |                             | **partner**                 | name of associated partner potter(s)   |
-|                             | **kilnsite**                | associated production centre(s)        |
+|                             | **kilnsite**                | related production centre(s)           |
 | -------------------------   | -------------------------   | -------------------------              |
 | cooperationandchiefpotter   | **id**                      | identifier (numeric)                   |
 |                             | **name**                    | name of the potter                     |
 |                             | **praenomen**               | praenomen of the potter                |
 |                             | **cognomen**                | cognomen of the potter                 |
-|                             | **slave**                   | name of associated dependent potter(s) |
+|                             | **dependent**               | name of associated dependent potter(s) |
 |                             | **gentilicium**             | family name (gentilicium)              |
 |                             | **partner**                 | name of associated partner potter(s)   |
-|                             | **kilnsite**                | associated production centre(s)        |
+|                             | **kilnsite**                | related production centre(s)           |
 | -------------------------   | -------------------------   | -------------------------              |
 | cooperationpotter           | **id**                      | identifier (numeric)                   |
 |                             | **pottername**              | name of the potter                     |
 |                             | **praenomen**               | praenomen of the potter                |
 |                             | **cognomen**                | cognomen of the potter                 |
-|                             | **slave**                   | name of associated dependent potter(s) |
+|                             | **dependent**               | name of associated dependent potter(s) |
 |                             | **gentilicium**             | family name (gentilicium)              |
 |                             | **partner**                 | name of associated partner potter(s)   |
-|                             | **kilnsite**                | associated production centre(s)        |
+|                             | **kilnsite**                | related production centre(s)           |
 | -------------------------   | -------------------------   | -------------------------              |
 | dependentpotter             | **id**                      | identifier (numeric)                   |
-|                             | **slave**                   | name of the dependent potter           |
+|                             | **name**                    | name of the dependent potter           |
 | -------------------------   | -------------------------   | -------------------------              |
 | discoverysite               | **id**                      | identifier (numeric)                   |
 |                             | **label**                   | identifier (string)                    |
@@ -559,29 +559,29 @@ Our CSV files are split into the categories *Instances*, containing unique lists
 |                             | **pottername**              | name of the potter                     |
 |                             | **praenomen**               | praenomen of the potter                |
 |                             | **cognomen**                | cognomen of the potter                 |
-|                             | **slave**                   | name of associated dependent potter(s) |
+|                             | **dependent**               | name of associated dependent potter(s) |
 |                             | **gentilicium**             | family name (gentilicium)              |
 |                             | **partner**                 | name of associated partner potter(s)   |
-|                             | **kilnsite**                | associated production centre(s)        |
+|                             | **kilnsite**                | related production centre(s)           |
 | -------------------------   | -------------------------   | -------------------------              |
 | informationcarrier          | **id**                      | identifier (numeric)                   |
 |                             | **label**                   | identifier (string)                    |
 |                             | **shapes**                  | formtype (int)                         |
-|                             | **number**                  | number of pieces                       |
-|                             | **kilnsite**                | associated production centre(s)        |
+|                             | **number**                  | number of items                        |
+|                             | **kilnsite**                | related production centre(s)           |
 |                             | **pottername**              | name of the potter                     |
 |                             | **die**                     | die stamp or stylus                    |
 |                             | **site**                    | discoverysite of the object(s)         |
 |                             | **repositorysite**          | repositorysite of the object(s)        |
 | -------------------------   | -------------------------   | -------------------------              |
 | inscriptiondie              | **id**                      | identifier (numeric)                   |
-|                             | **reading**                 | reading on the object(s)               |
-|                             | **simplereading**           | simplified reading on the object(s)    |
+|                             | **reading**                 | reading of the inscription             |
+|                             | **simplereading**           | simplified reading of the inscription  |
 |                             | **direction**               | reading direction of the inscription   |
 | -------------------------   | -------------------------   | -------------------------              |
 | inscriptiongraffito         | **id**                      | identifier (numeric)                   |
-|                             | **reading**                 | reading on the object(s)               |
-|                             | **simplereading**           | simplified reading on the object(s)    |
+|                             | **reading**                 | reading of the inscription             |
+|                             | **simplereading**           | simplified reading of the inscription  |
 |                             | **direction**               | reading direction of the inscription   |
 | -------------------------   | -------------------------   | -------------------------              |
 | inscriptionmakingtypedie    | **id**                      | identifier (numeric)                   |
@@ -609,17 +609,17 @@ Our CSV files are split into the categories *Instances*, containing unique lists
 |                             | **label**                   | identifier (string)                    |
 |                             | **image**                   | image of potform                       |
 |                             | **genericform**             | generic potform label                  |
-|                             | **tradition**               | tradition gaulish or italian           |
+|                             | **tradition**               | pottery tradition                      |
 | -------------------------   | -------------------------   | -------------------------              |
 | potformitalian              | **id**                      | identifier (numeric)                   |
 |                             | **label**                   | identifier (string)                    |
 |                             | **image**                   | image of potform                       |
 |                             | **genericform**             | generic potform label                  |
-|                             | **tradition**               | tradition gaulish or italian           |
+|                             | **tradition**               | pottery tradition                      |
 | -------------------------   | -------------------------   | -------------------------              |
 | productioncentre            | **id**                      | identifier (numeric)                   |
 |                             | **label**                   | identifier (string)                    |
-|                             | **kilnregion**              | Region of productioncentre             |
+|                             | **kilnregion**              | productioncentre region                |
 |                             | **lat**                     | latitude                               |
 |                             | **long**                    | longitude                              |
 |                             | **wkt**                     | well-known text format                 |
