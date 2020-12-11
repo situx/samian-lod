@@ -73,6 +73,12 @@ The ontology represents a graph model of the original relational database. Vague
 Classes (white boxes) are related to each other through predicates (arrows).
 Checkered lines present abstract relations to type classes (yellow and grey) as well as AMT-relations, which belong to their superclass but have been highlighted for visibility.
 
+***
+<p>
+    <center><img src="https://github.com/RGZM/samian-lod/raw/main/assets/images/spacer.png" style="height:24px;"></center>
+</p>
+***
+
 #### Detailed InformationCarrier
 
 {% include figure image_path="/assets/images/SamianLod_map_InformationCarrier.png" %}
