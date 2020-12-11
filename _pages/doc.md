@@ -34,7 +34,7 @@ Several steps (especially the cfm-scripts) were necessary in order to normalise 
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="/assets/images/SamianLod_map_InformationCarrier.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 
@@ -65,7 +65,7 @@ Uses are demonstrated in the Maps and examples below.
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="/assets/images/SamianLod_map_InformationCarrier.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 ### Class Structure
@@ -148,7 +148,7 @@ _Output_
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="/assets/images/SamianLod_map_InformationCarrier.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 #### Detailed Inscription
@@ -214,7 +214,7 @@ _Output_
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 #### Detailed Actor
@@ -282,7 +282,7 @@ _Output_
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 #### Detailed Location
@@ -323,7 +323,7 @@ _Output_
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 #### Detailed Potform
@@ -359,7 +359,7 @@ _Output_
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 #### AMT-Model
@@ -421,7 +421,7 @@ _-> Quietus worked at Kräherwald AND Rheinzabern, so the weight results in 1_
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 **Example 2:**
@@ -469,7 +469,7 @@ _-> The Informationcarrier's Productioncentre has been attributed to Kräherwald
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 **Example 3:**
@@ -518,7 +518,7 @@ _-> The Informationcarriers either has the potform 15/17, 18 OR 18/31 (vagueness
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 ## Provenance Modelling
@@ -529,7 +529,7 @@ The provenance information for the transformation process is stored using the [P
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 ## CSV-Documentation
@@ -663,7 +663,7 @@ Our CSV files are split into the categories *Instances*, containing unique lists
 
 [//]: #spacer
 <p align="center">
-  <img width="24" height="24" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
+  <img width="100" height="100" src="https://github.com/RGZM/samian-lod/blob/main/assets/images/spacer.png">
 </p>
 
 ### Semantic Relations
