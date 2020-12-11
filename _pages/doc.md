@@ -61,7 +61,7 @@ Uses are demonstrated in the maps and examples below.
 
 {% include figure image_path="/assets/images/SamianLod_map.png" %}
 
-The ontology represents a graph model of the original relational database which includes vague relations (amt).
+The ontology represents a graph model of the original relational database. Vague relations are included and marked as _amt_.
 Classes (white boxes) are related to each other through predicates (arrows).
 Checkered lines present abstract relations to type classes (yellow and grey) as well as AMT-relations, which belong to their superclass but have been highlighted for visibility.
 
@@ -342,7 +342,7 @@ _Output_
 {% include figure image_path="/assets/images/Samian_amt_model.png" %}
 
 The data contains strings with vague expressions.
-We model this vagueness using the Academic Meta Tool.
+This vagueness is modelled using the Academic Meta Tool.
 The AMT-Model depends on the keywords **AND** (_AMT-weight = 1_) and **OR** (_AMT-weight/2_).
 Attributions for e.g. productionscenters can result in more than one place, which has to be recorded accordingly.
 This vagueness has been taken into consideration with the Linked Open Samian Ware Project.
