@@ -12,8 +12,7 @@ sidebar:
 
 Discovery Sites are linked to `Pleiades` using the Open Annotation data model according to the [Pelagios Cookbook](<according to https://github.com/pelagios/pelagios-cookbook/wiki/Joining-Pelagios#minimum-example>).
 
-{% include figure image_path="/assets/images/pleiades_example.png" %}
-\_example of a Pleiades annotation_
+{% include figure image_path="/assets/images/pleiades_example.png" description="example of a Pleiades annotation" %}
 
 **Example Query - InformationCarrier**
 
@@ -75,5 +74,4 @@ Via the Wikidata SPARQL Query interface we may query our matching resources:
 -   kiln regions <https://w.wiki/owZ>
 -   all geospatial matches: <https://w.wiki/qxX>
 
-{% include figure image_path="/assets/images/wikidata_matches.png" %}
-\_map of geospatial data which matches between Linked Open Samian Ware and Wikidata_
+{% include figure image_path="/assets/images/wikidata_matches.png" description="map of geospatial data which matches between Linked Open Samian Ware and Wikidata" %}
