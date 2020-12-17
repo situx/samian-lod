@@ -41,9 +41,9 @@ _Output:_
 
 ## Wikidata
 
-Place data (discovery sites, kiln regions and production centres) are integrated into `Wikidata` using OpenRefine and Quick Statements. The mapping schemes in Open Refine can be seen at [ds_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/ds_schema.json), [kr_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/kr_schema.json) and [pc_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/pc_schema.json).
+Place data (discovery sites, kiln regions and production centres) are integrated into `Wikidata` using `OpenRefine` and `Quick Statements`. The mapping schemes in Open Refine can be seen at [ds_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/ds_schema.json), [kr_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/kr_schema.json) and [pc_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/pc_schema.json).
 
-For each category we created a specific identifier in Wikidata [Samian Ware Discovery Site](https://www.wikidata.org/wiki/Q102202066), [Samian Ware Productioncentre](https://www.wikidata.org/wiki/Q102202026) and [Samian Ware Kilnregion](https://www.wikidata.org/wiki/Q102201947). All entries are instances (P31) of a category and part of (P361) of [Samian Research](https://www.wikidata.org/wiki/Q90412636). In Wikidata we used the exact match (P2888) property to link to the Linked Open Samian Ware resource. In the Samian LOD dataset we used our `lado:exactMatch` property to create a bidirectional link.
+For each category we created a specific identifier in Wikidata [Samian Ware Discovery Site](https://www.wikidata.org/wiki/Q102202066), [Samian Ware Productioncentre](https://www.wikidata.org/wiki/Q102202026) and [Samian Ware Kilnregion](https://www.wikidata.org/wiki/Q102201947). All entries are instances (P31) of a category and part of (P361) [Samian Research](https://www.wikidata.org/wiki/Q90412636). In Wikidata we used the exact match (P2888) property to link to the Linked Open Samian Ware resource. In the Samian LOD dataset we used our `lado:exactMatch` property to create a bidirectional link.
 
 _-> 3 Random Wikidata matches_
 
