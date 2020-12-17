@@ -43,4 +43,4 @@ _Output:_
 
 ## Wikidata
 
-...
+Place data (discovery sites, kiln regions and production centres) are integrated into `Wikidata` using OpenRefine and Quick Statements. The mapping schemes in Open Refine can be seen at [ds_schema.json](<>), [kr_schema.json](<>) and [pc_schema.json](<>).
