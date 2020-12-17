@@ -1,6 +1,8 @@
 main:
   - title: "Documentation"
     url: /doc/
+  - title: "Linking"
+    url: /linking/
   - title: "Related Literature"
     url: /lit/
   - title: "Data Publications"
@@ -70,3 +72,11 @@ barDatapub:
     children:
       - title: "Releases"
         url: /datapub/#releases
+
+barLinking:
+  - title: "External Linking"
+    children:
+      - title: "Pleiades"
+        url: /linking/#pleiades
+      - title: "Wikidata"
+        url: /linking/#wikidata
