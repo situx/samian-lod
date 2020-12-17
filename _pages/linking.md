@@ -12,9 +12,7 @@ sidebar:
 
 Discovery Sites are linked to `Pleiades` using the Open Annotation data model according to the [Pelagios Cookbook](<according to https://github.com/pelagios/pelagios-cookbook/wiki/Joining-Pelagios#minimum-example>).
 
-<p>
-    <center><img src="https://github.com/RGZM/samian-lod/raw/main/assets/images/pleiades_example.png" style="height:250px;"></center>
-</p>
+{% include figure image_path="/assets/images/pleiades_example.png" %}
 
 **Example Query - InformationCarrier**
 
