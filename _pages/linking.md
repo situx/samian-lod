@@ -14,6 +14,8 @@ Discovery Sites are linked to `Pleiades` using the Open Annotation data model ac
 
 {% include figure image_path="/assets/images/pleiades_example.png" %}
 
+_example of a Pleiades annotation_
+
 **Example Query - InformationCarrier**
 
 _-> 3 Random Pleiades Annotations_
@@ -41,4 +43,39 @@ _Output:_
 
 ## Wikidata
 
-Place data (discovery sites, kiln regions and production centres) are integrated into `Wikidata` using OpenRefine and Quick Statements. The mapping schemes in Open Refine can be seen at [ds_schema.json](<>), [kr_schema.json](<>) and [pc_schema.json](<>).
+Place data (discovery sites, kiln regions and production centres) are integrated into `Wikidata` using OpenRefine and Quick Statements. The mapping schemes in Open Refine can be seen at [ds_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/ds_schema.json), [kr_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/kr_schema.json) and [pc_schema.json](https://github.com/RGZM/samian-lod/blob/main/wikidata/pc_schema.json).
+
+For each category we created a specific identifier in Wikidata [Samian Ware Discovery Site](https://www.wikidata.org/wiki/Q102202066), [Samian Ware Productioncentre](https://www.wikidata.org/wiki/Q102202026) and [Samian Ware Kilnregion](https://www.wikidata.org/wiki/Q102201947). All entries are instances (P31) of a category and part of (P361) of [Samian Research](https://www.wikidata.org/wiki/Q90412636). In Wikidata we used the exact match (P2888) property to link to the Linked Open Samian Ware resource. In the Samian LOD dataset we used our `lado:exactMatch` property to create a bidirectional link.
+
+_-> 3 Random Wikidata matches_
+
+<pre>
+  <code>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lado: <http://archaeology.link/ontology#>
+
+SELECT DISTINCT ?node ?nodeLabel ?wikidata WHERE {
+?node lado:exactMatch ?wikidata.
+?node rdfs:label ?nodeLabel.
+} LIMIT 3
+  </code>
+</pre>
+
+_Output:_
+
+| **node**              | **nodeLabel**         | **wikidata**        |
+| --------------------- | --------------------- | ------------------- |
+| samian:loc_ds_1000003 | "Baumes-de-Venise"@en | wikidata:Q103145968 |
+| samian:loc_ds_1000004 | "Brigstock"@en        | wikidata:Q103155047 |
+| samian:loc_ds_1000005 | "Highworth"@en        | wikidata:Q103163787 |
+
+Via the Wikidata SPARQL Query interface we may query our matching resources:
+
+-   discovery sites: <https://w.wiki/owf>
+-   production centres: <https://w.wiki/owe>
+-   kiln regions <https://w.wiki/owZ>
+-   all geospatial matches: <https://w.wiki/qxX>
+
+{% include figure image_path="/assets/images/wikidata_matches.png" %}
+
+_map of geospatial data which matches between Linked Open Samian Ware and Wikidata_
