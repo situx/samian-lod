@@ -10,7 +10,7 @@ CC BY-SA 4.0, via Wikimedia Commons, Samian Reseach, Florian Thiery, Allard Mees
 
 * https://commons.wikimedia.org/wiki/Data:SamianKilnregionArgonne.map
  * https://www.wikidata.org/entity/Q103132300
-* https://commons.wikimedia.org/wiki/
+* https://commons.wikimedia.org/wiki/Data:SamianKilnregionBritish.map
  * https://www.wikidata.org/entity/Q103132304
 * https://commons.wikimedia.org/wiki/Data:SamianKilnregionCentralGaulish.map
  * https://www.wikidata.org/entity/Q103132311
