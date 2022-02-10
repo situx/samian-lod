@@ -71,7 +71,14 @@ Via the Wikidata SPARQL Query interface we may query our matching resources:
 
 -   discovery sites: <https://w.wiki/owf>
 -   production centres: <https://w.wiki/owe>
--   kiln regions <https://w.wiki/owZ>
+-   kiln regions (centroid): <https://w.wiki/owZ>
+-   kiln regions (geoshape): <https://w.wiki/4pDk>
 -   all geospatial matches: <https://w.wiki/qxX>
 
 {% include figure image_path="/assets/images/wikidata_matches.png" description="map of geospatial data which matches between Linked Open Samian Ware and Wikidata" %}
+
+Map of geospatial data which matches between Linked Open Samian Ware and Wikidata.
+
+{% include figure image_path="/assets/images/wikidata_kilnregions.png" description="map of Wikidata kilnregions as geoshape" %}
+
+Map of Wikidata kilnregions as geoshape.
