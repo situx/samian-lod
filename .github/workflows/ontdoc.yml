@@ -35,7 +35,9 @@ jobs:
         run: |
              sudo apt-get install python3 python3-pip ruby -y   
              pip3 install pylode
-             mkdir docs
+             sudo gem install bundler jekyll
+             sudo bundle install
+             mkdir docs           
              bundle exec jekyll build -d docs
              cd docs
              python3 -m pylode -o ontology.html ../ontology/ontology.ttl
