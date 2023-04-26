@@ -19,4 +19,24 @@ jobs:
           createVOWL: true
           preferredlang: en
           ghpages: true
-          ghpagesfolder: /
+          ghpagesfolder: ontdoc/
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎 Check out main
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 1
+           sudo apt-get install python3 python3-pip -y   
+      - name: Create Ontology Documentation 🔧
+        run: |
+             sudo apt-get install python3 python3-pip -y   
+             pip3 install pylode
+             mkdir docs
+             cd docs
+             python3 -m pylode -o ontology.html ../ontology/ontology.ttl
+      - name: 🧪 Build and deploy
+        uses: victoriadrake/jekyll-cd@master
