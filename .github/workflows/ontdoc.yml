@@ -10,13 +10,39 @@ jobs:
     with: 
           rdffilepath: data/loc_discoverysite_1.ttl data/loc_kilnregion_1.ttl data/loc_productioncentre_1.ttl data/loc_repositorylocation_1.ttl data/placeasaconcept_1.ttl
           docpath: docs/
-          prefixns: http://data.archaeology.link/data/ars/
+          prefixns: http://data.archaeology.link/data/samian/
           prefixnsshort: ars
           indexpages: true
           metadatatable: true
-          createcollections: false
+          createcollections: true
           createnonNSPages: true
           createVOWL: true
           preferredlang: en
           ghpages: true
           ghpagesfolder: ontdoc/
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎 Check out main
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 1
+           sudo apt-get install python3 python3-pip -y   
+      - name: Create Ontology Documentation 🔧
+        run: |
+             sudo apt-get install python3 python3-pip ruby -y   
+             pip3 install pylode
+             sudo gem install bundler jekyll
+             sudo bundle install
+             mkdir docs           
+             bundle exec jekyll build -d docs
+             cd docs
+             python3 -m pylode -o ontology.html ../ontology/ontology.ttl
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+             BRANCH: gh-pages
+             FOLDER: docs/
