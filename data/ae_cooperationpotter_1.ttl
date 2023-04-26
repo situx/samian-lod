@@ -8,6 +8,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> 
 PREFIX dc: <http://purl.org/dc/elements/1.1/> 
 PREFIX sf: <http://www.opengis.net/ont/sf#> 
+PREFIX prov: <http://www.w3.org/ns/prov-o/>
 PREFIX lado: <http://archaeology.link/ontology#> 
 PREFIX samian: <http://data.archaeology.link/data/samian/> 
 PREFIX wd: <http://www.wikidata.org/entity/> 
