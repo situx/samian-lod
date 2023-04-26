@@ -1,20 +1,20 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://academic-meta-tool.xyz/vocab#> .
-@prefix ns2: <http://archaeology.link/ontology#> .
-@prefix ns3: <http://www.w3.org/ns/prov-o/> .
+@prefix ns1: <http://www.w3.org/ns/prov-o/> .
+@prefix ns2: <http://academic-meta-tool.xyz/vocab#> .
+@prefix ns3: <http://archaeology.link/ontology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://data.archaeology.link/data/samian/loc_pc_2000042> a ns2:Location,
-        ns2:ProductionCentre ;
+<http://data.archaeology.link/data/samian/loc_pc_2000042> a ns3:Location,
+        ns3:ProductionCentre ;
     rdfs:label "Les Allieux"@en ;
-    ns1:instanceOf ns2:Location ;
-    ns2:exactMatch <http://www.wikidata.org/entity/Q103135673> ;
-    ns2:hasType ns2:ProductionCentre ;
+    ns2:instanceOf ns3:Location ;
+    ns3:exactMatch <http://www.wikidata.org/entity/Q103135673> ;
+    ns3:hasType ns3:ProductionCentre ;
     dc:identifier 2000042 ;
     geo:hasGeometry <http://data.archaeology.link/data/samian/loc_pc_2000042_geom> ;
-    ns3:wasAttributedTo <http://data.archaeology.link/data/samian/ImportPythonScript_Samian> ;
-    ns3:wasDerivedFrom <http://www.wikidata.org/entity/Q90412636> ;
-    ns3:wasGeneratedBy <http://data.archaeology.link/data/samian/activity_loc_pc_2000042> .
+    ns1:wasAttributedTo <http://data.archaeology.link/data/samian/ImportPythonScript_Samian> ;
+    ns1:wasDerivedFrom <http://www.wikidata.org/entity/Q90412636> ;
+    ns1:wasGeneratedBy <http://data.archaeology.link/data/samian/activity_loc_pc_2000042> .
 
