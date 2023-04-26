@@ -22,6 +22,7 @@ github_username: rgzm
 minimal_mistakes_skin: default
 search: false
 repository: samian-lod
+baseurl: samian-lod/
 
 # Build settings
 markdown: kramdown
