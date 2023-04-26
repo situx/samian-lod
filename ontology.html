@@ -5,14 +5,14 @@
     <style>
         #pylode {
             position: fixed;
-            top: 130px;
-            left: -80px;
+            top: 205px;
+            left: -150px;
             font-size: small;
             transform: rotate(-90deg);
             color: grey;
         }
         #pylode a {
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: bold;
             text-decoration: none;
             color: #005A9C;
@@ -28,6 +28,12 @@
         }
         #pylode #version {
             font-size: 1.0em;
+        }
+
+        #profile {
+            font-style: italic;
+            font-size: 1.25em;
+            color: darkred!important;
         }
 
         .cardinality {
@@ -136,7 +142,7 @@
             background-position: top left;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            text-align: justify;
+            text-align: left;
         }
 
         section {
@@ -260,13 +266,16 @@
 code{
     word-wrap: break-word;
   }
-  table {
+table {
     table-layout: fixed;
     width: 100%;
-  }
-  td {
+}
+td {
     word-wrap: break-word;
-  }
+}
+#legend table.entity {
+    width: 25%;
+}
 	</style>
     <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png">
     <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==" rel="icon" sizes="32x32" type="image/png">
@@ -386,7 +395,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2000/01/rdf-schema#Class">rdfs:Class</a>
+                  <a href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -416,7 +425,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">rdf:Property</a>
+                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -442,13 +451,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">rdf:Property</a>
+                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.w3.org/2000/01/rdf-schema#Class">rdfs:Class</a>
+                      <a href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -480,7 +489,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -493,37 +502,37 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasEntity">ontology:hasEntity</a>
+                      <a href="#hasEntity">has entity</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#cognomen">ontology:cognomen</a>
+                      <a href="#cognomen">Cognomen</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#gentilicium">ontology:gentilicium</a>
+                      <a href="#gentilicium">Gentilicium</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#name">ontology:name</a>
+                      <a href="#name">Name</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#praenomen">ontology:praenomen</a>
+                      <a href="#praenomen">Praenomen</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#worksAtPlaceString">ontology:worksAtPlaceString</a>
+                      <a href="#worksAtPlaceString">arbeitet in Produktionszentrum (String)</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -536,7 +545,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#isAbout">ontology:isAbout</a>
+                  <a href="#isAbout">is about</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -547,7 +556,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -577,7 +586,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -590,19 +599,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasStatus">ontology:hasStatus</a>
+                      <a href="#hasStatus">has status</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#interactsWith">ontology:interactsWith</a>
+                      <a href="#interactsWith">interacts with</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#worksAtPlace">ontology:worksAtPlace</a>
+                      <a href="#worksAtPlace">arbeitet in</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -617,25 +626,25 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasEntity">ontology:hasEntity</a>
+                      <a href="#hasEntity">has entity</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasStatus">ontology:hasStatus</a>
+                      <a href="#hasStatus">has status</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasWorker">ontology:hasWorker</a>
+                      <a href="#hasWorker">hat Arbeiter</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#interactsWith">ontology:interactsWith</a>
+                      <a href="#interactsWith">interacts with</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -650,49 +659,49 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#ChiefPotter">ontology:ChiefPotter</a>
+                      <a href="#ChiefPotter">Cheftöpfer</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#CooperationPotter">ontology:CooperationPotter</a>
+                      <a href="#CooperationPotter">Cooperation Potter</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#DependentPotter">ontology:DependentPotter</a>
+                      <a href="#DependentPotter">Abhängiger Töpfer</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#IndependentPotter">ontology:IndependentPotter</a>
+                      <a href="#IndependentPotter">Independent Potter</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#KilnFiringPerson">ontology:KilnFiringPerson</a>
+                      <a href="#KilnFiringPerson">Kiln Firing Involved Person</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#MouldMaker">ontology:MouldMaker</a>
+                      <a href="#MouldMaker">Modelhersteller</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#PartnerPotter">ontology:PartnerPotter</a>
+                      <a href="#PartnerPotter">Partner Potter</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#Potmaker">ontology:Potmaker</a>
+                      <a href="#Potmaker">Gefäßhersteller</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -718,7 +727,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -742,7 +751,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -766,7 +775,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -790,7 +799,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Tool">ontology:Tool</a>
+                  <a href="#Tool">Tool</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -814,7 +823,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -886,7 +895,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Tipo</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -897,7 +906,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#generalisedAs">ontology:generalisedAs</a>
+                  <a href="#generalisedAs">generalised as</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -908,7 +917,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Potform">ontology:Potform</a>
+                  <a href="#Potform">Potform</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -932,7 +941,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -956,7 +965,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -986,7 +995,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">crm:E22_Man-Made_Object</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">Künstlicher Gegenstand</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -999,37 +1008,37 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#carries">ontology:carries</a>
+                      <a href="#carries">carries</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#disclosedAt">ontology:disclosedAt</a>
+                      <a href="#disclosedAt">disclosed at</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasKilnsite">ontology:hasKilnsite</a>
+                      <a href="#hasKilnsite">has kilnsite</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#representedBy">ontology:representedBy</a>
+                      <a href="#representedBy">represented by</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasKilnsiteString">ontology:hasKilnsiteString</a>
+                      <a href="#hasKilnsiteString">has kilnsite</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#number">ontology:number</a>
+                      <a href="#number">Anzahl</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -1042,7 +1051,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#isKilnsiteOf">ontology:isKilnsiteOf</a>
+                  <a href="#isKilnsiteOf">is kilnsite of</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1072,7 +1081,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature">crm:E25_Man-Made_Feature</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature">Característica Fabricada</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1085,37 +1094,37 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#isAbout">ontology:isAbout</a>
+                      <a href="#isAbout">is about</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#wasMadeBy">ontology:wasMadeBy</a>
+                      <a href="#wasMadeBy">was made by</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#dieposition">ontology:dieposition</a>
+                      <a href="#dieposition">Die Position</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#reading">ontology:reading</a>
+                      <a href="#reading">Schriftzug</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#readingDirection">ontology:readingDirection</a>
+                      <a href="#readingDirection">Schriftzugrichtung</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#simpleReading">ontology:simpleReading</a>
+                      <a href="#simpleReading">Schriftzug (einfach)</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -1128,7 +1137,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#carries">ontology:carries</a>
+                  <a href="#carries">carries</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1141,13 +1150,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#Dieimpression">ontology:DieImpression</a>
+                      <a href="#Dieimpression">Die impression</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#Graffito">ontology:Graffito</a>
+                      <a href="#Graffito">Graffito</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1179,7 +1188,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">crm:E22_Man-Made_Object</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">Künstlicher Gegenstand</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1192,13 +1201,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#die">ontology:die</a>
+                      <a href="#die">Stempel</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#pottername">ontology:pottername</a>
+                      <a href="#pottername">Töpfername</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -1211,7 +1220,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#wasMadeBy">ontology:wasMadeBy</a>
+                  <a href="#wasMadeBy">was made by</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1222,7 +1231,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Tool">ontology:Tool</a>
+                  <a href="#Tool">Tool</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1270,7 +1279,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1305,7 +1314,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#clusteredAs">ontology:clusteredAs</a>
+                  <a href="#clusteredAs">clustered as</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1362,19 +1371,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#clusteredAs">ontology:clusteredAs</a>
+                      <a href="#clusteredAs">clustered as</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasWorker">ontology:hasWorker</a>
+                      <a href="#hasWorker">hat Arbeiter</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#isKilnsiteOf">ontology:isKilnsiteOf</a>
+                      <a href="#isKilnsiteOf">is kilnsite of</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -1389,19 +1398,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasKilnsite">ontology:hasKilnsite</a>
+                      <a href="#hasKilnsite">has kilnsite</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasLocation">ontology:hasLocation</a>
+                      <a href="#hasLocation">has location</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#worksAtPlace">ontology:worksAtPlace</a>
+                      <a href="#worksAtPlace">arbeitet in</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -1427,7 +1436,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1451,7 +1460,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://xmlns.com/foaf/0.1/Project">foaf:Project</a>
+                  <a href="http://xmlns.com/foaf/0.1/Project">Project</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1475,7 +1484,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1499,7 +1508,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="https://pleiades.stoa.org/places/vocab#Place">pleiades:Place</a>
+                  <a href="https://pleiades.stoa.org/places/vocab#Place">Pleiades Place</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1512,19 +1521,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#hasLocation">ontology:hasLocation</a>
+                      <a href="#hasLocation">has location</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#ancientName">ontology:ancientName</a>
+                      <a href="#ancientName">antiker Ortsname (String)</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#pleiadesID">ontology:pleiadesID</a>
+                      <a href="#pleiadesID">Pleiades ID</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -1537,7 +1546,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#disclosedAt">ontology:disclosedAt</a>
+                  <a href="#disclosedAt">disclosed at</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1550,25 +1559,25 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#DiscoverySite">ontology:DiscoverySite</a>
+                      <a href="#DiscoverySite">Discovery Site</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#Kilnregion">ontology:KilnRegion</a>
+                      <a href="#Kilnregion">Kiln region</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#Location">ontology:Location</a>
+                      <a href="#Location">Location</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#RepositoryLocation">ontology:RepositoryLocation</a>
+                      <a href="#RepositoryLocation">Aufbewahrungsort</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1594,7 +1603,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Genericpotform">ontology:GenericPotform</a>
+                  <a href="#Genericpotform">Generic potform</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1607,13 +1616,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#generalisedAs">ontology:generalisedAs</a>
+                      <a href="#generalisedAs">generalised as</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasImage">ontology:hasImage</a>
+                      <a href="#hasImage">Bild</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -1626,7 +1635,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#representedBy">ontology:representedBy</a>
+                  <a href="#representedBy">represented by</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -1650,7 +1659,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1674,7 +1683,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Kilnregion">ontology:KilnRegion</a>
+                  <a href="#Kilnregion">Kiln region</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1722,7 +1731,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Tool">ontology:Tool</a>
+                  <a href="#Tool">Tool</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1746,7 +1755,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inschrift-Anfertigung">ontology:InscriptionMakingType</a>
+                  <a href="#Inschrift-Anfertigung">Inschrift-Anfertigung</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1759,13 +1768,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#Stempel">ontology:Die</a>
+                      <a href="#Stempel">Stempel</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#Griffel">ontology:Stylus</a>
+                      <a href="#Griffel">Griffel</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1791,7 +1800,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Tipo</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1804,13 +1813,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#Gallisch">ontology:Gaulish</a>
+                      <a href="#Gallisch">Gallisch</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#Italian">ontology:Italian</a>
+                      <a href="#Italian">Italian</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1847,7 +1856,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
+                  <a href="http://www.w3.org/ns/prov#Entity">Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1860,13 +1869,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">crm:E24_Physical_Man-Made_Thing</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">Chose matérielle fabriquée</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1899,7 +1908,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">crm:E24_Physical_Man-Made_Thing</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">Chose matérielle fabriquée</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1912,13 +1921,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#Informationcarrier">ontology:InformationCarrier</a>
+                      <a href="#Informationcarrier">Information carrier</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#Inschrift-Anfertigung">ontology:InscriptionMakingType</a>
+                      <a href="#Inschrift-Anfertigung">Inschrift-Anfertigung</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -1951,7 +1960,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -1964,13 +1973,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">crm:E22_Man-Made_Object</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">Künstlicher Gegenstand</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature">crm:E25_Man-Made_Feature</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature">Característica Fabricada</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2003,7 +2012,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">crm:E24_Physical_Man-Made_Thing</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">Chose matérielle fabriquée</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2014,7 +2023,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2045,7 +2054,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2056,7 +2065,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2089,7 +2098,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2100,7 +2109,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2131,7 +2140,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2142,7 +2151,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#hasType">ontology:hasType</a>
+                  <a href="#hasType">has type</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -2155,7 +2164,7 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#Genericpotform">ontology:GenericPotform</a>
+                      <a href="#Genericpotform">Generic potform</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2187,7 +2196,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2211,7 +2220,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2224,31 +2233,31 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#centroid">ontology:centroid</a>
+                      <a href="#centroid">has centroid</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#clusteredArea">ontology:clusteredArea</a>
+                      <a href="#clusteredArea">has clustered area</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasExactGeometry">ontology:hasExactGeometry</a>
+                      <a href="#hasExactGeometry">has exact geometry</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasPointGeometry">ontology:hasPointGeometry</a>
+                      <a href="#hasPointGeometry">has point geometry</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#locatedAt">ontology:locatedAt</a>
+                      <a href="#locatedAt">is located hat</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -2274,7 +2283,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">Lieu</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2287,19 +2296,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a>
+                      <a href="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/geosparql#asGeoJSON">geosparql:asGeoJSON</a>
+                      <a href="http://www.opengis.net/ont/geosparql#asGeoJSON">als GeoJSON</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/geosparql#asWKT">geosparql:asWKT</a>
+                      <a href="http://www.opengis.net/ont/geosparql#asWKT">als well-known-text</a>
                       <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
                     </span>
                   </li>
@@ -2314,43 +2323,43 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a>
+                      <a href="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>
+                      <a href="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/sf#MultiLineString">sf:MultiLineString</a>
+                      <a href="http://www.opengis.net/ont/sf#MultiLineString">Multi Line</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/sf#MultiPoint">sf:MultiPoint</a>
+                      <a href="http://www.opengis.net/ont/sf#MultiPoint">Mulit Point</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/sf#MultiPolygon">sf:MultiPolygon</a>
+                      <a href="http://www.opengis.net/ont/sf#MultiPolygon">Multi Polygon</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.opengis.net/ont/sf#Point">sf:Point</a>
+                      <a href="http://www.opengis.net/ont/sf#Point">Point</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="https://pleiades.stoa.org/places/vocab#Place">pleiades:Place</a>
+                      <a href="https://pleiades.stoa.org/places/vocab#Place">Pleiades Place</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2376,7 +2385,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2400,7 +2409,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2424,7 +2433,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2448,7 +2457,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2472,7 +2481,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#AcademicMetaToolEntity">ontology:AMT_Entity</a>
+                  <a href="#AcademicMetaToolEntity">Academic Meta Tool Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2483,7 +2492,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://academic-meta-tool.xyz/vocab#Role">vocab:Role</a>
+                  <a href="http://academic-meta-tool.xyz/vocab#Role">Role</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2507,7 +2516,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#AcademicMetaToolEntity">ontology:AMT_Entity</a>
+                  <a href="#AcademicMetaToolEntity">Academic Meta Tool Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2518,7 +2527,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://academic-meta-tool.xyz/vocab#Concept">vocab:Concept</a>
+                  <a href="http://academic-meta-tool.xyz/vocab#Concept">Concept</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2550,7 +2559,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2563,19 +2572,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">Actor</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">Lieu</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                      <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Tipo</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2601,7 +2610,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.wikidata.org/entity/Q1773840">wikidata:Q1773840</a>
+                  <a href="http://www.wikidata.org/entity/Q1773840">Herkunft</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2625,7 +2634,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.wikidata.org/entity/Q1773840">wikidata:Q1773840</a>
+                  <a href="http://www.wikidata.org/entity/Q1773840">Herkunft</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2638,19 +2647,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.w3.org/ns/prov#SoftwareAgent">prov:SoftwareAgent</a>
+                      <a href="http://www.w3.org/ns/prov#SoftwareAgent">Software Agent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</a>
+                      <a href="http://xmlns.com/foaf/0.1/Organization">Organization</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+                      <a href="http://xmlns.com/foaf/0.1/Person">Person</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2676,7 +2685,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">CRM Entity</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2700,7 +2709,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</a>
+                  <a href="http://xmlns.com/foaf/0.1/Organization">Organization</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2724,7 +2733,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+                  <a href="http://xmlns.com/foaf/0.1/Person">Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2748,7 +2757,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
+                  <a href="http://www.w3.org/ns/prov#Agent">Agent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2774,25 +2783,25 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="http://www.w3.org/ns/prov#Activity">prov:Activity</a>
+                      <a href="http://www.w3.org/ns/prov#Activity">Activity</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
+                      <a href="http://www.w3.org/ns/prov#Agent">Agent</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://www.wikidata.org/entity/Q3133368">wikidata:Q3133368</a>
+                      <a href="http://www.wikidata.org/entity/Q3133368">Repository</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="http://xmlns.com/foaf/0.1/Project">foaf:Project</a>
+                      <a href="http://xmlns.com/foaf/0.1/Project">Project</a>
                       <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                     </span>
                   </li>
@@ -2818,7 +2827,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.wikidata.org/entity/Q1773840">wikidata:Q1773840</a>
+                  <a href="http://www.wikidata.org/entity/Q1773840">Herkunft</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2842,7 +2851,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
+                  <a href="http://www.w3.org/ns/prov#Agent">Agent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2853,7 +2862,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#Organization">prov:Organization</a>
+                  <a href="http://www.w3.org/ns/prov#Organization">Organization</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2877,7 +2886,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#Agent">prov:Agent</a>
+                  <a href="http://www.w3.org/ns/prov#Agent">Agent</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2888,7 +2897,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/ns/prov#Person">prov:Person</a>
+                  <a href="http://www.w3.org/ns/prov#Person">Person</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2912,7 +2921,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.wikidata.org/entity/Q1773840">wikidata:Q1773840</a>
+                  <a href="http://www.wikidata.org/entity/Q1773840">Herkunft</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2953,7 +2962,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -2997,7 +3006,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a>
+                  <a href="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3021,7 +3030,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Informationcarrier">ontology:InformationCarrier</a>
+                  <a href="#Informationcarrier">Information carrier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3032,7 +3041,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3056,7 +3065,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#hasPointGeometry">ontology:hasPointGeometry</a>
+                  <a href="#hasPointGeometry">has point geometry</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3067,7 +3076,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>
+                  <a href="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3078,7 +3087,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3102,7 +3111,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#hasExactGeometry">ontology:hasExactGeometry</a>
+                  <a href="#hasExactGeometry">has exact geometry</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3113,7 +3122,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>
+                  <a href="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3124,7 +3133,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3148,7 +3157,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Location">ontology:Location</a>
+                  <a href="#Location">Location</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3159,7 +3168,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Kilnregion">ontology:KilnRegion</a>
+                  <a href="#Kilnregion">Kiln region</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3183,7 +3192,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Informationcarrier">ontology:InformationCarrier</a>
+                  <a href="#Informationcarrier">Information carrier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3218,7 +3227,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.wikidata.org/prop/direct/P2888">ns1:P2888</a>
+                  <a href="http://www.wikidata.org/prop/direct/P2888">exact match</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3229,7 +3238,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3240,7 +3249,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3264,7 +3273,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Potform">ontology:Potform</a>
+                  <a href="#Potform">Potform</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3275,7 +3284,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Genericpotform">ontology:GenericPotform</a>
+                  <a href="#Genericpotform">Generic potform</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3299,7 +3308,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3310,7 +3319,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3334,7 +3343,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3345,7 +3354,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3375,7 +3384,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a>
+                  <a href="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3386,7 +3395,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#clusteredArea">ontology:clusteredArea</a>
+                  <a href="#clusteredArea">has clustered area</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3397,7 +3406,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>
+                  <a href="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3408,7 +3417,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3432,7 +3441,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Informationcarrier">ontology:InformationCarrier</a>
+                  <a href="#Informationcarrier">Information carrier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3443,7 +3452,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Location">ontology:Location</a>
+                  <a href="#Location">Location</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3478,7 +3487,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Location">ontology:Location</a>
+                  <a href="#Location">Location</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3508,7 +3517,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a>
+                  <a href="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3521,13 +3530,13 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#centroid">ontology:centroid</a>
+                      <a href="#centroid">has centroid</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#locatedAt">ontology:locatedAt</a>
+                      <a href="#locatedAt">is located hat</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -3540,7 +3549,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>
+                  <a href="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3551,7 +3560,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3575,7 +3584,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3586,7 +3595,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3610,7 +3619,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3621,7 +3630,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a>
+                  <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">Tipo</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3645,7 +3654,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Location">ontology:Location</a>
+                  <a href="#Location">Location</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3656,7 +3665,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3680,7 +3689,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3691,7 +3700,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3715,7 +3724,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3726,7 +3735,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3750,7 +3759,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Location">ontology:Location</a>
+                  <a href="#Location">Location</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3761,7 +3770,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Informationcarrier">ontology:InformationCarrier</a>
+                  <a href="#Informationcarrier">Information carrier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3785,7 +3794,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#hasPointGeometry">ontology:hasPointGeometry</a>
+                  <a href="#hasPointGeometry">has point geometry</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -3796,7 +3805,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>
+                  <a href="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3807,7 +3816,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3831,7 +3840,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Informationcarrier">ontology:InformationCarrier</a>
+                  <a href="#Informationcarrier">Information carrier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3842,7 +3851,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Potform">ontology:Potform</a>
+                  <a href="#Potform">Potform</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3866,7 +3875,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3877,7 +3886,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inschrift-Anfertigung">ontology:InscriptionMakingType</a>
+                  <a href="#Inschrift-Anfertigung">Inschrift-Anfertigung</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3901,7 +3910,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#ActorEntity">ontology:ActorEntity</a>
+                  <a href="#ActorEntity">Akteur-Entität</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3912,7 +3921,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Location">ontology:Location</a>
+                  <a href="#Location">Location</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3938,19 +3947,19 @@ code{
                 <ul>
                   <li>
                     <span>
-                      <a href="#placeofinterest">ontology:PlaceOfInterest</a>
+                      <a href="#placeofinterest">place of interest</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasExactGeometry">ontology:hasExactGeometry</a>
+                      <a href="#hasExactGeometry">has exact geometry</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
                   <li>
                     <span>
-                      <a href="#hasPointGeometry">ontology:hasPointGeometry</a>
+                      <a href="#hasPointGeometry">has point geometry</a>
                       <sup class="sup-op" title="OWL Object Property">op</sup>
                     </span>
                   </li>
@@ -3963,7 +3972,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -3974,7 +3983,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4004,7 +4013,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2004/02/skos/core#exactMatch">skos:exactMatch</a>
+                  <a href="http://www.w3.org/2004/02/skos/core#exactMatch">has exact match</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -4015,7 +4024,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.wikidata.org/prop/direct/P2888">ns1:P2888</a>
+                  <a href="http://www.wikidata.org/prop/direct/P2888">exact match</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -4026,7 +4035,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4037,7 +4046,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4061,7 +4070,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</a>
+                  <a href="http://www.w3.org/2002/07/owl#sameAs">sameAs</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -4072,7 +4081,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4083,7 +4092,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4235,7 +4244,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#sameAs">owl:sameAs</a>
+                  <a href="http://www.w3.org/2002/07/owl#sameAs">sameAs</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -4246,7 +4255,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#exactmatch">ontology:exactMatch</a>
+                  <a href="#exactmatch">exact match</a>
                   <sup class="sup-op" title="OWL Object Property">op</sup>
                 </span>
               </td>
@@ -4257,7 +4266,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4268,7 +4277,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a>
+                  <a href="http://www.w3.org/2002/07/owl#Thing">Thing</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4305,7 +4314,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4327,7 +4336,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4337,7 +4346,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4359,7 +4368,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inschrift-Anfertigung">ontology:InscriptionMakingType</a>
+                  <a href="#Inschrift-Anfertigung">Inschrift-Anfertigung</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4369,7 +4378,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4391,7 +4400,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4401,7 +4410,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4423,7 +4432,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4433,7 +4442,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4455,7 +4464,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Potform">ontology:Potform</a>
+                  <a href="#Potform">Potform</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4465,7 +4474,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4487,7 +4496,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Informationcarrier">ontology:InformationCarrier</a>
+                  <a href="#Informationcarrier">Information carrier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4497,7 +4506,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4519,7 +4528,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4529,7 +4538,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4551,7 +4560,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Informationcarrier">ontology:InformationCarrier</a>
+                  <a href="#Informationcarrier">Information carrier</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4615,7 +4624,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inschrift-Anfertigung">ontology:InscriptionMakingType</a>
+                  <a href="#Inschrift-Anfertigung">Inschrift-Anfertigung</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4625,7 +4634,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4647,7 +4656,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4657,7 +4666,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4679,7 +4688,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4689,7 +4698,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4711,7 +4720,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4721,7 +4730,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4756,7 +4765,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Inscription">ontology:Inscription</a>
+                  <a href="#Inscription">Inschrift</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4766,7 +4775,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4801,7 +4810,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="#Actor">ontology:Actor</a>
+                  <a href="#Actor">Actor</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4811,7 +4820,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4833,7 +4842,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4843,7 +4852,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -4865,7 +4874,7 @@ code{
               </th>
               <td>
                 <span>
-                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>
+                  <a href="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a>
                   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
                 </span>
               </td>
@@ -4875,7 +4884,7 @@ code{
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
               </td>
             </tr>
           </table>
@@ -5125,10 +5134,6 @@ code{
           <dd>
             <code>http://www.opengis.net/ont/geosparql#</code>
           </dd>
-          <dt id="ns1">ns1</dt>
-          <dd>
-            <code>http://www.wikidata.org/prop/direct/</code>
-          </dd>
           <dt id="ontology">ontology</dt>
           <dd>
             <code>http://archaeology.link/ontology#</code>
@@ -5216,7 +5221,10 @@ code{
           <span id="y">y</span>
           <span>LODE</span>
         </a>
-        <a href="https://github.com/rdflib/pyLODE/release/3.0.4" id="version">3.0.4</a>
+        <a href="https://github.com/rdflib/pyLODE/release/3.0.5" id="version">3.0.5</a>
+        <span> with the </span>
+        <a href="https://w3id.org/profile/ontpub" id="profile">OntPub</a>
+        <span>profile</span>
       </p>
     </div>
     <div id="toc">
@@ -5682,9 +5690,6 @@ code{
             </li>
             <li>
               <a href="#geosparql">geosparql</a>
-            </li>
-            <li>
-              <a href="#ns1">ns1</a>
             </li>
             <li>
               <a href="#ontology">ontology</a>
