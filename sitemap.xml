@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/about/</loc>
+</url>
+<url>
+<loc>/datapub/</loc>
+</url>
+<url>
+<loc>/doc/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/linking/</loc>
+</url>
+<url>
+<loc>/lit/</loc>
+</url>
+<url>
+<loc>/data/</loc>
+</url>
+<url>
+<loc>/ontology/</loc>
+</url>
+<url>
+<loc>/py/</loc>
+</url>
+<url>
+<loc>/wikidata/</loc>
+</url>
+</urlset>
