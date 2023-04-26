@@ -33,10 +33,16 @@ jobs:
            sudo apt-get install python3 python3-pip -y   
       - name: Create Ontology Documentation 🔧
         run: |
-             sudo apt-get install python3 python3-pip -y   
+             sudo apt-get install python3 python3-pip ruby -y   
              pip3 install pylode
+             gem install bundler jekyll
+             bundle install
              mkdir docs
+             bundle exec jekyll build -d docs
              cd docs
              python3 -m pylode -o ontology.html ../ontology/ontology.ttl
-      - name: 🧪 Build and deploy
-        uses: victoriadrake/jekyll-cd@master
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+             BRANCH: gh-pages
+             FOLDER: docs/
