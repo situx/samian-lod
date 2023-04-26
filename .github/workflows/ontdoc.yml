@@ -10,7 +10,7 @@ jobs:
     with: 
           rdffilepath: data/loc_discoverysite_1.ttl data/loc_kilnregion_1.ttl data/loc_productioncentre_1.ttl data/loc_repositorylocation_1.ttl data/placeasaconcept_1.ttl
           docpath: docs/
-          prefixns: http://data.archaeology.link/data/ars/
+          prefixns: http://data.archaeology.link/data/samian/
           prefixnsshort: ars
           indexpages: true
           metadatatable: true
@@ -19,4 +19,4 @@ jobs:
           createVOWL: true
           preferredlang: en
           ghpages: true
-          ghpagesfolder: ontdoc/
+          ghpagesfolder: /
