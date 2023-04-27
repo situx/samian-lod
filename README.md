@@ -10,7 +10,7 @@ There is also a documentation website which can be accessed by <https://rgzm.git
 -   04/12/2020: first release at JCM CAA-NL-FL, CAA-DE and LinkedPasts6
  
 ## credits
-
+ 
 -   Florian Thiery (RGZM)
 -   Allard Mees (RGZM)
 -   Dennis Gottwald (JGU Mainz)
