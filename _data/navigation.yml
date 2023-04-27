@@ -7,6 +7,8 @@ main:
     url: /lit/
   - title: "Data Publications"
     url: /datapub/
+  - title: "Ontdoc"
+    url: /ontdoc/
   - title: "About"
     url: /about/
 
@@ -58,6 +60,12 @@ barLit:
         url: /lit/#talks
       - title: "Poster"
         url: /lit/#poster
+
+barOntdoc:
+  - title: "Ontdoc"
+    children:
+      - title: "Ontdoc"
+        url: /ontdoc/index.html
 
 
 barAbout:
