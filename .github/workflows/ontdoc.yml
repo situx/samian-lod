@@ -20,6 +20,8 @@ jobs:
           createVOWL: false
           preferredlang: en
           ghpages: true
+          datasettitle: Linked Open Samian Ware
+          templatedir: https://github.com/archaeolink-lod/unicorn-ontdoc-template-archaeolink/archive/refs/tags/v0.5.zip
           ghpagesfolder: ontdoc/
 
   build:
